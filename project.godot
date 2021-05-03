@@ -10,13 +10,17 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
 config/name="2021 game"
+run/main_scene="res://character_template.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalVariables="*res://global_variables.gd"
 
 [rendering]
 
