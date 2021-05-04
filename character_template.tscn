@@ -6,5 +6,72 @@
 [node name="character_template" type="Node"]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="slot 1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 626.25, 37.75 )
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="slot 2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 626.25, 150.725 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="slot 3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 626.25, 264.889 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="slot 4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 626.25, 387.377 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="slot 5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 627.439, 505.108 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="enemy slot 1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1514.25, 37.75 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="enemy slot 2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1514.25, 150.725 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="enemy slot 3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1514.25, 264.889 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="enemy slot 4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1514.25, 387.377 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
+
+[node name="enemy slot 5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1515.44, 505.108 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+offset = Vector2( -369.5, 17.5 )
