@@ -15,12 +15,17 @@ _global_script_class_icons={
 [application]
 
 config/name="2021 game"
-run/main_scene="res://character_template.tscn"
+run/main_scene="res://battle.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 GlobalVariables="*res://global_variables.gd"
+
+[display]
+
+window/size/width=1800
+window/size/height=800
 
 [rendering]
 

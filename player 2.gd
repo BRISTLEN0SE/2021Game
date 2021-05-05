@@ -5,7 +5,7 @@ var health = 100
 var speed = 0
 var star = 1
 var charname = "spiderman"
-var charnum = 1
+var charnum = 2
 
 
 
