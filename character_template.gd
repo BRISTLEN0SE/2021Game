@@ -2,7 +2,14 @@ extends Node
 
 var hide_show = 1
 var health = 100
+
 var speed = 0
+var max_speed = 500
+var base_speed = 100
+var start_speed = true
+
+var charge_enabled = true
+
 var star = 1
 var charname = "spiderman"
 var charnum = 1
@@ -12,6 +19,7 @@ var charnum = 1
 func _physics_process(delta):
 	if charnum in GlobalVariables.player_char:
 		if hide_show == 1:
+			#player
 			if GlobalVariables.slot1 == charnum:
 				$player/slot_1.show()
 			if GlobalVariables.slot2 == charnum:
@@ -30,15 +38,60 @@ func _physics_process(delta):
 				$player/slot_3.hide()
 			if GlobalVariables.slot4 != charnum:
 				$player/slot_4.hide()
-			if GlobalVariables.slot5 != charnum:	
+			if GlobalVariables.slot5 != charnum:
 				$player/slot_5.hide()
+
 	#timer
+		if start_speed == true:
+			speed = base_speed
+			start_speed = false
+			
 		if GlobalVariables.full != true:
 			print(speed)
 			speed += 1
-		if speed > 1000:
+		if speed > max_speed:
 			GlobalVariables.full = true
-		if Input.is_action_just_pressed("ui_select"):
-			speed = 0
-			GlobalVariables.full = false
-		
+			$attack_1.show()
+			$attack_2.show()
+			$attack_3.show()
+			$attack_2_charge.show()
+			$attack_3_charge.show()
+			if charge_enabled == true:
+				$attack_2_charge.value += 50
+				$attack_3_charge.value += 25
+				charge_enabled = false
+
+func _on_attack_1_pressed():
+	$attack_1.hide()
+	$attack_2.hide()
+	$attack_3.hide()
+	$attack_2_charge.hide()
+	$attack_3_charge.hide()
+	start_speed = true
+	charge_enabled = true
+	GlobalVariables.full = false
+
+func _on_attack_2_pressed():
+	if $attack_2_charge.value == 100:
+		$attack_1.hide()
+		$attack_2.hide()
+		$attack_3.hide()
+		$attack_2_charge.hide()
+		$attack_3_charge.hide()
+		start_speed = true
+		charge_enabled = true
+		$attack_2_charge.value = 0
+		GlobalVariables.full = false
+
+
+func _on_attack_3_pressed():
+	if $attack_3_charge.value == 100:
+		$attack_1.hide()
+		$attack_2.hide()
+		$attack_3.hide()
+		$attack_2_charge.hide()
+		$attack_3_charge.hide()
+		start_speed = true
+		charge_enabled = true
+		$attack_3_charge.value = 0
+		GlobalVariables.full = false

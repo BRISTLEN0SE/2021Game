@@ -10,7 +10,7 @@ var charnum = 1
 
 
 func _physics_process(delta):
-	if charnum in GlobalVariables.player_char:
+	if charnum in GlobalVariables.characters:
 		if hide_show == 1:
 			if GlobalVariables.slot1 == charnum:
 				$player/slot_1.show()
