@@ -9,30 +9,35 @@ script = ExtResource( 2 )
 [node name="player" type="Node" parent="."]
 
 [node name="slot_1" type="Sprite" parent="player"]
+visible = false
 position = Vector2( 624, 48 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_2" type="Sprite" parent="player"]
+visible = false
 position = Vector2( 624, 160 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_3" type="Sprite" parent="player"]
+visible = false
 position = Vector2( 624, 272 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_4" type="Sprite" parent="player"]
+visible = false
 position = Vector2( 624, 384 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_5" type="Sprite" parent="player"]
+visible = false
 position = Vector2( 624, 496 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
@@ -41,30 +46,35 @@ offset = Vector2( -369.5, 17.5 )
 [node name="enemy" type="Node" parent="."]
 
 [node name="enemy_slot1" type="Sprite" parent="enemy"]
+visible = false
 position = Vector2( 2282.25, 37.75 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="enemy_slot2" type="Sprite" parent="enemy"]
+visible = false
 position = Vector2( 2282.25, 149.75 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="enemy_slot3" type="Sprite" parent="enemy"]
+visible = false
 position = Vector2( 2282.25, 261.75 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="enemy_slot4" type="Sprite" parent="enemy"]
+visible = false
 position = Vector2( 2282.25, 373.75 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="enemy_slot5" type="Sprite" parent="enemy"]
+visible = false
 position = Vector2( 2282.25, 485.75 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )

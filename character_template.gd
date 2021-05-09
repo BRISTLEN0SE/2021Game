@@ -1,5 +1,7 @@
 extends Node
 
+#add if charcter in slot 1 & slot 2 have different timers
+
 var hide_show = 1
 var health = 100
 
@@ -7,6 +9,7 @@ var speed = 0
 var max_speed = 500
 var base_speed = 100
 var start_speed = true
+var tie = true
 
 var charge_enabled = true
 
@@ -17,7 +20,7 @@ var charnum = 1
 
 
 func _physics_process(delta):
-	if charnum in GlobalVariables.player_char:
+	if charnum in GlobalVariables.player_char or charnum in GlobalVariables.enemy_char:
 		if hide_show == 1:
 			#player
 			if GlobalVariables.slot1 == charnum:
@@ -40,6 +43,27 @@ func _physics_process(delta):
 				$player/slot_4.hide()
 			if GlobalVariables.slot5 != charnum:
 				$player/slot_5.hide()
+			#enemy
+			if GlobalVariables.enemy_slot1 == charnum:
+				$enemy/enemy_slot1.show()
+			if GlobalVariables.enemy_slot2 == charnum:
+				$enemy/enemy_slot2.show()
+			if GlobalVariables.enemy_slot3 == charnum:
+				$enemy/enemy_slot3.show()
+			if GlobalVariables.enemy_slot4 == charnum:
+				$enemy/enemy_slot4.show()
+			if GlobalVariables.enemy_slot5 == charnum:
+				$enemy/enemy_slot5.show()
+			if GlobalVariables.enemy_slot1 != charnum:
+				$enemy/enemy_slot1.hide()
+			if GlobalVariables.enemy_slot2 != charnum:
+				$enemy/enemy_slot2.hide()
+			if GlobalVariables.enemy_slot3 != charnum:
+				$enemy/enemy_slot3.hide()
+			if GlobalVariables.enemy_slot4 != charnum:
+				$enemy/enemy_slot4.hide()
+			if GlobalVariables.enemy_slot5 != charnum:
+				$enemy/enemy_slot5.hide()
 
 	#timer
 		if start_speed == true:
