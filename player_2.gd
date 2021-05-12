@@ -2,14 +2,12 @@ extends Node
 
 #add if charcter in slot 1 & slot 2 have different timers
 
-var character = load("res://player_1.tscn")
-
 var hide_show = 1
 var health = 100
 
 var speed = 0
 var max_speed = 500
-var base_speed = 100
+var base_speed = 200
 var start_speed = true
 var tie = true
 
@@ -17,7 +15,7 @@ var charge_enabled = true
 
 var star = 1
 var charname = "spiderman"
-var charnum = 1
+var charnum = 2
 
 
 

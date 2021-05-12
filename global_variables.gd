@@ -4,7 +4,7 @@ extends Node
 var slot1 = 1
 var slot2 = 2
 var slot3 = 3
-var slot4 = 1
+var slot4 = 4
 var slot5 = 5
 
 var enemy_slot1 = 6

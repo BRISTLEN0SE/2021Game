@@ -2,8 +2,6 @@ extends Node
 
 #add if charcter in slot 1 & slot 2 have different timers
 
-var character = load("res://player_1.tscn")
-
 var hide_show = 1
 var health = 100
 
