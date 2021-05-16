@@ -2,10 +2,28 @@
 
 [ext_resource path="res://player_2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player_1.tscn" type="PackedScene" id=2]
-[ext_resource path="res://battle.gd" type="Script" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+
+func _physics_process(delta):
+	if Input.is_action_just_pressed(\"ui_down\"):
+		GlobalVariables.slot1 -=1
+		GlobalVariables.slot2 -=1
+		GlobalVariables.slot3 -=1
+		GlobalVariables.slot4 -=1
+		GlobalVariables.slot5 -=1
+	if Input.is_action_just_pressed(\"ui_up\"):
+		GlobalVariables.slot1 +=1
+		GlobalVariables.slot2 +=1
+		GlobalVariables.slot3 +=1
+		GlobalVariables.slot4 +=1
+		GlobalVariables.slot5 +=1
+"
 
 [node name="battle" type="Node"]
-script = ExtResource( 3 )
+script = SubResource( 1 )
 
 [node name="player_1" parent="." instance=ExtResource( 2 )]
 

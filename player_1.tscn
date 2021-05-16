@@ -160,12 +160,14 @@ __meta__ = {
 [node name="other" type="Node" parent="."]
 
 [node name="current_character" type="Sprite" parent="other"]
+modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 1860.5, 75.5 )
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="targeted_character" type="Sprite" parent="other"]
+modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 2148.5, 75.5 )
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )

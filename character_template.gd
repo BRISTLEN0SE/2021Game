@@ -1,22 +1,31 @@
 extends Node
 
-#add if charcter in slot 1 & slot 2 have different timers
-
-var character = load("res://player_1.tscn")
+onready var character1 = preload("res://player_1.tscn") 
+onready var character2 = preload("res://player_1.tscn") 
+onready var character3 = preload("res://player_1.tscn") 
+onready var character4 = preload("res://player_1.tscn") 
+onready var character5 = preload("res://player_1.tscn") 
+onready var enemy_character1 = preload("res://player_1.tscn") 
+onready var enemy_character2 = preload("res://player_1.tscn") 
+onready var enemy_character3 = preload("res://player_1.tscn") 
+onready var enemy_character4 = preload("res://player_1.tscn") 
+onready var enemy_character5 = preload("res://player_1.tscn") 
 
 var hide_show = 1
 var health = 100
 
-var speed = 0
-var max_speed = 500
-var base_speed = 100
-var start_speed = true
-var tie = true
+var slot_1_used = false
+var slot_2_used = false
+var slot_3_used = false
+var slot_4_used = false
+var slot_5_used = false
 
-var charge_enabled = true
+var enemy_slot_1_used = false
+var enemy_slot_2_used = false
+var enemy_slot_3_used = false
+var enemy_slot_4_used = false
+var enemy_slot_5_used = false
 
-var star = 1
-var charname = "spiderman"
 var charnum = 1
 
 
@@ -26,97 +35,54 @@ func _physics_process(delta):
 		if hide_show == 1:
 			#player
 			if GlobalVariables.slot1 == charnum:
-				$player/slot_1.show()
+				if slot_1_used == false:
+					var new_chara1 = character1.instance()
+					get_parent().add_child(new_chara1)
+					slot_1_used = true
 			if GlobalVariables.slot2 == charnum:
-				$player/slot_2.show()
+				if slot_2_used == false:
+					var new_chara2 = character2.instance()
+					get_parent().add_child(new_chara2)
+					slot_2_used = true
 			if GlobalVariables.slot3 == charnum:
-				$player/slot_3.show()
+				if slot_3_used == false:
+					var new_chara3 = character3.instance()
+					get_parent().add_child(new_chara3)
+					slot_3_used = true
 			if GlobalVariables.slot4 == charnum:
-				$player/slot_4.show()
+				if slot_4_used == false:
+					var new_chara4 = character4.instance()
+					get_parent().add_child(new_chara4)
+					slot_4_used = true
 			if GlobalVariables.slot5 == charnum:
-				$player/slot_5.show()
-			if GlobalVariables.slot1 != charnum:
-				$player/slot_1.hide()
-			if GlobalVariables.slot2 != charnum:
-				$player/slot_2.hide()
-			if GlobalVariables.slot3 != charnum:
-				$player/slot_3.hide()
-			if GlobalVariables.slot4 != charnum:
-				$player/slot_4.hide()
-			if GlobalVariables.slot5 != charnum:
-				$player/slot_5.hide()
+				if slot_5_used == false:
+					var new_chara5 = character5.instance()
+					get_parent().add_child(new_chara5)
+					slot_5_used = true
+
 			#enemy
 			if GlobalVariables.enemy_slot1 == charnum:
-				$enemy/enemy_slot1.show()
+				if enemy_slot_1_used == false:
+					var new_enemy_chara1 = enemy_character1.instance()
+					get_parent().add_child(new_enemy_chara1)
+					enemy_slot_1_used = true
 			if GlobalVariables.enemy_slot2 == charnum:
-				$enemy/enemy_slot2.show()
+				if enemy_slot_2_used == false:
+					var new_enemy_chara2 = enemy_character2.instance()
+					get_parent().add_child(new_enemy_chara2)
+					enemy_slot_2_used = true
 			if GlobalVariables.enemy_slot3 == charnum:
-				$enemy/enemy_slot3.show()
+				if enemy_slot_3_used == false:
+					var new_enemy_chara3 = enemy_character3.instance()
+					get_parent().add_child(new_enemy_chara3)
+					enemy_slot_3_used = true
 			if GlobalVariables.enemy_slot4 == charnum:
-				$enemy/enemy_slot4.show()
+				if enemy_slot_4_used == false:
+					var new_enemy_chara4 = enemy_character4.instance()
+					get_parent().add_child(new_enemy_chara4)
+					enemy_slot_4_used = true
 			if GlobalVariables.enemy_slot5 == charnum:
-				$enemy/enemy_slot5.show()
-			if GlobalVariables.enemy_slot1 != charnum:
-				$enemy/enemy_slot1.hide()
-			if GlobalVariables.enemy_slot2 != charnum:
-				$enemy/enemy_slot2.hide()
-			if GlobalVariables.enemy_slot3 != charnum:
-				$enemy/enemy_slot3.hide()
-			if GlobalVariables.enemy_slot4 != charnum:
-				$enemy/enemy_slot4.hide()
-			if GlobalVariables.enemy_slot5 != charnum:
-				$enemy/enemy_slot5.hide()
-
-	#timer
-		if start_speed == true:
-			speed = base_speed
-			start_speed = false
-			
-		if GlobalVariables.full != true:
-			speed += 1
-		if speed > max_speed:
-			GlobalVariables.full = true
-			$attack_1.show()
-			$attack_2.show()
-			$attack_3.show()
-			$attack_2_charge.show()
-			$attack_3_charge.show()
-			if charge_enabled == true:
-				$attack_2_charge.value += 34
-				$attack_3_charge.value += 20
-				charge_enabled = false
-
-func _on_attack_1_pressed():
-	$attack_1.hide()
-	$attack_2.hide()
-	$attack_3.hide()
-	$attack_2_charge.hide()
-	$attack_3_charge.hide()
-	start_speed = true
-	charge_enabled = true
-	GlobalVariables.full = false
-
-func _on_attack_2_pressed():
-	if $attack_2_charge.value >= 100:
-		$attack_1.hide()
-		$attack_2.hide()
-		$attack_3.hide()
-		$attack_2_charge.hide()
-		$attack_3_charge.hide()
-		start_speed = true
-		charge_enabled = true
-		$attack_2_charge.value = 0
-		GlobalVariables.full = false
-
-
-func _on_attack_3_pressed():
-	if $attack_3_charge.value >= 100:
-		$attack_1.hide()
-		$attack_2.hide()
-		$attack_3.hide()
-		$attack_2_charge.hide()
-		$attack_3_charge.hide()
-		start_speed = true
-		charge_enabled = true
-		$attack_3_charge.value = 0
-		GlobalVariables.full = false
+				if enemy_slot_5_used == false:
+					var new_enemy_chara5 = enemy_character5.instance()
+					get_parent().add_child(new_enemy_chara5)
+					enemy_slot_5_used = true
