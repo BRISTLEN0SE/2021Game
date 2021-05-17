@@ -1,7 +1,5 @@
 extends Node
 
-#add if charcter in slot 1 & slot 2 have different timers
-
 var hide_show = 1
 var health = 100
 
@@ -14,6 +12,8 @@ var tie = true
 var charge_enabled = true
 
 var star = 1
+var level = 1
+
 var charname = "spiderman"
 var charnum = 1
 
@@ -72,8 +72,11 @@ func _physics_process(delta):
 			
 		if GlobalVariables.full != true:
 			speed += 1
+			if GlobalVariables.targeted != charnum:
+				$other/targeted_character.hide()
 		if speed > max_speed:
 			GlobalVariables.full = true
+			$other/current_character.show()
 			$attack_1.show()
 			$attack_2.show()
 			$attack_3.show()
@@ -90,6 +93,7 @@ func _on_attack_1_pressed():
 	$attack_3.hide()
 	$attack_2_charge.hide()
 	$attack_3_charge.hide()
+	$other/current_character.hide()
 	start_speed = true
 	charge_enabled = true
 	GlobalVariables.full = false
@@ -101,6 +105,7 @@ func _on_attack_2_pressed():
 		$attack_3.hide()
 		$attack_2_charge.hide()
 		$attack_3_charge.hide()
+		$other/current_character.hide()
 		start_speed = true
 		charge_enabled = true
 		$attack_2_charge.value = 0
@@ -114,7 +119,30 @@ func _on_attack_3_pressed():
 		$attack_3.hide()
 		$attack_2_charge.hide()
 		$attack_3_charge.hide()
+		$other/current_character.hide()
 		start_speed = true
 		charge_enabled = true
 		$attack_3_charge.value = 0
 		GlobalVariables.full = false
+
+
+func _on_enemy_slot1_pressed():
+	GlobalVariables.targeted = charnum
+	$other/targeted_character.show()
+
+func _on_enemy_slot2_pressed():
+	GlobalVariables.targeted = charnum
+	$other/targeted_character.show()
+
+func _on_enemy_slot3_pressed():
+	GlobalVariables.targeted = charnum
+	$other/targeted_character.show()
+
+func _on_enemy_slot4_pressed():
+	GlobalVariables.targeted = charnum
+	$other/targeted_character.show()
+
+func _on_enemy_slot5_pressed():
+	GlobalVariables.targeted = charnum
+	$other/targeted_character.show()
+

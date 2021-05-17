@@ -9,86 +9,105 @@ script = ExtResource( 2 )
 [node name="player" type="Node" parent="."]
 
 [node name="slot_1" type="Sprite" parent="player"]
-visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 624, 48 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 704, 48 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_2" type="Sprite" parent="player"]
-visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 624, 160 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 704, 176 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_3" type="Sprite" parent="player"]
-visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 624, 272 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 704, 304 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_4" type="Sprite" parent="player"]
-visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 624, 384 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 704, 432 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_5" type="Sprite" parent="player"]
-visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 624, 496 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 704, 560 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="enemy" type="Node" parent="."]
 
-[node name="enemy_slot1" type="Sprite" parent="enemy"]
-visible = false
+[node name="enemy_slot1" type="Button" parent="enemy"]
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 2282.25, 37.75 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 1 )
-offset = Vector2( -369.5, 17.5 )
+margin_left = 1664.0
+margin_top = 16.0
+margin_right = 1740.0
+margin_bottom = 86.0
+rect_scale = Vector2( 1.5, 1.5 )
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="enemy_slot2" type="Sprite" parent="enemy"]
+[node name="enemy_slot2" type="Button" parent="enemy"]
 visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 2282.25, 149.75 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 1 )
-offset = Vector2( -369.5, 17.5 )
+margin_left = 1664.0
+margin_top = 144.0
+margin_right = 1740.0
+margin_bottom = 214.0
+rect_scale = Vector2( 1.5, 1.5 )
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="enemy_slot3" type="Sprite" parent="enemy"]
+[node name="enemy_slot3" type="Button" parent="enemy"]
 visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 2282.25, 261.75 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 1 )
-offset = Vector2( -369.5, 17.5 )
+margin_left = 1664.0
+margin_top = 272.0
+margin_right = 1740.0
+margin_bottom = 342.0
+rect_scale = Vector2( 1.5, 1.5 )
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="enemy_slot4" type="Sprite" parent="enemy"]
+[node name="enemy_slot4" type="Button" parent="enemy"]
 visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 2282.25, 373.75 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 1 )
-offset = Vector2( -369.5, 17.5 )
+margin_left = 1664.0
+margin_top = 400.0
+margin_right = 1740.0
+margin_bottom = 470.0
+rect_scale = Vector2( 1.5, 1.5 )
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="enemy_slot5" type="Sprite" parent="enemy"]
+[node name="enemy_slot5" type="Button" parent="enemy"]
 visible = false
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 2282.25, 485.75 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 1 )
-offset = Vector2( -369.5, 17.5 )
+margin_left = 1664.0
+margin_top = 528.0
+margin_right = 1740.0
+margin_bottom = 598.0
+rect_scale = Vector2( 1.5, 1.5 )
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="attack" type="Node" parent="."]
 
@@ -160,6 +179,7 @@ __meta__ = {
 [node name="other" type="Node" parent="."]
 
 [node name="current_character" type="Sprite" parent="other"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 1860.5, 75.5 )
 scale = Vector2( 3, 3 )
@@ -167,12 +187,18 @@ texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="targeted_character" type="Sprite" parent="other"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 2148.5, 75.5 )
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
+[connection signal="pressed" from="enemy/enemy_slot1" to="." method="_on_enemy_slot1_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot2" to="." method="_on_enemy_slot2_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot3" to="." method="_on_enemy_slot3_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot4" to="." method="_on_enemy_slot4_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot5" to="." method="_on_enemy_slot5_pressed"]
 [connection signal="pressed" from="attack_1" to="." method="_on_attack_1_pressed"]
 [connection signal="pressed" from="attack_2" to="." method="_on_attack_2_pressed"]
 [connection signal="pressed" from="attack_3" to="." method="_on_attack_3_pressed"]
