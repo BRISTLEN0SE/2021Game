@@ -2,9 +2,12 @@ extends Node
 
 var hide_show = 1
 var health = 100
+var attack1 = 10
+var attack2 = 20
+var attack3 = 30
 
 var speed = 0
-var max_speed = 500
+var max_speed = 200
 var base_speed = 100
 var start_speed = true
 var tie = true
@@ -17,32 +20,46 @@ var level = 1
 var charname = "spiderman"
 var charnum = 1
 
+var slot = 1
+var changed = false
+
 
 
 func _physics_process(delta):
 	if charnum in GlobalVariables.player_char or charnum in GlobalVariables.enemy_char:
 		if hide_show == 1:
 			#player
-			if GlobalVariables.slot1 == charnum:
-				$player/slot_1.show()
-			if GlobalVariables.slot2 == charnum:
-				$player/slot_2.show()
-			if GlobalVariables.slot3 == charnum:
-				$player/slot_3.show()
-			if GlobalVariables.slot4 == charnum:
-				$player/slot_4.show()
-			if GlobalVariables.slot5 == charnum:
-				$player/slot_5.show()
-			if GlobalVariables.slot1 != charnum:
-				$player/slot_1.hide()
-			if GlobalVariables.slot2 != charnum:
-				$player/slot_2.hide()
-			if GlobalVariables.slot3 != charnum:
-				$player/slot_3.hide()
-			if GlobalVariables.slot4 != charnum:
-				$player/slot_4.hide()
-			if GlobalVariables.slot5 != charnum:
-				$player/slot_5.hide()
+			if changed != true:
+				if GlobalVariables.slot1 == charnum:
+					$player/slot_1.show()
+					slot = 1
+					changed = true
+				if GlobalVariables.slot2 == charnum:
+					$player/slot_2.show()
+					slot = 2
+					changed = true
+				if GlobalVariables.slot3 == charnum:
+					$player/slot_3.show()
+					slot = 3
+					changed = true
+				if GlobalVariables.slot4 == charnum:
+					$player/slot_4.show()
+					slot = 4
+					changed = true
+				if GlobalVariables.slot5 == charnum:
+					$player/slot_5.show()
+					slot = 5
+					changed = true
+				if GlobalVariables.slot1 != charnum:
+					$player/slot_1.hide()
+				if GlobalVariables.slot2 != charnum:
+					$player/slot_2.hide()
+				if GlobalVariables.slot3 != charnum:
+					$player/slot_3.hide()
+				if GlobalVariables.slot4 != charnum:
+					$player/slot_4.hide()
+				if GlobalVariables.slot5 != charnum:
+					$player/slot_5.hide()
 			#enemy
 			if GlobalVariables.enemy_slot1 == charnum:
 				$enemy/enemy_slot1.show()
@@ -65,27 +82,39 @@ func _physics_process(delta):
 			if GlobalVariables.enemy_slot5 != charnum:
 				$enemy/enemy_slot5.hide()
 
-	#timer
+	
 		if start_speed == true:
 			speed = base_speed
 			start_speed = false
 			
 		if GlobalVariables.full != true:
 			speed += 1
+			print(slot)
 			if GlobalVariables.targeted != charnum:
 				$other/targeted_character.hide()
 		if speed > max_speed:
 			GlobalVariables.full = true
-			$other/current_character.show()
-			$attack_1.show()
-			$attack_2.show()
-			$attack_3.show()
-			$attack_2_charge.show()
-			$attack_3_charge.show()
+			if charnum in GlobalVariables.player_char:
+				$other/current_character.show()
+				$attack_1.show()
+				$attack_2.show()
+				$attack_3.show()
+				$attack_2_charge.show()
+				$attack_3_charge.show()
 			if charge_enabled == true:
 				$attack_2_charge.value += 34
 				$attack_3_charge.value += 20
 				charge_enabled = false
+				if slot > 5:
+					$attack_1.hide()
+					$attack_2.hide()
+					$attack_3.hide()
+					$attack_2_charge.hide()
+					$attack_3_charge.hide()
+					$other/current_character.hide()
+					start_speed = true
+					charge_enabled = true
+					GlobalVariables.full = false
 
 func _on_attack_1_pressed():
 	$attack_1.hide()
@@ -127,22 +156,22 @@ func _on_attack_3_pressed():
 
 
 func _on_enemy_slot1_pressed():
-	GlobalVariables.targeted = charnum
+	GlobalVariables.targeted = GlobalVariables.enemy_slot1
 	$other/targeted_character.show()
 
 func _on_enemy_slot2_pressed():
-	GlobalVariables.targeted = charnum
+	GlobalVariables.targeted = GlobalVariables.enemy_slot2
 	$other/targeted_character.show()
 
 func _on_enemy_slot3_pressed():
-	GlobalVariables.targeted = charnum
+	GlobalVariables.targeted = GlobalVariables.enemy_slot3
 	$other/targeted_character.show()
 
 func _on_enemy_slot4_pressed():
-	GlobalVariables.targeted = charnum
+	GlobalVariables.targeted = GlobalVariables.enemy_slot4
 	$other/targeted_character.show()
 
 func _on_enemy_slot5_pressed():
-	GlobalVariables.targeted = charnum
+	GlobalVariables.targeted = GlobalVariables.enemy_slot5
 	$other/targeted_character.show()
 

@@ -56,7 +56,7 @@ func _physics_process(delta):
 					slot_4_used = true
 			if GlobalVariables.slot5 == charnum:
 				if slot_5_used == false:
-					var new_chara5 = character5.instance()
+					var new_chara5 = character1.instance()
 					get_parent().add_child(new_chara5)
 					slot_5_used = true
 
