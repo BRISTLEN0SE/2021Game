@@ -9,6 +9,7 @@ script = ExtResource( 2 )
 [node name="player" type="Node" parent="."]
 
 [node name="slot_1" type="Sprite" parent="player"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 704, 48 )
 scale = Vector2( 1.7, 1.7 )
@@ -16,6 +17,7 @@ texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_2" type="Sprite" parent="player"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 704, 176 )
 scale = Vector2( 1.7, 1.7 )
@@ -23,6 +25,7 @@ texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_3" type="Sprite" parent="player"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 704, 304 )
 scale = Vector2( 1.7, 1.7 )
@@ -30,6 +33,7 @@ texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_4" type="Sprite" parent="player"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 704, 432 )
 scale = Vector2( 1.7, 1.7 )
@@ -37,6 +41,7 @@ texture = ExtResource( 1 )
 offset = Vector2( -369.5, 17.5 )
 
 [node name="slot_5" type="Sprite" parent="player"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 704, 560 )
 scale = Vector2( 1.7, 1.7 )
@@ -46,6 +51,7 @@ offset = Vector2( -369.5, 17.5 )
 [node name="enemy" type="Node" parent="."]
 
 [node name="enemy_slot1" type="Button" parent="enemy"]
+visible = false
 modulate = Color( 1, 0, 0, 1 )
 margin_left = 1664.0
 margin_top = 16.0
