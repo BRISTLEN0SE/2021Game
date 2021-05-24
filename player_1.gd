@@ -37,40 +37,40 @@ func _physics_process(delta):
 					GlobalVariables.character1_created = true
 					$player/slot_1.show()
 					changed = true
-				elif GlobalVariables.character2_created != true:
+				if GlobalVariables.character2_created != true:
 					GlobalVariables.character2_created = true
 					$player/slot_2.show()
 					changed = true
-				elif GlobalVariables.character3_created != true:
+				if GlobalVariables.character3_created != true:
 					GlobalVariables.character3_created = true
 					$player/slot_3.show()
 					changed = true
-				elif GlobalVariables.character4_created != true:
+				if GlobalVariables.character4_created != true:
 					GlobalVariables.character4_created = true
 					$player/slot_4.show()
 					changed = true
-				elif GlobalVariables.character5_created != true:
+				if GlobalVariables.character5_created != true:
 					GlobalVariables.character5_created = true
 					$player/slot_5.show()
 					changed = true
 					
-				elif GlobalVariables.character6_created != true:
+				if GlobalVariables.character6_created != true:
 					GlobalVariables.character6_created = true
 					$enemy/enemy_slot1.show()
 					changed = true
-				elif GlobalVariables.character7_created != true:
+				if GlobalVariables.character7_created != true:
 					GlobalVariables.character7_created = true
 					$enemy/enemy_slot2.show()
 					changed = true
-				elif GlobalVariables.character8_created != true:
+				if GlobalVariables.character8_created != true:
 					GlobalVariables.character8_created = true
 					$enemy/enemy_slot3.show()
 					changed = true
-				elif GlobalVariables.character9_created != true:
+				if GlobalVariables.character9_created != true:
 					GlobalVariables.character9_created = true
 					$enemy/enemy_slot4.show()
 					changed = true
-				elif GlobalVariables.character10_created != true:
+				if GlobalVariables.character10_created != true:
 					GlobalVariables.character10_created = true
 					$enemy/enemy_slot5.show()
 					changed = true

@@ -8,10 +8,10 @@ var slot4 = 4
 var slot5 = 5
 
 var enemy_slot1 = 1
-var enemy_slot2 = 1
+var enemy_slot2 = 2
 var enemy_slot3 = 1
-var enemy_slot4 = 1
-var enemy_slot5 = 2
+var enemy_slot4 = 4
+var enemy_slot5 = 5
 
 var character1_created = false
 var character2_created = false
