@@ -5,6 +5,7 @@ extends Node
 
 var hide_show = 1
 var health = 100
+var attack = 1
 var attack1 = 10
 var attack2 = 20
 var attack3 = 30
@@ -31,7 +32,7 @@ var changed = false
 func _physics_process(delta):
 	if charnum in GlobalVariables.player_char or charnum in GlobalVariables.enemy_char:
 		if hide_show == 1:
-			#player
+			#swap system
 			if changed != true:
 				if GlobalVariables.character1_created != true and GlobalVariables.slot1 == charnum:
 					GlobalVariables.character1_created = true
@@ -77,25 +78,55 @@ func _physics_process(delta):
 				
 			if $player/slot_1.is_visible_in_tree() == true:
 				slot = 1
+				GlobalVariables.slot1_attack = attack
+				GlobalVariables.slot1_health = health
 			if $player/slot_2.is_visible_in_tree() == true:
 				slot = 2
+				GlobalVariables.slot2_attack = attack
+				GlobalVariables.slot2_health = health
 			if $player/slot_3.is_visible_in_tree() == true:
 				slot = 3
+				GlobalVariables.slot3_attack = attack
+				GlobalVariables.slot3_health = health
 			if $player/slot_4.is_visible_in_tree() == true:
 				slot = 4
+				GlobalVariables.slot4_attack = attack
+				GlobalVariables.slot4_health = health
 			if $player/slot_5.is_visible_in_tree() == true:
 				slot = 5
+				GlobalVariables.slot5_attack = attack
+				GlobalVariables.slot5_health = health
 				
 			if $enemy/enemy_slot1.is_visible_in_tree() == true:
 				slot = 6
+				GlobalVariables.enemy_slot1_attack = attack
+				GlobalVariables.enemy_slot1_health = health
+				if GlobalVariables.targeted == 1:
+					$other/targeted_character.show()
 			if $enemy/enemy_slot2.is_visible_in_tree() == true:
 				slot = 7
+				GlobalVariables.enemy_slot2_attack = attack
+				GlobalVariables.enemy_slot2_health = health
+				if GlobalVariables.targeted == 2:
+					$other/targeted_character.show()
 			if $enemy/enemy_slot3.is_visible_in_tree() == true:
 				slot = 8
+				GlobalVariables.enemy_slot3_attack = attack
+				GlobalVariables.enemy_slot3_health = health
+				if GlobalVariables.targeted == 3:
+					$other/targeted_character.show()
 			if $enemy/enemy_slot4.is_visible_in_tree() == true:
 				slot = 9
+				GlobalVariables.enemy_slot4_attack = attack
+				GlobalVariables.enemy_slot4_health = health
+				if GlobalVariables.targeted == 4:
+					$other/targeted_character.show()
 			if $enemy/enemy_slot5.is_visible_in_tree() == true:
 				slot = 10
+				GlobalVariables.enemy_slot5_attack = attack
+				GlobalVariables.enemy_slot5_health = health
+				if GlobalVariables.targeted == 5:
+					$other/targeted_character.show()
 			
 			
 			
@@ -128,7 +159,6 @@ func _physics_process(delta):
 			
 		if GlobalVariables.full != true:
 			speed += 1
-			print(slot)
 			if GlobalVariables.targeted != charnum:
 				$other/targeted_character.hide()
 		if speed > max_speed:
@@ -151,6 +181,7 @@ func _physics_process(delta):
 				GlobalVariables.full = false
 
 func _on_attack_1_pressed():
+	attack = attack1
 	$attack_1.hide()
 	$attack_2.hide()
 	$attack_3.hide()
@@ -163,6 +194,7 @@ func _on_attack_1_pressed():
 
 func _on_attack_2_pressed():
 	if $attack_2_charge.value >= 100:
+		attack = attack2
 		$attack_1.hide()
 		$attack_2.hide()
 		$attack_3.hide()
@@ -177,6 +209,7 @@ func _on_attack_2_pressed():
 
 func _on_attack_3_pressed():
 	if $attack_3_charge.value >= 100:
+		attack = attack3
 		$attack_1.hide()
 		$attack_2.hide()
 		$attack_3.hide()
@@ -190,22 +223,17 @@ func _on_attack_3_pressed():
 
 
 func _on_enemy_slot1_pressed():
-	GlobalVariables.targeted = GlobalVariables.enemy_slot1
-	$other/targeted_character.show()
+	GlobalVariables.targeted = 1
 
 func _on_enemy_slot2_pressed():
-	GlobalVariables.targeted = GlobalVariables.enemy_slot2
-	$other/targeted_character.show()
+	GlobalVariables.targeted = 2
 
 func _on_enemy_slot3_pressed():
-	GlobalVariables.targeted = GlobalVariables.enemy_slot3
-	$other/targeted_character.show()
+	GlobalVariables.targeted = 3
 
 func _on_enemy_slot4_pressed():
-	GlobalVariables.targeted = GlobalVariables.enemy_slot4
-	$other/targeted_character.show()
+	GlobalVariables.targeted = 4
 
 func _on_enemy_slot5_pressed():
-	GlobalVariables.targeted = GlobalVariables.enemy_slot5
-	$other/targeted_character.show()
+	GlobalVariables.targeted = 5
 
