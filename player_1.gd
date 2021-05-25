@@ -33,44 +33,44 @@ func _physics_process(delta):
 		if hide_show == 1:
 			#player
 			if changed != true:
-				if GlobalVariables.character1_created != true:
+				if GlobalVariables.character1_created != true and GlobalVariables.slot1 == charnum:
 					GlobalVariables.character1_created = true
 					$player/slot_1.show()
 					changed = true
-				if GlobalVariables.character2_created != true:
+				elif GlobalVariables.character2_created != true and GlobalVariables.slot2 == charnum:
 					GlobalVariables.character2_created = true
 					$player/slot_2.show()
 					changed = true
-				if GlobalVariables.character3_created != true:
+				elif GlobalVariables.character3_created != true and GlobalVariables.slot3 == charnum:
 					GlobalVariables.character3_created = true
 					$player/slot_3.show()
 					changed = true
-				if GlobalVariables.character4_created != true:
+				elif GlobalVariables.character4_created != true and GlobalVariables.slot4 == charnum:
 					GlobalVariables.character4_created = true
 					$player/slot_4.show()
 					changed = true
-				if GlobalVariables.character5_created != true:
+				elif GlobalVariables.character5_created != true and GlobalVariables.slot5 == charnum:
 					GlobalVariables.character5_created = true
 					$player/slot_5.show()
 					changed = true
 					
-				if GlobalVariables.character6_created != true:
+				elif GlobalVariables.character6_created != true and GlobalVariables.enemy_slot1 == charnum:
 					GlobalVariables.character6_created = true
 					$enemy/enemy_slot1.show()
 					changed = true
-				if GlobalVariables.character7_created != true:
+				elif GlobalVariables.character7_created != true and GlobalVariables.enemy_slot2 == charnum:
 					GlobalVariables.character7_created = true
 					$enemy/enemy_slot2.show()
 					changed = true
-				if GlobalVariables.character8_created != true:
+				elif GlobalVariables.character8_created != true and GlobalVariables.enemy_slot3 == charnum:
 					GlobalVariables.character8_created = true
 					$enemy/enemy_slot3.show()
 					changed = true
-				if GlobalVariables.character9_created != true:
+				elif GlobalVariables.character9_created != true and GlobalVariables.enemy_slot4 == charnum:
 					GlobalVariables.character9_created = true
 					$enemy/enemy_slot4.show()
 					changed = true
-				if GlobalVariables.character10_created != true:
+				elif GlobalVariables.character10_created != true and GlobalVariables.enemy_slot5 == charnum:
 					GlobalVariables.character10_created = true
 					$enemy/enemy_slot5.show()
 					changed = true

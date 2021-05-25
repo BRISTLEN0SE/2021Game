@@ -9,7 +9,7 @@ var slot5 = 5
 
 var enemy_slot1 = 1
 var enemy_slot2 = 2
-var enemy_slot3 = 1
+var enemy_slot3 = 3
 var enemy_slot4 = 4
 var enemy_slot5 = 5
 
