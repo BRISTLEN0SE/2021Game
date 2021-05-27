@@ -1,7 +1,6 @@
 extends Node
 
-#each charcter is activting all the code for hideshow as GlobalVariables.character1_created != true 
-#is right therefore charcters hide as GlobalVariables.slot1 != charnum is also true
+#enemy attacks
 
 var hide_show = 1
 var health = 100
@@ -58,22 +57,27 @@ func _physics_process(delta):
 				elif GlobalVariables.character6_created != true and GlobalVariables.enemy_slot1 == charnum:
 					GlobalVariables.character6_created = true
 					$enemy/enemy_slot1.show()
+					GlobalVariables.enemy_slot1_health = health
 					changed = true
 				elif GlobalVariables.character7_created != true and GlobalVariables.enemy_slot2 == charnum:
 					GlobalVariables.character7_created = true
 					$enemy/enemy_slot2.show()
+					GlobalVariables.enemy_slot2_health = health
 					changed = true
 				elif GlobalVariables.character8_created != true and GlobalVariables.enemy_slot3 == charnum:
 					GlobalVariables.character8_created = true
 					$enemy/enemy_slot3.show()
+					GlobalVariables.enemy_slot3_health = health
 					changed = true
 				elif GlobalVariables.character9_created != true and GlobalVariables.enemy_slot4 == charnum:
 					GlobalVariables.character9_created = true
 					$enemy/enemy_slot4.show()
+					GlobalVariables.enemy_slot4_health = health
 					changed = true
 				elif GlobalVariables.character10_created != true and GlobalVariables.enemy_slot5 == charnum:
 					GlobalVariables.character10_created = true
 					$enemy/enemy_slot5.show()
+					GlobalVariables.enemy_slot5_health = health
 					changed = true
 				
 			if $player/slot_1.is_visible_in_tree() == true:
@@ -100,34 +104,43 @@ func _physics_process(delta):
 			if $enemy/enemy_slot1.is_visible_in_tree() == true:
 				slot = 6
 				GlobalVariables.enemy_slot1_attack = attack
-				GlobalVariables.enemy_slot1_health = health
-				if GlobalVariables.targeted == 1:
+				if GlobalVariables.enemy_slot1_health < 1:
+					GlobalVariables.target = false
+					queue_free()
+				if GlobalVariables.targeted == 6:
 					$other/targeted_character.show()
 			if $enemy/enemy_slot2.is_visible_in_tree() == true:
 				slot = 7
 				GlobalVariables.enemy_slot2_attack = attack
-				GlobalVariables.enemy_slot2_health = health
-				if GlobalVariables.targeted == 2:
+				if GlobalVariables.enemy_slot2_health < 1:
+					GlobalVariables.target = false
+					queue_free()
+				if GlobalVariables.targeted == 7:
 					$other/targeted_character.show()
 			if $enemy/enemy_slot3.is_visible_in_tree() == true:
 				slot = 8
 				GlobalVariables.enemy_slot3_attack = attack
-				GlobalVariables.enemy_slot3_health = health
-				if GlobalVariables.targeted == 3:
+				if GlobalVariables.enemy_slot3_health < 1:
+					GlobalVariables.target = false
+					queue_free()
+				if GlobalVariables.targeted == 8:
 					$other/targeted_character.show()
 			if $enemy/enemy_slot4.is_visible_in_tree() == true:
 				slot = 9
 				GlobalVariables.enemy_slot4_attack = attack
-				GlobalVariables.enemy_slot4_health = health
-				if GlobalVariables.targeted == 4:
+				if GlobalVariables.enemy_slot4_health < 1:
+					GlobalVariables.target = false
+					queue_free()
+				if GlobalVariables.targeted == 9:
 					$other/targeted_character.show()
 			if $enemy/enemy_slot5.is_visible_in_tree() == true:
 				slot = 10
 				GlobalVariables.enemy_slot5_attack = attack
-				GlobalVariables.enemy_slot5_health = health
-				if GlobalVariables.targeted == 5:
+				if GlobalVariables.enemy_slot5_health < 1:
+					GlobalVariables.target = false
+					queue_free()
+				if GlobalVariables.targeted == 10:
 					$other/targeted_character.show()
-			
 			
 			
 			if GlobalVariables.slot1 != charnum:
@@ -181,59 +194,77 @@ func _physics_process(delta):
 				GlobalVariables.full = false
 
 func _on_attack_1_pressed():
-	attack = attack1
-	$attack_1.hide()
-	$attack_2.hide()
-	$attack_3.hide()
-	$attack_2_charge.hide()
-	$attack_3_charge.hide()
-	$other/current_character.hide()
-	start_speed = true
-	charge_enabled = true
-	GlobalVariables.full = false
-
-func _on_attack_2_pressed():
-	if $attack_2_charge.value >= 100:
-		attack = attack2
+	if GlobalVariables.target == true:
+		attack = attack1
 		$attack_1.hide()
 		$attack_2.hide()
 		$attack_3.hide()
 		$attack_2_charge.hide()
 		$attack_3_charge.hide()
 		$other/current_character.hide()
+		if GlobalVariables.targeted == 6:
+			GlobalVariables.enemy_slot1_health -= attack
+		if GlobalVariables.targeted == 7:
+			GlobalVariables.enemy_slot2_health -= attack
+		if GlobalVariables.targeted == 8:
+			GlobalVariables.enemy_slot3_health -= attack
+		if GlobalVariables.targeted == 9:
+			GlobalVariables.enemy_slot4_health -= attack
+		if GlobalVariables.targeted == 10:
+			GlobalVariables.enemy_slot5_health -= attack
 		start_speed = true
 		charge_enabled = true
-		$attack_2_charge.value = 0
 		GlobalVariables.full = false
+
+func _on_attack_2_pressed():
+	if GlobalVariables.target == true:
+		if $attack_2_charge.value >= 100:
+			attack = attack2
+			$attack_1.hide()
+			$attack_2.hide()
+			$attack_3.hide()
+			$attack_2_charge.hide()
+			$attack_3_charge.hide()
+			$other/current_character.hide()
+			start_speed = true
+			charge_enabled = true
+			$attack_2_charge.value = 0
+			GlobalVariables.full = false
 
 
 func _on_attack_3_pressed():
-	if $attack_3_charge.value >= 100:
-		attack = attack3
-		$attack_1.hide()
-		$attack_2.hide()
-		$attack_3.hide()
-		$attack_2_charge.hide()
-		$attack_3_charge.hide()
-		$other/current_character.hide()
-		start_speed = true
-		charge_enabled = true
-		$attack_3_charge.value = 0
-		GlobalVariables.full = false
+	if GlobalVariables.target == true:
+		if $attack_3_charge.value >= 100:
+			attack = attack3
+			$attack_1.hide()
+			$attack_2.hide()
+			$attack_3.hide()
+			$attack_2_charge.hide()
+			$attack_3_charge.hide()
+			$other/current_character.hide()
+			start_speed = true
+			charge_enabled = true
+			$attack_3_charge.value = 0
+			GlobalVariables.full = false
 
 
 func _on_enemy_slot1_pressed():
-	GlobalVariables.targeted = 1
+	GlobalVariables.targeted = 6
+	GlobalVariables.target = true
 
 func _on_enemy_slot2_pressed():
-	GlobalVariables.targeted = 2
+	GlobalVariables.targeted = 7
+	GlobalVariables.target = true
 
 func _on_enemy_slot3_pressed():
-	GlobalVariables.targeted = 3
+	GlobalVariables.targeted = 8
+	GlobalVariables.target = true
 
 func _on_enemy_slot4_pressed():
-	GlobalVariables.targeted = 4
+	GlobalVariables.targeted = 9
+	GlobalVariables.target = true
 
 func _on_enemy_slot5_pressed():
-	GlobalVariables.targeted = 5
+	GlobalVariables.targeted = 10
+	GlobalVariables.target = true
 
