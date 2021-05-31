@@ -54,12 +54,13 @@ var enemy_slot5_health = 1
 var targeted = 1
 var player_targeted = 1
 var target = false
+var player_target = false
 
-var slot1_alive = true
-var slot2_alive = true
-var slot3_alive = true
-var slot4_alive = true
-var slot5_alive = true
+var slot1_alive = false
+var slot2_alive = false
+var slot3_alive = false
+var slot4_alive = false
+var slot5_alive = false
 
 var player_char = [slot1,slot2,slot3,slot4,slot5]
 var enemy_char = [enemy_slot1,enemy_slot2,enemy_slot3,enemy_slot4,enemy_slot5]
