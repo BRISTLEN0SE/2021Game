@@ -230,7 +230,6 @@ func _physics_process(delta):
 				charge_enabled = false
 			if slot > 5:
 				GlobalVariables.player_targeted = range(1,6)[randi()%range(1,6).size()]
-				print(GlobalVariables.player_targeted)
 				if $attack_3_charge.value >= 100:
 					attack = attack3
 					if GlobalVariables.player_targeted == 1 and GlobalVariables.slot1_alive == true:
