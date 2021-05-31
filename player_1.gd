@@ -6,8 +6,10 @@ var hide_show = 1
 var health = 100
 var attack = 1
 var attack1 = 10
-var attack2 = 20
-var attack3 = 30
+var attack2 = 50
+var attack3 = 100
+var attack2_charge = 34
+var attack3_charge = 20
 
 var speed = 0
 var max_speed = 200
@@ -185,8 +187,8 @@ func _physics_process(delta):
 					$attack_2_charge.show()
 					$attack_3_charge.show()
 			if charge_enabled == true:
-				$attack_2_charge.value += 34
-				$attack_3_charge.value += 20
+				$attack_2_charge.value += attack2_charge
+				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
 				start_speed = true
@@ -226,6 +228,16 @@ func _on_attack_2_pressed():
 			$attack_2_charge.hide()
 			$attack_3_charge.hide()
 			$other/current_character.hide()
+			if GlobalVariables.targeted == 6:
+				GlobalVariables.enemy_slot1_health -= attack
+			if GlobalVariables.targeted == 7:
+				GlobalVariables.enemy_slot2_health -= attack
+			if GlobalVariables.targeted == 8:
+				GlobalVariables.enemy_slot3_health -= attack
+			if GlobalVariables.targeted == 9:
+				GlobalVariables.enemy_slot4_health -= attack
+			if GlobalVariables.targeted == 10:
+				GlobalVariables.enemy_slot5_health -= attack
 			start_speed = true
 			charge_enabled = true
 			$attack_2_charge.value = 0
@@ -242,6 +254,16 @@ func _on_attack_3_pressed():
 			$attack_2_charge.hide()
 			$attack_3_charge.hide()
 			$other/current_character.hide()
+			if GlobalVariables.targeted == 6:
+				GlobalVariables.enemy_slot1_health -= attack
+			if GlobalVariables.targeted == 7:
+				GlobalVariables.enemy_slot2_health -= attack
+			if GlobalVariables.targeted == 8:
+				GlobalVariables.enemy_slot3_health -= attack
+			if GlobalVariables.targeted == 9:
+				GlobalVariables.enemy_slot4_health -= attack
+			if GlobalVariables.targeted == 10:
+				GlobalVariables.enemy_slot5_health -= attack
 			start_speed = true
 			charge_enabled = true
 			$attack_3_charge.value = 0
