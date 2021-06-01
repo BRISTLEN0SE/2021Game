@@ -6,8 +6,8 @@ var hide_show = 1
 var health = 100
 var attack = 1
 var attack1 = 10
-var attack2 = 50
-var attack3 = 100
+var attack2 = 20
+var attack3 = 30
 var attack2_charge = 34
 var attack3_charge = 20
 
@@ -229,85 +229,89 @@ func _physics_process(delta):
 				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
-				GlobalVariables.player_targeted = range(1,6)[randi()%range(1,6).size()]
-				if $attack_3_charge.value >= 100:
-					attack = attack3
-					if GlobalVariables.player_targeted == 1 and GlobalVariables.slot1_alive == true:
-						GlobalVariables.slot1_health -= attack
+				GlobalVariables.player_targeted = 1#random value from array
+				print(GlobalVariables.player_targeted)
+				if GlobalVariables.player_targeted == 1:
+					if GlobalVariables.slot1_alive == true:
+						if attack3_charge >= 100:
+							attack = attack3
+							GlobalVariables.slot1_health -= attack
+							$attack_3_charge.value = 0
+						elif attack2_charge >= 100:
+							attack = attack2
+							GlobalVariables.slot1_health -= attack
+							$attack_2_charge.value = 0
+						else:
+							attack = attack1
+							GlobalVariables.slot1_health -= attack
 						start_speed = true
 						charge_enabled = true
 						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 2 and GlobalVariables.slot2_alive == true:
-						GlobalVariables.slot2_health -= attack
+					
+				elif GlobalVariables.player_targeted == 2:
+					if GlobalVariables.slot2_alive == true:
+						if attack3_charge >= 100:
+							attack = attack3
+							GlobalVariables.slot2_health -= attack
+							$attack_3_charge.value = 0
+						elif attack2_charge >= 100:
+							attack = attack2
+							GlobalVariables.slot2_health -= attack
+							$attack_2_charge.value = 0
+						else:
+							attack = attack1
+							GlobalVariables.slot2_health -= attack
 						start_speed = true
 						charge_enabled = true
 						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 3 and GlobalVariables.slot3_alive == true:
-						GlobalVariables.slot3_health -= attack
+						
+				elif GlobalVariables.player_targeted == 3:
+					if GlobalVariables.slot3_alive == true:
+						if attack3_charge >= 100:
+							attack = attack3
+							GlobalVariables.slot3_health -= attack
+							$attack_3_charge.value = 0
+						elif attack2_charge >= 100:
+							attack = attack2
+							GlobalVariables.slot3_health -= attack
+							$attack_2_charge.value = 0
+						else:
+							attack = attack1
+							GlobalVariables.slot3_health -= attack
 						start_speed = true
 						charge_enabled = true
 						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 4 and GlobalVariables.slot4_alive == true:
-						GlobalVariables.slot4_health -= attack
+						
+				elif GlobalVariables.player_targeted == 4:
+					if GlobalVariables.slot4_alive == true:
+						if attack3_charge >= 100:
+							attack = attack3
+							GlobalVariables.slot4_health -= attack
+							$attack_3_charge.value = 0
+						elif attack2_charge >= 100:
+							attack = attack2
+							GlobalVariables.slot4_health -= attack
+							$attack_2_charge.value = 0
+						else:
+							attack = attack1
+							GlobalVariables.slot4_health -= attack
 						start_speed = true
 						charge_enabled = true
 						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 5 and GlobalVariables.slot5_alive == true:
-						GlobalVariables.slot5_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-				elif $attack_2_charge.value >= 100:
-					attack = attack2
-					if GlobalVariables.player_targeted == 1 and GlobalVariables.slot1_alive == true:
-						GlobalVariables.slot1_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 2 and GlobalVariables.slot2_alive == true:
-						GlobalVariables.slot2_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 3 and GlobalVariables.slot3_alive == true:
-						GlobalVariables.slot3_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 4 and GlobalVariables.slot4_alive == true:
-						GlobalVariables.slot4_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 5 and GlobalVariables.slot5_alive == true:
-						GlobalVariables.slot5_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-				else:
-					attack = attack1
-					if GlobalVariables.player_targeted == 1 and GlobalVariables.slot1_alive == true:
-						GlobalVariables.slot1_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 2 and GlobalVariables.slot2_alive == true:
-						GlobalVariables.slot2_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 3 and GlobalVariables.slot3_alive == true:
-						GlobalVariables.slot3_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 4 and GlobalVariables.slot4_alive == true:
-						GlobalVariables.slot4_health -= attack
-						start_speed = true
-						charge_enabled = true
-						GlobalVariables.full = false
-					elif GlobalVariables.player_targeted == 5 and GlobalVariables.slot5_alive == true:
-						GlobalVariables.slot5_health -= attack
+						
+				elif GlobalVariables.player_targeted == 5:
+					if GlobalVariables.slot5_alive == true:
+						if attack3_charge >= 100:
+							attack = attack3
+							GlobalVariables.slot5_health -= attack
+							$attack_3_charge.value = 0
+						elif attack2_charge >= 100:
+							attack = attack2
+							GlobalVariables.slot5_health -= attack
+							$attack_2_charge.value = 0
+						else:
+							attack = attack1
+							GlobalVariables.slot5_health -= attack
 						start_speed = true
 						charge_enabled = true
 						GlobalVariables.full = false

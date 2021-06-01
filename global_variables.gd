@@ -2,10 +2,10 @@ extends Node
 
 #slot
 var slot1 = 1
-var slot2 = 2
-var slot3 = 3
-var slot4 = 4
-var slot5 = 5
+var slot2 = 1
+var slot3 = 1
+var slot4 = 1
+var slot5 = 1
 
 var enemy_slot1 = 1
 var enemy_slot2 = 1
@@ -52,7 +52,7 @@ var enemy_slot5_health = 1
 
 
 var targeted = 1
-var player_targeted = 1
+var player_targeted = 0
 var target = false
 var player_target = false
 
