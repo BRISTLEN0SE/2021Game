@@ -6,7 +6,7 @@ var hide_show = 1
 var health = 100
 var attack = 1
 var attack1 = 10
-var attack2 = 20
+var attack2 = 100
 var attack3 = 30
 var attack2_charge = 34
 var attack3_charge = 20
@@ -230,15 +230,14 @@ func _physics_process(delta):
 				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
-				GlobalVariables.player_targeted = (randi() % 5 + 1)
-				print(GlobalVariables.player_targeted)
-				if GlobalVariables.player_targeted == 1:
-					if GlobalVariables.slot1_alive == true:
-						if attack3_charge >= 100:
+				GlobalVariables.player_targeted = range(1,6)[randi()%range(1,6).size()]
+				if GlobalVariables.slot1_alive == true:
+					if GlobalVariables.player_targeted == 1:
+						if $attack_3_charge.value >= 100:
 							attack = attack3
 							GlobalVariables.slot1_health -= attack
 							$attack_3_charge.value = 0
-						elif attack2_charge >= 100:
+						elif $attack_2_charge.value >= 100:
 							attack = attack2
 							GlobalVariables.slot1_health -= attack
 							$attack_2_charge.value = 0
@@ -249,13 +248,13 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 					
-				if GlobalVariables.player_targeted == 2:
-					if GlobalVariables.slot2_alive == true:
-						if attack3_charge >= 100:
+				if GlobalVariables.slot2_alive == true:
+					if GlobalVariables.player_targeted == 2:
+						if $attack_3_charge.value >= 100:
 							attack = attack3
 							GlobalVariables.slot2_health -= attack
 							$attack_3_charge.value = 0
-						elif attack2_charge >= 100:
+						elif $attack_2_charge.value >= 100:
 							attack = attack2
 							GlobalVariables.slot2_health -= attack
 							$attack_2_charge.value = 0
@@ -266,13 +265,13 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.player_targeted == 3:
-					if GlobalVariables.slot3_alive == true:
-						if attack3_charge >= 100:
+				if GlobalVariables.slot3_alive == true:
+					if GlobalVariables.player_targeted == 3:
+						if $attack_3_charge.value >= 100:
 							attack = attack3
 							GlobalVariables.slot3_health -= attack
 							$attack_3_charge.value = 0
-						elif attack2_charge >= 100:
+						elif $attack_2_charge.value >= 100:
 							attack = attack2
 							GlobalVariables.slot3_health -= attack
 							$attack_2_charge.value = 0
@@ -283,13 +282,13 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.player_targeted == 4:
-					if GlobalVariables.slot4_alive == true:
-						if attack3_charge >= 100:
+				if GlobalVariables.slot4_alive == true:
+					if GlobalVariables.player_targeted == 4:
+						if $attack_3_charge.value >= 100:
 							attack = attack3
 							GlobalVariables.slot4_health -= attack
 							$attack_3_charge.value = 0
-						elif attack2_charge >= 100:
+						elif $attack_2_charge.value >= 100:
 							attack = attack2
 							GlobalVariables.slot4_health -= attack
 							$attack_2_charge.value = 0
@@ -300,13 +299,13 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.player_targeted == 5:
-					if GlobalVariables.slot5_alive == true:
-						if attack3_charge >= 100:
+				if GlobalVariables.slot5_alive == true:
+					if GlobalVariables.player_targeted == 5:
+						if $attack_3_charge.value >= 100:
 							attack = attack3
 							GlobalVariables.slot5_health -= attack
 							$attack_3_charge.value = 0
-						elif attack2_charge >= 100:
+						elif $attack_2_charge.value >= 100:
 							attack = attack2
 							GlobalVariables.slot5_health -= attack
 							$attack_2_charge.value = 0
