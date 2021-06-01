@@ -1,6 +1,6 @@
 extends Node
 
-#enemy attacks
+#enemy attacks dead players
 
 var hide_show = 1
 var health = 100
