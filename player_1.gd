@@ -18,6 +18,7 @@ var start_speed = true
 var tie = true
 
 var charge_enabled = true
+var player_target = [1,2,3,4,5]
 
 var star = 1
 var level = 1
@@ -62,7 +63,7 @@ func _physics_process(delta):
 				elif GlobalVariables.character5_created != true and GlobalVariables.slot5 == charnum:
 					GlobalVariables.character5_created = true
 					$player/slot_5.show()
-					GlobalVariables.slot4_health = health
+					GlobalVariables.slot5_health = health
 					GlobalVariables.slot1_alive = true
 					changed = true
 					
@@ -229,7 +230,7 @@ func _physics_process(delta):
 				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
-				GlobalVariables.player_targeted = 1#random value from array
+				GlobalVariables.player_targeted = (randi() % 5 + 1)
 				print(GlobalVariables.player_targeted)
 				if GlobalVariables.player_targeted == 1:
 					if GlobalVariables.slot1_alive == true:
@@ -248,7 +249,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 					
-				elif GlobalVariables.player_targeted == 2:
+				if GlobalVariables.player_targeted == 2:
 					if GlobalVariables.slot2_alive == true:
 						if attack3_charge >= 100:
 							attack = attack3
@@ -265,7 +266,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				elif GlobalVariables.player_targeted == 3:
+				if GlobalVariables.player_targeted == 3:
 					if GlobalVariables.slot3_alive == true:
 						if attack3_charge >= 100:
 							attack = attack3
@@ -282,7 +283,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				elif GlobalVariables.player_targeted == 4:
+				if GlobalVariables.player_targeted == 4:
 					if GlobalVariables.slot4_alive == true:
 						if attack3_charge >= 100:
 							attack = attack3
@@ -299,7 +300,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				elif GlobalVariables.player_targeted == 5:
+				if GlobalVariables.player_targeted == 5:
 					if GlobalVariables.slot5_alive == true:
 						if attack3_charge >= 100:
 							attack = attack3
