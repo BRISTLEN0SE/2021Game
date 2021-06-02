@@ -18,10 +18,10 @@ var start_speed = true
 var tie = true
 
 var charge_enabled = true
-var player_target = [1,2,3,4,5]
 
 var star = 1
 var level = 1
+
 
 var charname = "spiderman"
 var charnum = 1
@@ -98,40 +98,30 @@ func _physics_process(delta):
 				GlobalVariables.slot1_attack = attack
 				GlobalVariables.slot1_alive = true
 				if GlobalVariables.slot1_health < 1:
-					GlobalVariables.player_target = false
-					GlobalVariables.slot1_alive = false
 					queue_free()
 			if $player/slot_2.is_visible_in_tree() == true:
 				slot = 2
 				GlobalVariables.slot2_attack = attack
 				GlobalVariables.slot2_alive = true
 				if GlobalVariables.slot2_health < 1:
-					GlobalVariables.player_target = false
-					GlobalVariables.slot2_alive = false
 					queue_free()
 			if $player/slot_3.is_visible_in_tree() == true:
 				slot = 3
 				GlobalVariables.slot3_attack = attack
 				GlobalVariables.slot3_alive = true
 				if GlobalVariables.slot3_health < 1:
-					GlobalVariables.player_target = false
-					GlobalVariables.slot3_alive = false
 					queue_free()
 			if $player/slot_4.is_visible_in_tree() == true:
 				slot = 4
 				GlobalVariables.slot4_attack = attack
 				GlobalVariables.slot4_alive = true
 				if GlobalVariables.slot4_health < 1:
-					GlobalVariables.player_target = false
-					GlobalVariables.slot4_alive = false
 					queue_free()
 			if $player/slot_5.is_visible_in_tree() == true:
 				slot = 5
 				GlobalVariables.slot5_attack = attack
 				GlobalVariables.slot5_alive = true
 				if GlobalVariables.slot5_health < 1:
-					GlobalVariables.player_target = false
-					GlobalVariables.slot5_alive = false
 					queue_free()
 				
 			if $enemy/enemy_slot1.is_visible_in_tree() == true:
@@ -230,8 +220,9 @@ func _physics_process(delta):
 				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
-				GlobalVariables.player_targeted = range(1,6)[randi()%range(1,6).size()]
-				if GlobalVariables.slot1_alive == true:
+				GlobalVariables.player_targeted = 1
+				print(GlobalVariables.player_targeted)
+				if GlobalVariables.slot1_health > 1:
 					if GlobalVariables.player_targeted == 1:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -248,7 +239,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 					
-				if GlobalVariables.slot2_alive == true:
+				if GlobalVariables.slot2_health > 1:
 					if GlobalVariables.player_targeted == 2:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -265,7 +256,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot3_alive == true:
+				if GlobalVariables.slot3_health > 1:
 					if GlobalVariables.player_targeted == 3:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -282,7 +273,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot4_alive == true:
+				if GlobalVariables.slot4_health > 1:
 					if GlobalVariables.player_targeted == 4:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -299,7 +290,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot5_alive == true:
+				if GlobalVariables.slot5_health > 1:
 					if GlobalVariables.player_targeted == 5:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
