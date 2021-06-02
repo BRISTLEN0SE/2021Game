@@ -40,31 +40,26 @@ func _physics_process(delta):
 					GlobalVariables.character1_created = true
 					$player/slot_1.show()
 					GlobalVariables.slot1_health = health
-					GlobalVariables.slot1_alive = true
 					changed = true
 				elif GlobalVariables.character2_created != true and GlobalVariables.slot2 == charnum:
 					GlobalVariables.character2_created = true
 					$player/slot_2.show()
 					GlobalVariables.slot2_health = health
-					GlobalVariables.slot2_alive = true
 					changed = true
 				elif GlobalVariables.character3_created != true and GlobalVariables.slot3 == charnum:
 					GlobalVariables.character3_created = true
 					$player/slot_3.show()
 					GlobalVariables.slot3_health = health
-					GlobalVariables.slot3_alive = true
 					changed = true
 				elif GlobalVariables.character4_created != true and GlobalVariables.slot4 == charnum:
 					GlobalVariables.character4_created = true
 					$player/slot_4.show()
 					GlobalVariables.slot4_health = health
-					GlobalVariables.slot4_alive = true
 					changed = true
 				elif GlobalVariables.character5_created != true and GlobalVariables.slot5 == charnum:
 					GlobalVariables.character5_created = true
 					$player/slot_5.show()
 					GlobalVariables.slot5_health = health
-					GlobalVariables.slot1_alive = true
 					changed = true
 					
 				elif GlobalVariables.character6_created != true and GlobalVariables.enemy_slot1 == charnum:
@@ -96,31 +91,26 @@ func _physics_process(delta):
 			if $player/slot_1.is_visible_in_tree() == true:
 				slot = 1
 				GlobalVariables.slot1_attack = attack
-				GlobalVariables.slot1_alive = true
 				if GlobalVariables.slot1_health < 1:
 					queue_free()
 			if $player/slot_2.is_visible_in_tree() == true:
 				slot = 2
 				GlobalVariables.slot2_attack = attack
-				GlobalVariables.slot2_alive = true
 				if GlobalVariables.slot2_health < 1:
 					queue_free()
 			if $player/slot_3.is_visible_in_tree() == true:
 				slot = 3
 				GlobalVariables.slot3_attack = attack
-				GlobalVariables.slot3_alive = true
 				if GlobalVariables.slot3_health < 1:
 					queue_free()
 			if $player/slot_4.is_visible_in_tree() == true:
 				slot = 4
 				GlobalVariables.slot4_attack = attack
-				GlobalVariables.slot4_alive = true
 				if GlobalVariables.slot4_health < 1:
 					queue_free()
 			if $player/slot_5.is_visible_in_tree() == true:
 				slot = 5
 				GlobalVariables.slot5_attack = attack
-				GlobalVariables.slot5_alive = true
 				if GlobalVariables.slot5_health < 1:
 					queue_free()
 				
@@ -222,7 +212,8 @@ func _physics_process(delta):
 			if slot > 5:
 				GlobalVariables.player_targeted = 1
 				print(GlobalVariables.player_targeted)
-				if GlobalVariables.slot1_health > 1:
+				
+				if GlobalVariables.slot1_health > 0:
 					if GlobalVariables.player_targeted == 1:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -239,7 +230,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 					
-				if GlobalVariables.slot2_health > 1:
+				if GlobalVariables.slot2_health > 0:
 					if GlobalVariables.player_targeted == 2:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -256,7 +247,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot3_health > 1:
+				if GlobalVariables.slot3_health > 0:
 					if GlobalVariables.player_targeted == 3:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -273,7 +264,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot4_health > 1:
+				if GlobalVariables.slot4_health > 0:
 					if GlobalVariables.player_targeted == 4:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
@@ -290,7 +281,7 @@ func _physics_process(delta):
 						charge_enabled = true
 						GlobalVariables.full = false
 						
-				if GlobalVariables.slot5_health > 1:
+				if GlobalVariables.slot5_health > 0:
 					if GlobalVariables.player_targeted == 5:
 						if $attack_3_charge.value >= 100:
 							attack = attack3
