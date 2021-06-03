@@ -6,7 +6,7 @@ var hide_show = 1
 var health = 100
 var attack = 1
 var attack1 = 10
-var attack2 = 100
+var attack2 = 20
 var attack3 = 30
 var attack2_charge = 34
 var attack3_charge = 20
@@ -18,6 +18,7 @@ var start_speed = true
 var tie = true
 
 var charge_enabled = true
+var random = RandomNumberGenerator.new()
 
 var star = 1
 var level = 1
@@ -210,7 +211,8 @@ func _physics_process(delta):
 				$attack_3_charge.value += attack3_charge
 				charge_enabled = false
 			if slot > 5:
-				GlobalVariables.player_targeted = 1
+				random.randomize()
+				GlobalVariables.player_targeted = random.randi_range(1,5)
 				print(GlobalVariables.player_targeted)
 				
 				if GlobalVariables.slot1_health > 0:
