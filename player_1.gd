@@ -66,26 +66,31 @@ func _physics_process(delta):
 				elif GlobalVariables.character6_created != true and GlobalVariables.enemy_slot1 == charnum:
 					GlobalVariables.character6_created = true
 					$enemy/enemy_slot1.show()
+					$enemy/enemy1.show()
 					GlobalVariables.enemy_slot1_health = health
 					changed = true
 				elif GlobalVariables.character7_created != true and GlobalVariables.enemy_slot2 == charnum:
 					GlobalVariables.character7_created = true
 					$enemy/enemy_slot2.show()
+					$enemy/enemy2.show()
 					GlobalVariables.enemy_slot2_health = health
 					changed = true
 				elif GlobalVariables.character8_created != true and GlobalVariables.enemy_slot3 == charnum:
 					GlobalVariables.character8_created = true
 					$enemy/enemy_slot3.show()
+					$enemy/enemy3.show()
 					GlobalVariables.enemy_slot3_health = health
 					changed = true
 				elif GlobalVariables.character9_created != true and GlobalVariables.enemy_slot4 == charnum:
 					GlobalVariables.character9_created = true
 					$enemy/enemy_slot4.show()
+					$enemy/enemy4.show()
 					GlobalVariables.enemy_slot4_health = health
 					changed = true
 				elif GlobalVariables.character10_created != true and GlobalVariables.enemy_slot5 == charnum:
 					GlobalVariables.character10_created = true
 					$enemy/enemy_slot5.show()
+					$enemy/enemy5.show()
 					GlobalVariables.enemy_slot5_health = health
 					changed = true
 				
@@ -180,14 +185,19 @@ func _physics_process(delta):
 			#enemy
 			if GlobalVariables.enemy_slot1 != charnum:
 				$enemy/enemy_slot1.hide()
+				$enemy/enemy1.hide()
 			if GlobalVariables.enemy_slot2 != charnum:
 				$enemy/enemy_slot2.hide()
+				$enemy/enemy2.hide()
 			if GlobalVariables.enemy_slot3 != charnum:
 				$enemy/enemy_slot3.hide()
+				$enemy/enemy3.hide()
 			if GlobalVariables.enemy_slot4 != charnum:
 				$enemy/enemy_slot4.hide()
+				$enemy/enemy4.hide()
 			if GlobalVariables.enemy_slot5 != charnum:
 				$enemy/enemy_slot5.hide()
+				$enemy/enemy5.hide()
 
 	
 		if start_speed == true:
@@ -204,6 +214,9 @@ func _physics_process(delta):
 					$attack_1.show()
 					$attack_2.show()
 					$attack_3.show()
+					$attack1.show()
+					$attack2.show()
+					$attack3.show()
 					$attack_2_charge.show()
 					$attack_3_charge.show()
 			if charge_enabled == true:
@@ -306,6 +319,9 @@ func _on_attack_1_pressed():
 		$attack_1.hide()
 		$attack_2.hide()
 		$attack_3.hide()
+		$attack1.hide()
+		$attack2.hide()
+		$attack3.hide()
 		$attack_2_charge.hide()
 		$attack_3_charge.hide()
 		$other/current_character.hide()
@@ -330,6 +346,9 @@ func _on_attack_2_pressed():
 			$attack_1.hide()
 			$attack_2.hide()
 			$attack_3.hide()
+			$attack1.hide()
+			$attack2.hide()
+			$attack3.hide()
 			$attack_2_charge.hide()
 			$attack_3_charge.hide()
 			$other/current_character.hide()
@@ -356,6 +375,9 @@ func _on_attack_3_pressed():
 			$attack_1.hide()
 			$attack_2.hide()
 			$attack_3.hide()
+			$attack1.hide()
+			$attack2.hide()
+			$attack3.hide()
 			$attack_2_charge.hide()
 			$attack_3_charge.hide()
 			$other/current_character.hide()
