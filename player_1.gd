@@ -12,8 +12,8 @@ var attack2_charge = 34
 var attack3_charge = 20
 
 var speed = 0
-var max_speed = 200
-var base_speed = 100
+var max_speed = 100
+var base_speed = 50
 var start_speed = true
 var tie = true
 
@@ -97,32 +97,38 @@ func _physics_process(delta):
 			if $player/slot_1.is_visible_in_tree() == true:
 				slot = 1
 				GlobalVariables.slot1_attack = attack
+				GlobalVariables.slot1_speed = speed
 				if GlobalVariables.slot1_health < 1:
 					queue_free()
 			if $player/slot_2.is_visible_in_tree() == true:
 				slot = 2
 				GlobalVariables.slot2_attack = attack
+				GlobalVariables.slot2_speed = speed
 				if GlobalVariables.slot2_health < 1:
 					queue_free()
 			if $player/slot_3.is_visible_in_tree() == true:
 				slot = 3
 				GlobalVariables.slot3_attack = attack
+				GlobalVariables.slot3_speed = speed
 				if GlobalVariables.slot3_health < 1:
 					queue_free()
 			if $player/slot_4.is_visible_in_tree() == true:
 				slot = 4
 				GlobalVariables.slot4_attack = attack
+				GlobalVariables.slot4_speed = speed
 				if GlobalVariables.slot4_health < 1:
 					queue_free()
 			if $player/slot_5.is_visible_in_tree() == true:
 				slot = 5
 				GlobalVariables.slot5_attack = attack
+				GlobalVariables.slot5_speed = speed
 				if GlobalVariables.slot5_health < 1:
 					queue_free()
 				
 			if $enemy/enemy_slot1.is_visible_in_tree() == true:
 				slot = 6
 				GlobalVariables.enemy_slot1_attack = attack
+				GlobalVariables.enemy_slot1_speed = speed
 				if GlobalVariables.enemy_slot1_health < 1:
 					GlobalVariables.target = false
 					queue_free()
@@ -133,6 +139,7 @@ func _physics_process(delta):
 			if $enemy/enemy_slot2.is_visible_in_tree() == true:
 				slot = 7
 				GlobalVariables.enemy_slot2_attack = attack
+				GlobalVariables.enemy_slot2_speed = speed
 				if GlobalVariables.enemy_slot2_health < 1:
 					GlobalVariables.target = false
 					queue_free()
@@ -143,6 +150,7 @@ func _physics_process(delta):
 			if $enemy/enemy_slot3.is_visible_in_tree() == true:
 				slot = 8
 				GlobalVariables.enemy_slot3_attack = attack
+				GlobalVariables.enemy_slot3_speed = speed
 				if GlobalVariables.enemy_slot3_health < 1:
 					GlobalVariables.target = false
 					queue_free()
@@ -153,6 +161,7 @@ func _physics_process(delta):
 			if $enemy/enemy_slot4.is_visible_in_tree() == true:
 				slot = 9
 				GlobalVariables.enemy_slot4_attack = attack
+				GlobalVariables.enemy_slot4_speed = speed
 				if GlobalVariables.enemy_slot4_health < 1:
 					GlobalVariables.target = false
 					queue_free()
@@ -163,6 +172,7 @@ func _physics_process(delta):
 			if $enemy/enemy_slot5.is_visible_in_tree() == true:
 				slot = 10
 				GlobalVariables.enemy_slot5_attack = attack
+				GlobalVariables.enemy_slot5_speed = speed
 				if GlobalVariables.enemy_slot5_health < 1:
 					GlobalVariables.target = false
 					queue_free()
@@ -226,7 +236,6 @@ func _physics_process(delta):
 			if slot > 5:
 				random.randomize()
 				GlobalVariables.player_targeted = random.randi_range(1,5)
-				print(GlobalVariables.player_targeted)
 				
 				if GlobalVariables.slot1_health > 0:
 					if GlobalVariables.player_targeted == 1:

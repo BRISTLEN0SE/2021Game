@@ -50,6 +50,18 @@ var enemy_slot3_health = 1
 var enemy_slot4_health = 1
 var enemy_slot5_health = 1
 
+var slot1_speed = 1
+var slot2_speed = 1
+var slot3_speed = 1
+var slot4_speed = 1
+var slot5_speed = 1
+
+var enemy_slot1_speed = 1
+var enemy_slot2_speed = 1
+var enemy_slot3_speed = 1
+var enemy_slot4_speed = 1
+var enemy_slot5_speed = 1
+
 
 var targeted = 1
 var player_targeted = 0
