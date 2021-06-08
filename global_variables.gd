@@ -64,6 +64,7 @@ var enemy_slot5_speed = 1
 
 
 var targeted = 1
+var current = 0
 var player_targeted = 0
 var target = false
 

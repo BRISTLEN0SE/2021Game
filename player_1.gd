@@ -15,7 +15,7 @@ var speed = 0
 var max_speed = 100
 var base_speed = 50
 var start_speed = true
-var tie = true
+var player = 1
 
 var charge_enabled = true
 var random = RandomNumberGenerator.new()
@@ -229,6 +229,16 @@ func _physics_process(delta):
 					$attack3.show()
 					$attack_2_charge.show()
 					$attack_3_charge.show()
+					if $player/slot_1.is_visible_in_tree() == true:
+						GlobalVariables.current = 1
+					if $player/slot_2.is_visible_in_tree() == true:
+						GlobalVariables.current = 2
+					if $player/slot_3.is_visible_in_tree() == true:
+						GlobalVariables.current = 3
+					if $player/slot_4.is_visible_in_tree() == true:
+						GlobalVariables.current = 4
+					if $player/slot_5.is_visible_in_tree() == true:
+						GlobalVariables.current = 5
 			if charge_enabled == true:
 				$attack_2_charge.value += attack2_charge
 				$attack_3_charge.value += attack3_charge
