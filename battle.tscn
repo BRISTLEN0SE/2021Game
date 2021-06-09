@@ -157,8 +157,140 @@ __meta__ = {
 
 [node name="Player" type="Node" parent="speed_bars"]
 
+[node name="slot1_speed" type="TextureProgress" parent="speed_bars/Player"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 256.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot2_speed" type="TextureProgress" parent="speed_bars/Player"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 256.0
+margin_top = 384.0
+margin_right = 320.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot3_speed" type="TextureProgress" parent="speed_bars/Player"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 320.0
+margin_top = 384.0
+margin_right = 384.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot4_speed" type="TextureProgress" parent="speed_bars/Player"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 384.0
+margin_top = 384.0
+margin_right = 448.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot5_speed" type="TextureProgress" parent="speed_bars/Player"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 448.0
+margin_top = 384.0
+margin_right = 512.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Enemy" type="Node" parent="speed_bars"]
+
+[node name="slot1_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 960.0
+margin_top = 384.0
+margin_right = 1024.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot2_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 1024.0
+margin_top = 384.0
+margin_right = 1088.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot3_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 1088.0
+margin_top = 384.0
+margin_right = 1152.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot4_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 1152.0
+margin_top = 384.0
+margin_right = 1216.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot5_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 1216.0
+margin_top = 384.0
+margin_right = 1280.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Current" type="Node" parent="speed_bars"]
 
+[node name="current_speed" type="TextureProgress" parent="speed_bars/Current"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 576.0
+margin_top = 384.0
+margin_right = 640.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Targeted" type="Node" parent="speed_bars"]
+
+[node name="targeted_speed" type="TextureProgress" parent="speed_bars/Targeted"]
+modulate = Color( 0, 0.298039, 1, 1 )
+margin_left = 832.0
+margin_top = 384.0
+margin_right = 896.0
+margin_bottom = 448.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
