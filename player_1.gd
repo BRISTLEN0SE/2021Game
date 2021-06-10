@@ -1,6 +1,27 @@
 extends Node
 
-#enemy attacks dead players
+#status effects
+#taunt
+#heal
+#stealth
+#blind
+#bleed - remove after turn
+#sleep - 0% hit rate
+#poison - perma
+#paralyse - 50% hit rate
+#cure
+#attack/defense buff/debuff
+#haste/slow buff/debuff
+#disable
+#regen
+#revive
+#invincibile/deathproof
+#perish
+#hp drain
+#speed drain
+
+
+
 
 var hide_show = 1
 var health = 100
