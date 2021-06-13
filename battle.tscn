@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://charcter_1_creator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://battle.gd" type="Script" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
 
 [node name="Battle" type="Node"]
 script = ExtResource( 2 )
@@ -15,140 +14,161 @@ script = ExtResource( 2 )
 
 [node name="Player" type="Node" parent="health_bars"]
 
-[node name="slot1_health" type="TextureProgress" parent="health_bars/Player"]
+[node name="slot1_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 192.0
-margin_top = 320.0
-margin_right = 256.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 48.0
+margin_top = 240.0
+margin_right = 112.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot2_health" type="TextureProgress" parent="health_bars/Player"]
+[node name="slot2_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 256.0
-margin_top = 320.0
-margin_right = 320.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 112.0
+margin_top = 240.0
+margin_right = 176.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot3_health" type="TextureProgress" parent="health_bars/Player"]
+[node name="slot3_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 320.0
-margin_top = 320.0
-margin_right = 384.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 176.0
+margin_top = 240.0
+margin_right = 240.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot4_health" type="TextureProgress" parent="health_bars/Player"]
+[node name="slot4_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 384.0
-margin_top = 320.0
-margin_right = 448.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 240.0
+margin_top = 240.0
+margin_right = 304.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot5_health" type="TextureProgress" parent="health_bars/Player"]
+[node name="slot5_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 448.0
-margin_top = 320.0
-margin_right = 512.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 304.0
+margin_top = 240.0
+margin_right = 368.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Enemy" type="Node" parent="health_bars"]
 
-[node name="slot1_health" type="TextureProgress" parent="health_bars/Enemy"]
+[node name="slot1_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 960.0
-margin_top = 320.0
-margin_right = 1024.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 640.0
+margin_top = 240.0
+margin_right = 704.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot2_health" type="TextureProgress" parent="health_bars/Enemy"]
+[node name="slot2_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 1024.0
-margin_top = 320.0
-margin_right = 1088.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 704.0
+margin_top = 240.0
+margin_right = 768.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot3_health" type="TextureProgress" parent="health_bars/Enemy"]
+[node name="slot3_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 1088.0
-margin_top = 320.0
-margin_right = 1152.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 768.0
+margin_top = 240.0
+margin_right = 832.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot4_health" type="TextureProgress" parent="health_bars/Enemy"]
+[node name="slot4_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 1152.0
-margin_top = 320.0
-margin_right = 1216.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 832.0
+margin_top = 240.0
+margin_right = 896.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot5_health" type="TextureProgress" parent="health_bars/Enemy"]
+[node name="slot5_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 1216.0
-margin_top = 320.0
-margin_right = 1280.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_left = 896.0
+margin_top = 240.0
+margin_right = 960.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 
 [node name="Current" type="Node" parent="health_bars"]
 
-[node name="current_health" type="TextureProgress" parent="health_bars/Current"]
+[node name="current_health" type="ProgressBar" parent="health_bars/Current"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 576.0
-margin_top = 320.0
-margin_right = 640.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 432.0
+margin_top = 240.0
+margin_right = 496.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Targeted" type="Node" parent="health_bars"]
 
-[node name="targeted_health" type="TextureProgress" parent="health_bars/Targeted"]
+[node name="targeted_health" type="ProgressBar" parent="health_bars/Targeted"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 832.0
-margin_top = 320.0
-margin_right = 896.0
-margin_bottom = 384.0
-texture_progress = ExtResource( 3 )
+margin_left = 512.0
+margin_top = 240.0
+margin_right = 576.0
+margin_bottom = 304.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -157,140 +177,149 @@ __meta__ = {
 
 [node name="Player" type="Node" parent="speed_bars"]
 
-[node name="slot1_speed" type="TextureProgress" parent="speed_bars/Player"]
+[node name="slot1_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 192.0
-margin_top = 384.0
-margin_right = 256.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 48.0
+margin_top = 304.0
+margin_right = 112.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot2_speed" type="TextureProgress" parent="speed_bars/Player"]
+[node name="slot2_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 256.0
-margin_top = 384.0
-margin_right = 320.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 112.0
+margin_top = 304.0
+margin_right = 176.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot3_speed" type="TextureProgress" parent="speed_bars/Player"]
+[node name="slot3_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 320.0
-margin_top = 384.0
-margin_right = 384.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 176.0
+margin_top = 304.0
+margin_right = 240.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot4_speed" type="TextureProgress" parent="speed_bars/Player"]
+[node name="slot4_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 384.0
-margin_top = 384.0
-margin_right = 448.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 240.0
+margin_top = 304.0
+margin_right = 304.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot5_speed" type="TextureProgress" parent="speed_bars/Player"]
+[node name="slot5_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 448.0
-margin_top = 384.0
-margin_right = 512.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 304.0
+margin_top = 304.0
+margin_right = 368.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Enemy" type="Node" parent="speed_bars"]
 
-[node name="slot1_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+[node name="slot1_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 960.0
-margin_top = 384.0
-margin_right = 1024.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 640.0
+margin_top = 304.0
+margin_right = 704.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot2_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+[node name="slot2_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 1024.0
-margin_top = 384.0
-margin_right = 1088.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 704.0
+margin_top = 304.0
+margin_right = 768.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot3_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+[node name="slot3_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 1088.0
-margin_top = 384.0
-margin_right = 1152.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 768.0
+margin_top = 304.0
+margin_right = 832.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot4_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+[node name="slot4_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 1152.0
-margin_top = 384.0
-margin_right = 1216.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 832.0
+margin_top = 304.0
+margin_right = 896.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot5_speed" type="TextureProgress" parent="speed_bars/Enemy"]
+[node name="slot5_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 1216.0
-margin_top = 384.0
-margin_right = 1280.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_left = 896.0
+margin_top = 304.0
+margin_right = 960.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 
 [node name="Current" type="Node" parent="speed_bars"]
 
-[node name="current_speed" type="TextureProgress" parent="speed_bars/Current"]
+[node name="current_speed" type="ProgressBar" parent="speed_bars/Current"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 576.0
-margin_top = 384.0
-margin_right = 640.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 432.0
+margin_top = 304.0
+margin_right = 496.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Targeted" type="Node" parent="speed_bars"]
 
-[node name="targeted_speed" type="TextureProgress" parent="speed_bars/Targeted"]
+[node name="targeted_speed" type="ProgressBar" parent="speed_bars/Targeted"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 832.0
-margin_top = 384.0
-margin_right = 896.0
-margin_bottom = 448.0
-texture_progress = ExtResource( 3 )
+margin_left = 512.0
+margin_top = 304.0
+margin_right = 576.0
+margin_bottom = 368.0
+rect_scale = Vector2( 1, 0.25 )
+value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

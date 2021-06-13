@@ -24,8 +24,8 @@ GlobalVariables="*res://global_variables.gd"
 
 [display]
 
-window/size/width=1505
-window/size/height=750
+window/size/width=1280
+window/size/height=640
 
 [rendering]
 
