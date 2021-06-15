@@ -16,10 +16,10 @@ script = ExtResource( 2 )
 
 [node name="slot1_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 48.0
-margin_top = 240.0
-margin_right = 112.0
-margin_bottom = 304.0
+margin_left = 64.0
+margin_top = 96.0
+margin_right = 128.0
+margin_bottom = 160.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -29,10 +29,10 @@ __meta__ = {
 
 [node name="slot2_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 112.0
-margin_top = 240.0
-margin_right = 176.0
-margin_bottom = 304.0
+margin_left = 64.0
+margin_top = 224.0
+margin_right = 128.0
+margin_bottom = 288.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -42,10 +42,10 @@ __meta__ = {
 
 [node name="slot3_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 176.0
-margin_top = 240.0
-margin_right = 240.0
-margin_bottom = 304.0
+margin_left = 64.0
+margin_top = 352.0
+margin_right = 128.0
+margin_bottom = 416.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -55,10 +55,10 @@ __meta__ = {
 
 [node name="slot4_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 240.0
-margin_top = 240.0
-margin_right = 304.0
-margin_bottom = 304.0
+margin_left = 64.0
+margin_top = 480.0
+margin_right = 128.0
+margin_bottom = 544.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -68,10 +68,10 @@ __meta__ = {
 
 [node name="slot5_health" type="ProgressBar" parent="health_bars/Player"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 304.0
-margin_top = 240.0
-margin_right = 368.0
-margin_bottom = 304.0
+margin_left = 64.0
+margin_top = 608.0
+margin_right = 128.0
+margin_bottom = 672.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -83,10 +83,10 @@ __meta__ = {
 
 [node name="slot1_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 640.0
-margin_top = 240.0
-margin_right = 704.0
-margin_bottom = 304.0
+margin_left = 1152.0
+margin_top = 96.0
+margin_right = 1216.0
+margin_bottom = 160.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -96,10 +96,10 @@ __meta__ = {
 
 [node name="slot2_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 704.0
-margin_top = 240.0
-margin_right = 768.0
-margin_bottom = 304.0
+margin_left = 1152.0
+margin_top = 224.0
+margin_right = 1216.0
+margin_bottom = 288.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -109,10 +109,10 @@ __meta__ = {
 
 [node name="slot3_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 768.0
-margin_top = 240.0
-margin_right = 832.0
-margin_bottom = 304.0
+margin_left = 1152.0
+margin_top = 352.0
+margin_right = 1216.0
+margin_bottom = 416.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -122,10 +122,10 @@ __meta__ = {
 
 [node name="slot4_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 832.0
-margin_top = 240.0
-margin_right = 896.0
-margin_bottom = 304.0
+margin_left = 1152.0
+margin_top = 480.0
+margin_right = 1216.0
+margin_bottom = 544.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -135,10 +135,10 @@ __meta__ = {
 
 [node name="slot5_health" type="ProgressBar" parent="health_bars/Enemy"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 896.0
-margin_top = 240.0
-margin_right = 960.0
-margin_bottom = 304.0
+margin_left = 1152.0
+margin_top = 608.0
+margin_right = 1216.0
+margin_bottom = 672.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
 percent_visible = false
@@ -147,11 +147,11 @@ percent_visible = false
 
 [node name="current_health" type="ProgressBar" parent="health_bars/Current"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 432.0
-margin_top = 240.0
-margin_right = 496.0
-margin_bottom = 304.0
-rect_scale = Vector2( 1, 0.25 )
+margin_left = 416.0
+margin_top = 192.0
+margin_right = 480.0
+margin_bottom = 256.0
+rect_scale = Vector2( 2, 0.5 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -162,11 +162,11 @@ __meta__ = {
 
 [node name="targeted_health" type="ProgressBar" parent="health_bars/Targeted"]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 512.0
-margin_top = 240.0
-margin_right = 576.0
-margin_bottom = 304.0
-rect_scale = Vector2( 1, 0.25 )
+margin_left = 736.0
+margin_top = 192.0
+margin_right = 800.0
+margin_bottom = 256.0
+rect_scale = Vector2( 2, 0.5 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -179,60 +179,65 @@ __meta__ = {
 
 [node name="slot1_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 48.0
-margin_top = 304.0
-margin_right = 112.0
-margin_bottom = 368.0
+margin_left = 64.0
+margin_top = 112.0
+margin_right = 128.0
+margin_bottom = 176.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot2_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 112.0
-margin_top = 304.0
-margin_right = 176.0
-margin_bottom = 368.0
+margin_left = 64.0
+margin_top = 240.0
+margin_right = 128.0
+margin_bottom = 304.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot3_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 176.0
-margin_top = 304.0
-margin_right = 240.0
-margin_bottom = 368.0
+margin_left = 64.0
+margin_top = 368.0
+margin_right = 128.0
+margin_bottom = 432.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot4_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 240.0
-margin_top = 304.0
-margin_right = 304.0
-margin_bottom = 368.0
+margin_left = 64.0
+margin_top = 496.0
+margin_right = 128.0
+margin_bottom = 560.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot5_speed" type="ProgressBar" parent="speed_bars/Player"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 304.0
-margin_top = 304.0
-margin_right = 368.0
-margin_bottom = 368.0
+margin_left = 64.0
+margin_top = 624.0
+margin_right = 128.0
+margin_bottom = 688.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -241,71 +246,80 @@ __meta__ = {
 
 [node name="slot1_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 640.0
-margin_top = 304.0
-margin_right = 704.0
-margin_bottom = 368.0
+margin_left = 1152.0
+margin_top = 112.0
+margin_right = 1216.0
+margin_bottom = 176.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot2_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 704.0
-margin_top = 304.0
-margin_right = 768.0
-margin_bottom = 368.0
+margin_left = 1152.0
+margin_top = 240.0
+margin_right = 1216.0
+margin_bottom = 304.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot3_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 768.0
-margin_top = 304.0
-margin_right = 832.0
-margin_bottom = 368.0
+margin_left = 1152.0
+margin_top = 368.0
+margin_right = 1216.0
+margin_bottom = 432.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot4_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 832.0
-margin_top = 304.0
-margin_right = 896.0
-margin_bottom = 368.0
+margin_left = 1152.0
+margin_top = 496.0
+margin_right = 1216.0
+margin_bottom = 560.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="slot5_speed" type="ProgressBar" parent="speed_bars/Enemy"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 896.0
-margin_top = 304.0
-margin_right = 960.0
-margin_bottom = 368.0
+margin_left = 1152.0
+margin_top = 624.0
+margin_right = 1216.0
+margin_bottom = 688.0
 rect_scale = Vector2( 1, 0.25 )
 value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Current" type="Node" parent="speed_bars"]
 
 [node name="current_speed" type="ProgressBar" parent="speed_bars/Current"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 432.0
-margin_top = 304.0
-margin_right = 496.0
-margin_bottom = 368.0
-rect_scale = Vector2( 1, 0.25 )
+margin_left = 416.0
+margin_top = 224.0
+margin_right = 480.0
+margin_bottom = 288.0
+rect_scale = Vector2( 2, 0.5 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -314,12 +328,13 @@ __meta__ = {
 
 [node name="targeted_speed" type="ProgressBar" parent="speed_bars/Targeted"]
 modulate = Color( 0, 0.298039, 1, 1 )
-margin_left = 512.0
-margin_top = 304.0
-margin_right = 576.0
-margin_bottom = 368.0
-rect_scale = Vector2( 1, 0.25 )
+margin_left = 736.0
+margin_top = 224.0
+margin_right = 800.0
+margin_bottom = 288.0
+rect_scale = Vector2( 2, 0.5 )
 value = 100.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
