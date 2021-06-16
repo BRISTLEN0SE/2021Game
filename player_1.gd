@@ -19,7 +19,6 @@ extends Node
 #attack/defense buff/debuff
 #haste/slow buff/debuff
 
-var hide_show = 1
 var health = 100
 var attack = 1
 var attack1 = 10
@@ -31,21 +30,21 @@ var attack3_charge = 20
 var speed = 0
 var max_speed = 100
 var base_speed = 50
-var start_speed = true
-var player = 1
+var charnum = 1
 
-var charge_enabled = true
-var random = RandomNumberGenerator.new()
 
 var star = 1
 var level = 1
-
-
 var charname = "spiderman"
-var charnum = 1
+
 
 var slot = 1
+var start_speed = true
 var changed = false
+
+var hide_show = 1
+var charge_enabled = true
+var random = RandomNumberGenerator.new()
 
 
 
@@ -110,7 +109,6 @@ func _physics_process(delta):
 					$enemy/enemy5.show()
 					GlobalVariables.enemy_slot5_health = health
 					changed = true
-				
 			if $player/slot_1.is_visible_in_tree():
 				slot = 1
 				GlobalVariables.slot1_attack = attack

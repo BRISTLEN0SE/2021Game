@@ -27,6 +27,13 @@ func _physics_process(delta):
 	$speed_bars/Enemy/slot4_speed.value = GlobalVariables.enemy_slot4_speed
 	$speed_bars/Enemy/slot5_speed.value = GlobalVariables.enemy_slot5_speed
 	
+	if $health_bars/Targeted/targeted_health.value < 1:
+		$health_bars/Targeted/targeted_health.hide()
+		$speed_bars/Targeted/targeted_speed.hide()
+	else:
+		$health_bars/Targeted/targeted_health.show()
+		$speed_bars/Targeted/targeted_speed.show()
+	
 	if GlobalVariables.targeted == 6:
 		$health_bars/Targeted/targeted_health.value = GlobalVariables.enemy_slot1_health
 		$speed_bars/Targeted/targeted_speed.value = GlobalVariables.enemy_slot1_speed

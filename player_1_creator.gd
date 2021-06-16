@@ -11,6 +11,8 @@ onready var enemy_character3 = preload("res://player_1.tscn")
 onready var enemy_character4 = preload("res://player_1.tscn") 
 onready var enemy_character5 = preload("res://player_1.tscn") 
 
+var charnum = 1
+
 var hide_show = 1
 var health = 100
 
@@ -25,8 +27,6 @@ var enemy_slot_2_used = false
 var enemy_slot_3_used = false
 var enemy_slot_4_used = false
 var enemy_slot_5_used = false
-
-var charnum = 1
 
 
 
