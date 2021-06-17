@@ -1,20 +1,19 @@
 extends Node
 
-onready var character1 = preload("res://player_1.tscn") 
-onready var character2 = preload("res://player_1.tscn") 
-onready var character3 = preload("res://player_1.tscn") 
-onready var character4 = preload("res://player_1.tscn") 
-onready var character5 = preload("res://player_1.tscn") 
-onready var enemy_character1 = preload("res://player_1.tscn") 
-onready var enemy_character2 = preload("res://player_1.tscn") 
-onready var enemy_character3 = preload("res://player_1.tscn") 
-onready var enemy_character4 = preload("res://player_1.tscn") 
-onready var enemy_character5 = preload("res://player_1.tscn") 
+onready var character1 = preload("res://characters/player_1.tscn") 
+onready var character2 = preload("res://characters/player_1.tscn") 
+onready var character3 = preload("res://characters/player_1.tscn") 
+onready var character4 = preload("res://characters/player_1.tscn") 
+onready var character5 = preload("res://characters/player_1.tscn") 
+onready var enemy_character1 = preload("res://characters/player_1.tscn") 
+onready var enemy_character2 = preload("res://characters/player_1.tscn") 
+onready var enemy_character3 = preload("res://characters/player_1.tscn") 
+onready var enemy_character4 = preload("res://characters/player_1.tscn") 
+onready var enemy_character5 = preload("res://characters/player_1.tscn") 
 
 var charnum = 1
 
 var hide_show = 1
-var health = 100
 
 var slot_1_used = false
 var slot_2_used = false
