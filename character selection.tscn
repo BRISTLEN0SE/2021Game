@@ -53,292 +53,340 @@
 
 [node name="Node" type="Node"]
 
-[node name="chosen characters" type="Node" parent="."]
+[node name="final characters" type="Node" parent="."]
 
-[node name="Male 02-2" type="Sprite" parent="chosen characters"]
+[node name="Male 02-1" type="Sprite" parent="final characters"]
+position = Vector2( 48, 960 )
+texture = ExtResource( 2 )
+
+[node name="Male 05-1" type="Sprite" parent="final characters"]
+position = Vector2( 304, 960 )
+texture = ExtResource( 50 )
+
+[node name="Male 08-1" type="Sprite" parent="final characters"]
+position = Vector2( 1072, 960 )
+texture = ExtResource( 39 )
+
+[node name="Male 16-1" type="Sprite" parent="final characters"]
+position = Vector2( 688, 960 )
+texture = ExtResource( 1 )
+
+[node name="Male 18-1" type="Sprite" parent="final characters"]
+position = Vector2( 816, 960 )
+texture = ExtResource( 49 )
+
+[node name="Male 03-1" type="Sprite" parent="final characters"]
+position = Vector2( 432, 960 )
+texture = ExtResource( 34 )
+
+[node name="Female 13-1" type="Sprite" parent="final characters"]
+position = Vector2( 1328, 960 )
+texture = ExtResource( 20 )
+
+[node name="Female 04-1" type="Sprite" parent="final characters"]
+position = Vector2( 560, 960 )
+texture = ExtResource( 9 )
+
+[node name="Female 08-1" type="Sprite" parent="final characters"]
+position = Vector2( 176, 960 )
+texture = ExtResource( 15 )
+
+[node name="Female 09-1" type="Sprite" parent="final characters"]
+position = Vector2( 944, 960 )
+texture = ExtResource( 8 )
+
+[node name="Female 03-1" type="Sprite" parent="final characters"]
+position = Vector2( 1200, 960 )
+texture = ExtResource( 13 )
+
+[node name="chosen character options" type="Node" parent="."]
+
+[node name="Male 02-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 48, 576 )
 texture = ExtResource( 2 )
 
-[node name="Male 05-2" type="Sprite" parent="chosen characters"]
+[node name="Male 05-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 304, 576 )
 texture = ExtResource( 50 )
 
-[node name="Male 04-2" type="Sprite" parent="chosen characters"]
+[node name="Male 04-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 560, 576 )
 texture = ExtResource( 38 )
 
-[node name="Male 16-2" type="Sprite" parent="chosen characters"]
+[node name="Male 16-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 688, 576 )
 texture = ExtResource( 1 )
 
-[node name="Male 01-2" type="Sprite" parent="chosen characters"]
+[node name="Male 01-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1200, 576 )
 texture = ExtResource( 45 )
 
-[node name="Male 08-2" type="Sprite" parent="chosen characters"]
+[node name="Male 08-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1072, 576 )
 texture = ExtResource( 39 )
 
-[node name="Male 18-2" type="Sprite" parent="chosen characters"]
+[node name="Male 18-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1328, 576 )
 texture = ExtResource( 49 )
 
-[node name="Male 10-2" type="Sprite" parent="chosen characters"]
+[node name="Male 10-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 944, 576 )
 texture = ExtResource( 28 )
 
-[node name="Male 09-2" type="Sprite" parent="chosen characters"]
+[node name="Male 09-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 176, 576 )
 texture = ExtResource( 3 )
 
-[node name="Female 03-2" type="Sprite" parent="chosen characters"]
+[node name="Female 03-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1200, 704 )
 texture = ExtResource( 13 )
 
-[node name="Female 04-2" type="Sprite" parent="chosen characters"]
+[node name="Female 04-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 560, 704 )
 texture = ExtResource( 9 )
 
-[node name="Female 09-2" type="Sprite" parent="chosen characters"]
+[node name="Female 09-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 944, 704 )
 texture = ExtResource( 8 )
 
-[node name="Female 24-2" type="Sprite" parent="chosen characters"]
+[node name="Female 24-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 688, 704 )
 texture = ExtResource( 37 )
 
-[node name="Female 05-2" type="Sprite" parent="chosen characters"]
+[node name="Female 05-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 304, 704 )
 texture = ExtResource( 12 )
 
-[node name="Female 08-2" type="Sprite" parent="chosen characters"]
+[node name="Female 08-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 176, 704 )
 texture = ExtResource( 15 )
 
-[node name="Female 13-2" type="Sprite" parent="chosen characters"]
+[node name="Female 13-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1328, 704 )
 texture = ExtResource( 20 )
 
-[node name="Female 11-2" type="Sprite" parent="chosen characters"]
+[node name="Female 11-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 1072, 704 )
 texture = ExtResource( 17 )
 
-[node name="Female 02-2" type="Sprite" parent="chosen characters"]
+[node name="Female 02-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 48, 704 )
 texture = ExtResource( 19 )
 
-[node name="Female 12-2" type="Sprite" parent="chosen characters"]
+[node name="Female 12-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 816, 704 )
 texture = ExtResource( 18 )
 
-[node name="Female 10-2" type="Sprite" parent="chosen characters"]
+[node name="Female 10-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 432, 704 )
 texture = ExtResource( 16 )
 
-[node name="Male 07-2" type="Sprite" parent="chosen characters"]
+[node name="Male 07-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 816, 576 )
 texture = ExtResource( 48 )
 
-[node name="Male 03-2" type="Sprite" parent="chosen characters"]
+[node name="Male 03-2" type="Sprite" parent="chosen character options"]
 position = Vector2( 432, 576 )
 texture = ExtResource( 34 )
 
-[node name="Female 01-1" type="Sprite" parent="."]
+[node name="all characters" type="Node" parent="."]
+
+[node name="Female 01-1" type="Sprite" parent="all characters"]
 position = Vector2( 48, 64 )
 texture = ExtResource( 11 )
 
-[node name="Female 02-1" type="Sprite" parent="."]
+[node name="Female 02-1" type="Sprite" parent="all characters"]
 position = Vector2( 176, 64 )
 texture = ExtResource( 19 )
 
-[node name="Female 03-1" type="Sprite" parent="."]
+[node name="Female 03-1" type="Sprite" parent="all characters"]
 position = Vector2( 304, 64 )
 texture = ExtResource( 13 )
 
-[node name="Female 04-1" type="Sprite" parent="."]
+[node name="Female 04-1" type="Sprite" parent="all characters"]
 position = Vector2( 432, 64 )
 texture = ExtResource( 9 )
 
-[node name="Female 05-1" type="Sprite" parent="."]
+[node name="Female 05-1" type="Sprite" parent="all characters"]
 position = Vector2( 560, 64 )
 texture = ExtResource( 12 )
 
-[node name="Female 06-1" type="Sprite" parent="."]
+[node name="Female 06-1" type="Sprite" parent="all characters"]
 position = Vector2( 688, 64 )
 texture = ExtResource( 7 )
 
-[node name="Female 07-1" type="Sprite" parent="."]
+[node name="Female 07-1" type="Sprite" parent="all characters"]
 position = Vector2( 816, 64 )
 texture = ExtResource( 14 )
 
-[node name="Female 08-1" type="Sprite" parent="."]
+[node name="Female 08-1" type="Sprite" parent="all characters"]
 position = Vector2( 944, 64 )
 texture = ExtResource( 15 )
 
-[node name="Female 09-1" type="Sprite" parent="."]
+[node name="Female 09-1" type="Sprite" parent="all characters"]
 position = Vector2( 1072, 64 )
 texture = ExtResource( 8 )
 
-[node name="Female 10-1" type="Sprite" parent="."]
+[node name="Female 10-1" type="Sprite" parent="all characters"]
 position = Vector2( 1200, 64 )
 texture = ExtResource( 16 )
 
-[node name="Female 11-1" type="Sprite" parent="."]
+[node name="Female 11-1" type="Sprite" parent="all characters"]
 position = Vector2( 1328, 64 )
 texture = ExtResource( 17 )
 
-[node name="Female 12-1" type="Sprite" parent="."]
+[node name="Female 12-1" type="Sprite" parent="all characters"]
 position = Vector2( 1456, 64 )
 texture = ExtResource( 18 )
 
-[node name="Female 13-1" type="Sprite" parent="."]
+[node name="Female 13-1" type="Sprite" parent="all characters"]
 position = Vector2( 1584, 64 )
 texture = ExtResource( 20 )
 
-[node name="Female 14-1" type="Sprite" parent="."]
+[node name="Female 14-1" type="Sprite" parent="all characters"]
 position = Vector2( 1712, 64 )
 texture = ExtResource( 10 )
 
-[node name="Female 15-1" type="Sprite" parent="."]
+[node name="Female 15-1" type="Sprite" parent="all characters"]
 position = Vector2( 1840, 64 )
 texture = ExtResource( 4 )
 
-[node name="Female 16-1" type="Sprite" parent="."]
+[node name="Female 16-1" type="Sprite" parent="all characters"]
 position = Vector2( 1968, 64 )
 texture = ExtResource( 5 )
 
-[node name="Female 17-1" type="Sprite" parent="."]
+[node name="Female 17-1" type="Sprite" parent="all characters"]
 position = Vector2( 2096, 64 )
 texture = ExtResource( 6 )
 
-[node name="Female 18-1" type="Sprite" parent="."]
+[node name="Female 18-1" type="Sprite" parent="all characters"]
 position = Vector2( 2224, 64 )
 texture = ExtResource( 24 )
 
-[node name="Female 19-1" type="Sprite" parent="."]
+[node name="Female 19-1" type="Sprite" parent="all characters"]
 position = Vector2( 2352, 64 )
 texture = ExtResource( 44 )
 
-[node name="Female 20-1" type="Sprite" parent="."]
+[node name="Female 20-1" type="Sprite" parent="all characters"]
 position = Vector2( 2480, 64 )
 texture = ExtResource( 35 )
 
-[node name="Female 21-1" type="Sprite" parent="."]
+[node name="Female 21-1" type="Sprite" parent="all characters"]
 position = Vector2( 2608, 64 )
 texture = ExtResource( 33 )
 
-[node name="Female 22-1" type="Sprite" parent="."]
+[node name="Female 22-1" type="Sprite" parent="all characters"]
 position = Vector2( 2736, 64 )
 texture = ExtResource( 36 )
 
-[node name="Female 23-1" type="Sprite" parent="."]
+[node name="Female 23-1" type="Sprite" parent="all characters"]
 position = Vector2( 2864, 64 )
 texture = ExtResource( 26 )
 
-[node name="Female 24-1" type="Sprite" parent="."]
+[node name="Female 24-1" type="Sprite" parent="all characters"]
 position = Vector2( 2992, 64 )
 texture = ExtResource( 37 )
 
-[node name="Female 25-1" type="Sprite" parent="."]
+[node name="Female 25-1" type="Sprite" parent="all characters"]
 position = Vector2( 3120, 64 )
 texture = ExtResource( 21 )
 
-[node name="Male 01-1" type="Sprite" parent="."]
+[node name="Male 01-1" type="Sprite" parent="all characters"]
 position = Vector2( 48, 192 )
 texture = ExtResource( 45 )
 
-[node name="Male 02-1" type="Sprite" parent="."]
+[node name="Male 02-1" type="Sprite" parent="all characters"]
 position = Vector2( 176, 192 )
 texture = ExtResource( 2 )
 
-[node name="Male 03-1" type="Sprite" parent="."]
+[node name="Male 03-1" type="Sprite" parent="all characters"]
 position = Vector2( 304, 192 )
 texture = ExtResource( 34 )
 
-[node name="Male 04-1" type="Sprite" parent="."]
+[node name="Male 04-1" type="Sprite" parent="all characters"]
 position = Vector2( 432, 192 )
 texture = ExtResource( 38 )
 
-[node name="Male 05-1" type="Sprite" parent="."]
+[node name="Male 05-1" type="Sprite" parent="all characters"]
 position = Vector2( 560, 192 )
 texture = ExtResource( 50 )
 
-[node name="Male 06-1" type="Sprite" parent="."]
+[node name="Male 06-1" type="Sprite" parent="all characters"]
 position = Vector2( 688, 192 )
 texture = ExtResource( 27 )
 
-[node name="Male 07-1" type="Sprite" parent="."]
+[node name="Male 07-1" type="Sprite" parent="all characters"]
 position = Vector2( 816, 192 )
 texture = ExtResource( 48 )
 
-[node name="Male 08-1" type="Sprite" parent="."]
+[node name="Male 08-1" type="Sprite" parent="all characters"]
 position = Vector2( 944, 192 )
 texture = ExtResource( 39 )
 
-[node name="Male 09-1" type="Sprite" parent="."]
+[node name="Male 09-1" type="Sprite" parent="all characters"]
 position = Vector2( 1072, 192 )
 texture = ExtResource( 3 )
 
-[node name="Male 10-1" type="Sprite" parent="."]
+[node name="Male 10-1" type="Sprite" parent="all characters"]
 position = Vector2( 1200, 192 )
 texture = ExtResource( 28 )
 
-[node name="Male 11-1" type="Sprite" parent="."]
+[node name="Male 11-1" type="Sprite" parent="all characters"]
 position = Vector2( 1328, 192 )
 texture = ExtResource( 40 )
 
-[node name="Male 12-1" type="Sprite" parent="."]
+[node name="Male 12-1" type="Sprite" parent="all characters"]
 position = Vector2( 1456, 192 )
 texture = ExtResource( 29 )
 
-[node name="Male 13-1" type="Sprite" parent="."]
+[node name="Male 13-1" type="Sprite" parent="all characters"]
 position = Vector2( 1584, 192 )
 texture = ExtResource( 25 )
 
-[node name="Male 14-1" type="Sprite" parent="."]
+[node name="Male 14-1" type="Sprite" parent="all characters"]
 position = Vector2( 1712, 192 )
 texture = ExtResource( 41 )
 
-[node name="Male 15-1" type="Sprite" parent="."]
+[node name="Male 15-1" type="Sprite" parent="all characters"]
 position = Vector2( 1840, 192 )
 texture = ExtResource( 30 )
 
-[node name="Male 16-1" type="Sprite" parent="."]
+[node name="Male 16-1" type="Sprite" parent="all characters"]
 position = Vector2( 1968, 192 )
 texture = ExtResource( 1 )
 
-[node name="Male 17-1" type="Sprite" parent="."]
+[node name="Male 17-1" type="Sprite" parent="all characters"]
 position = Vector2( 2096, 192 )
 texture = ExtResource( 42 )
 
-[node name="Male 18-1" type="Sprite" parent="."]
+[node name="Male 18-1" type="Sprite" parent="all characters"]
 position = Vector2( 2224, 192 )
 texture = ExtResource( 49 )
 
-[node name="Soldier 01-1" type="Sprite" parent="."]
+[node name="Soldier 01-1" type="Sprite" parent="all characters"]
 position = Vector2( 48, 320 )
 texture = ExtResource( 47 )
 
-[node name="Soldier 02-1" type="Sprite" parent="."]
+[node name="Soldier 02-1" type="Sprite" parent="all characters"]
 position = Vector2( 176, 320 )
 texture = ExtResource( 23 )
 
-[node name="Soldier 03-1" type="Sprite" parent="."]
+[node name="Soldier 03-1" type="Sprite" parent="all characters"]
 position = Vector2( 304, 320 )
 texture = ExtResource( 43 )
 
-[node name="Soldier 04-1" type="Sprite" parent="."]
+[node name="Soldier 04-1" type="Sprite" parent="all characters"]
 position = Vector2( 432, 320 )
 texture = ExtResource( 31 )
 
-[node name="Soldier 05-1" type="Sprite" parent="."]
+[node name="Soldier 05-1" type="Sprite" parent="all characters"]
 position = Vector2( 560, 320 )
 texture = ExtResource( 46 )
 
-[node name="Soldier 06-1" type="Sprite" parent="."]
+[node name="Soldier 06-1" type="Sprite" parent="all characters"]
 position = Vector2( 688, 320 )
 texture = ExtResource( 22 )
 
-[node name="Soldier 07-1" type="Sprite" parent="."]
+[node name="Soldier 07-1" type="Sprite" parent="all characters"]
 position = Vector2( 816, 320 )
 texture = ExtResource( 32 )
