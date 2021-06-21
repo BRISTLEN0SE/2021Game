@@ -1,0 +1,270 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://characters/player_11.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Female/Female 13-1.png" type="Texture" id=3]
+
+[node name="player_2" type="Node"]
+script = ExtResource( 1 )
+
+[node name="player" type="Node" parent="."]
+
+[node name="slot_1" type="Sprite" parent="player"]
+visible = false
+position = Vector2( 1088, 0 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="slot_2" type="Sprite" parent="player"]
+visible = false
+position = Vector2( 1088, 128 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="slot_3" type="Sprite" parent="player"]
+visible = false
+position = Vector2( 1088, 256 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="slot_4" type="Sprite" parent="player"]
+visible = false
+position = Vector2( 1088, 384 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="slot_5" type="Sprite" parent="player"]
+visible = false
+position = Vector2( 1088, 512 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="enemy" type="Node" parent="."]
+
+[node name="enemy_slot1" type="Button" parent="enemy"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1136.0
+margin_right = 1212.0
+margin_bottom = 70.0
+rect_scale = Vector2( 1.3, 1.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy_slot2" type="Button" parent="enemy"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1136.0
+margin_top = 128.0
+margin_right = 1212.0
+margin_bottom = 198.0
+rect_scale = Vector2( 1.3, 1.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy_slot3" type="Button" parent="enemy"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1136.0
+margin_top = 256.0
+margin_right = 1212.0
+margin_bottom = 326.0
+rect_scale = Vector2( 1.3, 1.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy_slot4" type="Button" parent="enemy"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1136.0
+margin_top = 384.0
+margin_right = 1212.0
+margin_bottom = 454.0
+rect_scale = Vector2( 1.3, 1.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy_slot5" type="Button" parent="enemy"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1136.0
+margin_top = 512.0
+margin_right = 1212.0
+margin_bottom = 582.0
+rect_scale = Vector2( 1.3, 1.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy1" type="Sprite" parent="enemy"]
+visible = false
+position = Vector2( 1179.2, 43.2 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+hframes = 3
+vframes = 4
+
+[node name="enemy2" type="Sprite" parent="enemy"]
+visible = false
+position = Vector2( 1179.2, 171.2 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+hframes = 3
+vframes = 4
+
+[node name="enemy3" type="Sprite" parent="enemy"]
+visible = false
+position = Vector2( 1179.2, 299.2 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+hframes = 3
+vframes = 4
+
+[node name="enemy4" type="Sprite" parent="enemy"]
+visible = false
+position = Vector2( 1179.2, 427.2 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+hframes = 3
+vframes = 4
+
+[node name="enemy5" type="Sprite" parent="enemy"]
+visible = false
+position = Vector2( 1179.2, 555.2 )
+scale = Vector2( 2.7, 2.7 )
+texture = ExtResource( 3 )
+hframes = 3
+vframes = 4
+
+[node name="attack" type="Node" parent="."]
+
+[node name="attack_1" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 400.0
+margin_top = 480.0
+margin_right = 476.0
+margin_bottom = 550.0
+rect_scale = Vector2( 1.9, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_2" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 576.0
+margin_top = 480.0
+margin_right = 652.0
+margin_bottom = 550.0
+rect_scale = Vector2( 1.9, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_3" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 752.0
+margin_top = 480.0
+margin_right = 828.0
+margin_bottom = 550.0
+rect_scale = Vector2( 1.9, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_2_charge" type="TextureProgress" parent="."]
+visible = false
+modulate = Color( 0.992157, 1, 0.0156863, 1 )
+margin_left = 566.4
+margin_top = 416.0
+margin_right = 630.4
+margin_bottom = 480.0
+rect_scale = Vector2( 2.4, 0.5 )
+texture_progress = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_3_charge" type="TextureProgress" parent="."]
+visible = false
+modulate = Color( 0.992157, 1, 0.0156863, 1 )
+margin_left = 742.4
+margin_top = 416.0
+margin_right = 806.4
+margin_bottom = 480.0
+rect_scale = Vector2( 2.4, 0.5 )
+texture_progress = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack1" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.262745, 0, 0.321569, 1 )
+position = Vector2( 470.4, 544 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 2 )
+
+[node name="attack2" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.262745, 0, 0.321569, 1 )
+position = Vector2( 646.4, 544 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 2 )
+
+[node name="attack3" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.262745, 0, 0.321569, 1 )
+position = Vector2( 822.4, 544 )
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 2 )
+
+[node name="other" type="Node" parent="."]
+
+[node name="current_character" type="Sprite" parent="other"]
+visible = false
+position = Vector2( 2481.7, 7.9 )
+scale = Vector2( 5.4, 5.4 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[node name="targeted_character" type="Sprite" parent="other"]
+visible = false
+position = Vector2( 2785.7, 7.9 )
+scale = Vector2( 5.4, 5.4 )
+texture = ExtResource( 3 )
+offset = Vector2( -369.5, 17.5 )
+hframes = 3
+vframes = 4
+
+[connection signal="pressed" from="enemy/enemy_slot1" to="." method="_on_enemy_slot1_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot2" to="." method="_on_enemy_slot2_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot3" to="." method="_on_enemy_slot3_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot4" to="." method="_on_enemy_slot4_pressed"]
+[connection signal="pressed" from="enemy/enemy_slot5" to="." method="_on_enemy_slot5_pressed"]
+[connection signal="pressed" from="attack_1" to="." method="_on_attack_1_pressed"]
+[connection signal="pressed" from="attack_2" to="." method="_on_attack_2_pressed"]
+[connection signal="pressed" from="attack_3" to="." method="_on_attack_3_pressed"]

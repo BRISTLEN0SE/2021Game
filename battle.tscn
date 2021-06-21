@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://character creators/character_1_creator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://battle.gd" type="Script" id=2]
@@ -8,6 +8,11 @@
 [ext_resource path="res://character creators/character_4_creator.tscn" type="PackedScene" id=6]
 [ext_resource path="res://character creators/character_5_creator.tscn" type="PackedScene" id=7]
 [ext_resource path="res://character creators/character_6_creator.tscn" type="PackedScene" id=8]
+[ext_resource path="res://character creators/character_7_creator.tscn" type="PackedScene" id=9]
+[ext_resource path="res://character creators/character_9_creator.tscn" type="PackedScene" id=10]
+[ext_resource path="res://character creators/character_10_creator.tscn" type="PackedScene" id=11]
+[ext_resource path="res://character creators/character_11_creator.tscn" type="PackedScene" id=12]
+[ext_resource path="res://character creators/character_8_creator.tscn" type="PackedScene" id=13]
 
 [node name="Battle" type="Node"]
 script = ExtResource( 2 )
@@ -33,6 +38,16 @@ expand = true
 [node name="player_5_creator" parent="Player_creators" instance=ExtResource( 7 )]
 
 [node name="player_6_creator" parent="Player_creators" instance=ExtResource( 8 )]
+
+[node name="player_7_creator" parent="Player_creators" instance=ExtResource( 9 )]
+
+[node name="player_8_creator" parent="Player_creators" instance=ExtResource( 13 )]
+
+[node name="player_9_creator" parent="Player_creators" instance=ExtResource( 10 )]
+
+[node name="player_10_creator" parent="Player_creators" instance=ExtResource( 11 )]
+
+[node name="player_11_creator" parent="Player_creators" instance=ExtResource( 12 )]
 
 [node name="health_bars" type="Node" parent="."]
 
