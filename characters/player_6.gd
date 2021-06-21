@@ -109,35 +109,41 @@ func _physics_process(delta):
 					$enemy/enemy5.show()
 					GlobalVariables.enemy_slot5_health = health
 					changed = true
+					
 			if $player/slot_1.is_visible_in_tree():
 				slot = 1
 				GlobalVariables.slot1_attack = attack
 				GlobalVariables.slot1_speed = speed
 				if GlobalVariables.slot1_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_2.is_visible_in_tree():
 				slot = 2
 				GlobalVariables.slot2_attack = attack
 				GlobalVariables.slot2_speed = speed
 				if GlobalVariables.slot2_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_3.is_visible_in_tree():
 				slot = 3
 				GlobalVariables.slot3_attack = attack
 				GlobalVariables.slot3_speed = speed
 				if GlobalVariables.slot3_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_4.is_visible_in_tree():
 				slot = 4
 				GlobalVariables.slot4_attack = attack
 				GlobalVariables.slot4_speed = speed
 				if GlobalVariables.slot4_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_5.is_visible_in_tree():
 				slot = 5
 				GlobalVariables.slot5_attack = attack
 				GlobalVariables.slot5_speed = speed
 				if GlobalVariables.slot5_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 				
 			if $enemy/enemy_slot1.is_visible_in_tree():
@@ -146,6 +152,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot1_speed = speed
 				if GlobalVariables.enemy_slot1_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 6:
 					$other/targeted_character.show()
@@ -157,6 +164,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot2_speed = speed
 				if GlobalVariables.enemy_slot2_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 7:
 					$other/targeted_character.show()
@@ -168,6 +176,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot3_speed = speed
 				if GlobalVariables.enemy_slot3_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 8:
 					$other/targeted_character.show()
@@ -179,6 +188,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot4_speed = speed
 				if GlobalVariables.enemy_slot4_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 9:
 					$other/targeted_character.show()
@@ -190,39 +200,12 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot5_speed = speed
 				if GlobalVariables.enemy_slot5_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 10:
 					$other/targeted_character.show()
 				if GlobalVariables.targeted != 10:
 					$other/targeted_character.hide()
-			
-			
-			if GlobalVariables.slot1 != charnum:
-				$player/slot_1.hide()
-			if GlobalVariables.slot2 != charnum:
-				$player/slot_2.hide()
-			if GlobalVariables.slot3 != charnum:
-				$player/slot_3.hide()
-			if GlobalVariables.slot4 != charnum:
-				$player/slot_4.hide()
-			if GlobalVariables.slot5 != charnum:
-				$player/slot_5.hide()
-			#enemy
-			if GlobalVariables.enemy_slot1 != charnum:
-				$enemy/enemy_slot1.hide()
-				$enemy/enemy1.hide()
-			if GlobalVariables.enemy_slot2 != charnum:
-				$enemy/enemy_slot2.hide()
-				$enemy/enemy2.hide()
-			if GlobalVariables.enemy_slot3 != charnum:
-				$enemy/enemy_slot3.hide()
-				$enemy/enemy3.hide()
-			if GlobalVariables.enemy_slot4 != charnum:
-				$enemy/enemy_slot4.hide()
-				$enemy/enemy4.hide()
-			if GlobalVariables.enemy_slot5 != charnum:
-				$enemy/enemy_slot5.hide()
-				$enemy/enemy5.hide()
 
 	
 		if start_speed == true:

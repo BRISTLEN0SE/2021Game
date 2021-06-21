@@ -114,30 +114,35 @@ func _physics_process(delta):
 				GlobalVariables.slot1_attack = attack
 				GlobalVariables.slot1_speed = speed
 				if GlobalVariables.slot1_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_2.is_visible_in_tree():
 				slot = 2
 				GlobalVariables.slot2_attack = attack
 				GlobalVariables.slot2_speed = speed
 				if GlobalVariables.slot2_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_3.is_visible_in_tree():
 				slot = 3
 				GlobalVariables.slot3_attack = attack
 				GlobalVariables.slot3_speed = speed
 				if GlobalVariables.slot3_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_4.is_visible_in_tree():
 				slot = 4
 				GlobalVariables.slot4_attack = attack
 				GlobalVariables.slot4_speed = speed
 				if GlobalVariables.slot4_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 			if $player/slot_5.is_visible_in_tree():
 				slot = 5
 				GlobalVariables.slot5_attack = attack
 				GlobalVariables.slot5_speed = speed
 				if GlobalVariables.slot5_health < 1:
+					GlobalVariables.death_count += 1
 					queue_free()
 				
 			if $enemy/enemy_slot1.is_visible_in_tree():
@@ -146,6 +151,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot1_speed = speed
 				if GlobalVariables.enemy_slot1_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 6:
 					$other/targeted_character.show()
@@ -157,6 +163,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot2_speed = speed
 				if GlobalVariables.enemy_slot2_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 7:
 					$other/targeted_character.show()
@@ -168,6 +175,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot3_speed = speed
 				if GlobalVariables.enemy_slot3_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 8:
 					$other/targeted_character.show()
@@ -179,6 +187,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot4_speed = speed
 				if GlobalVariables.enemy_slot4_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 9:
 					$other/targeted_character.show()
@@ -190,6 +199,7 @@ func _physics_process(delta):
 				GlobalVariables.enemy_slot5_speed = speed
 				if GlobalVariables.enemy_slot5_health < 1:
 					GlobalVariables.target = false
+					GlobalVariables.death_count += 1
 					queue_free()
 				if GlobalVariables.targeted == 10:
 					$other/targeted_character.show()

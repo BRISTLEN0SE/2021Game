@@ -68,6 +68,8 @@ var current = 0
 var player_targeted = 0
 var target = false
 
+var death_count = 0
+
 var player_char = [slot1,slot2,slot3,slot4,slot5]
 var enemy_char = [enemy_slot1,enemy_slot2,enemy_slot3,enemy_slot4,enemy_slot5]
 #turns
