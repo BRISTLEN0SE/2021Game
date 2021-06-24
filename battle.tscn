@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://character creators/character_1_creator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://battle.gd" type="Script" id=2]
@@ -13,6 +13,36 @@
 [ext_resource path="res://character creators/character_10_creator.tscn" type="PackedScene" id=11]
 [ext_resource path="res://character creators/character_11_creator.tscn" type="PackedScene" id=12]
 [ext_resource path="res://character creators/character_8_creator.tscn" type="PackedScene" id=13]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.431373, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.431373, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.431373, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.431373, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.431373, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0.00392157, 0.258824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0.00392157, 0.258824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0, 0.00392157, 0.258824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0.00392157, 0.258824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0.00392157, 0.258824, 1 )
 
 [node name="Battle" type="Node"]
 script = ExtResource( 2 )
@@ -54,12 +84,12 @@ expand = true
 [node name="Player" type="Node" parent="health_bars"]
 
 [node name="slot1_health" type="ProgressBar" parent="health_bars/Player"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 64.0
 margin_top = 96.0
 margin_right = 128.0
 margin_bottom = 160.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 1 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -67,12 +97,12 @@ __meta__ = {
 }
 
 [node name="slot2_health" type="ProgressBar" parent="health_bars/Player"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 64.0
 margin_top = 224.0
 margin_right = 128.0
 margin_bottom = 288.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 2 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -80,12 +110,12 @@ __meta__ = {
 }
 
 [node name="slot3_health" type="ProgressBar" parent="health_bars/Player"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 64.0
 margin_top = 352.0
 margin_right = 128.0
 margin_bottom = 416.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 2 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -93,12 +123,12 @@ __meta__ = {
 }
 
 [node name="slot4_health" type="ProgressBar" parent="health_bars/Player"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 64.0
 margin_top = 480.0
 margin_right = 128.0
 margin_bottom = 544.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 2 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -106,12 +136,12 @@ __meta__ = {
 }
 
 [node name="slot5_health" type="ProgressBar" parent="health_bars/Player"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 64.0
 margin_top = 608.0
 margin_right = 128.0
 margin_bottom = 672.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 2 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -121,12 +151,12 @@ __meta__ = {
 [node name="Enemy" type="Node" parent="health_bars"]
 
 [node name="slot1_health" type="ProgressBar" parent="health_bars/Enemy"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 1152.0
 margin_top = 96.0
 margin_right = 1216.0
 margin_bottom = 160.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 3 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -134,12 +164,12 @@ __meta__ = {
 }
 
 [node name="slot2_health" type="ProgressBar" parent="health_bars/Enemy"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 1152.0
 margin_top = 224.0
 margin_right = 1216.0
 margin_bottom = 288.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 3 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -147,12 +177,12 @@ __meta__ = {
 }
 
 [node name="slot3_health" type="ProgressBar" parent="health_bars/Enemy"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 1152.0
 margin_top = 352.0
 margin_right = 1216.0
 margin_bottom = 416.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 3 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -160,12 +190,12 @@ __meta__ = {
 }
 
 [node name="slot4_health" type="ProgressBar" parent="health_bars/Enemy"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 1152.0
 margin_top = 480.0
 margin_right = 1216.0
 margin_bottom = 544.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 3 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -173,24 +203,24 @@ __meta__ = {
 }
 
 [node name="slot5_health" type="ProgressBar" parent="health_bars/Enemy"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 1152.0
 margin_top = 608.0
 margin_right = 1216.0
 margin_bottom = 672.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 3 )
 value = 100.0
 percent_visible = false
 
 [node name="Current" type="Node" parent="health_bars"]
 
 [node name="current_health" type="ProgressBar" parent="health_bars/Current"]
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 416.0
 margin_top = 192.0
 margin_right = 480.0
 margin_bottom = 256.0
 rect_scale = Vector2( 2, 0.5 )
+custom_styles/fg = SubResource( 4 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -201,12 +231,12 @@ __meta__ = {
 
 [node name="targeted_health" type="ProgressBar" parent="health_bars/Targeted"]
 visible = false
-modulate = Color( 1, 0, 0, 1 )
 margin_left = 736.0
 margin_top = 192.0
 margin_right = 800.0
 margin_bottom = 256.0
 rect_scale = Vector2( 2, 0.5 )
+custom_styles/fg = SubResource( 5 )
 percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
@@ -217,12 +247,12 @@ __meta__ = {
 [node name="Player" type="Node" parent="speed_bars"]
 
 [node name="slot1_speed" type="ProgressBar" parent="speed_bars/Player"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 64.0
 margin_top = 112.0
 margin_right = 128.0
 margin_bottom = 176.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 6 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -236,6 +266,7 @@ margin_top = 240.0
 margin_right = 128.0
 margin_bottom = 304.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 7 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -249,6 +280,7 @@ margin_top = 368.0
 margin_right = 128.0
 margin_bottom = 432.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 7 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -262,6 +294,7 @@ margin_top = 496.0
 margin_right = 128.0
 margin_bottom = 560.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 7 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -275,6 +308,7 @@ margin_top = 624.0
 margin_right = 128.0
 margin_bottom = 688.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 7 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -284,12 +318,12 @@ __meta__ = {
 [node name="Enemy" type="Node" parent="speed_bars"]
 
 [node name="slot1_speed" type="ProgressBar" parent="speed_bars/Enemy"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 1152.0
 margin_top = 112.0
 margin_right = 1216.0
 margin_bottom = 176.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 8 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -297,12 +331,12 @@ __meta__ = {
 }
 
 [node name="slot2_speed" type="ProgressBar" parent="speed_bars/Enemy"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 1152.0
 margin_top = 240.0
 margin_right = 1216.0
 margin_bottom = 304.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 8 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -310,12 +344,12 @@ __meta__ = {
 }
 
 [node name="slot3_speed" type="ProgressBar" parent="speed_bars/Enemy"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 1152.0
 margin_top = 368.0
 margin_right = 1216.0
 margin_bottom = 432.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 8 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -323,12 +357,12 @@ __meta__ = {
 }
 
 [node name="slot4_speed" type="ProgressBar" parent="speed_bars/Enemy"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 1152.0
 margin_top = 496.0
 margin_right = 1216.0
 margin_bottom = 560.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 8 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -336,12 +370,12 @@ __meta__ = {
 }
 
 [node name="slot5_speed" type="ProgressBar" parent="speed_bars/Enemy"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 1152.0
 margin_top = 624.0
 margin_right = 1216.0
 margin_bottom = 688.0
 rect_scale = Vector2( 1, 0.25 )
+custom_styles/fg = SubResource( 8 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -351,12 +385,12 @@ __meta__ = {
 [node name="Current" type="Node" parent="speed_bars"]
 
 [node name="current_speed" type="ProgressBar" parent="speed_bars/Current"]
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 416.0
 margin_top = 224.0
 margin_right = 480.0
 margin_bottom = 288.0
 rect_scale = Vector2( 2, 0.5 )
+custom_styles/fg = SubResource( 9 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -367,12 +401,12 @@ __meta__ = {
 
 [node name="targeted_speed" type="ProgressBar" parent="speed_bars/Targeted"]
 visible = false
-modulate = Color( 0, 0.298039, 1, 1 )
 margin_left = 736.0
 margin_top = 224.0
 margin_right = 800.0
 margin_bottom = 288.0
 rect_scale = Vector2( 2, 0.5 )
+custom_styles/fg = SubResource( 10 )
 percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false

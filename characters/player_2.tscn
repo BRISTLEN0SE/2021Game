@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Female/Female 08-1.png" type="Texture" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://characters/player_2.gd" type="Script" id=3]
+[ext_resource path="res://attack/tank 1.png" type="Texture" id=4]
 
 [node name="player_2" type="Node"]
 script = ExtResource( 3 )
@@ -161,10 +162,10 @@ vframes = 4
 visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 400.0
-margin_top = 480.0
+margin_top = 464.0
 margin_right = 476.0
-margin_bottom = 550.0
-rect_scale = Vector2( 1.9, 2 )
+margin_bottom = 534.0
+rect_scale = Vector2( 1.8, 2.3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -221,10 +222,9 @@ __meta__ = {
 
 [node name="attack1" type="Sprite" parent="."]
 visible = false
-modulate = Color( 1, 0.560784, 0, 1 )
 position = Vector2( 470.4, 544 )
-scale = Vector2( 2.2, 2.2 )
-texture = ExtResource( 2 )
+scale = Vector2( 4.5, 5 )
+texture = ExtResource( 4 )
 
 [node name="attack2" type="Sprite" parent="."]
 visible = false
