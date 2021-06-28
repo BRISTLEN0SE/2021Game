@@ -360,6 +360,8 @@ func _physics_process(delta):
 
 func _on_attack_1_pressed():
 	if GlobalVariables.target == true:
+		random.randomize()
+		$attack1.frame = random.randi_range(0,3)
 		attack = attack1
 		$attack_1.hide()
 		$attack_2.hide()
