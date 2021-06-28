@@ -163,11 +163,11 @@ vframes = 4
 [node name="attack_1" type="Button" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 400.0
-margin_top = 480.0
-margin_right = 476.0
-margin_bottom = 550.0
-rect_scale = Vector2( 1.9, 2 )
+margin_left = 392.0
+margin_top = 464.0
+margin_right = 468.0
+margin_bottom = 534.0
+rect_scale = Vector2( 2.1, 2.3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -175,11 +175,11 @@ __meta__ = {
 [node name="attack_2" type="Button" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 576.0
-margin_top = 480.0
-margin_right = 652.0
-margin_bottom = 550.0
-rect_scale = Vector2( 1.9, 2 )
+margin_left = 568.0
+margin_top = 464.0
+margin_right = 644.0
+margin_bottom = 534.0
+rect_scale = Vector2( 2.1, 2.3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -187,11 +187,11 @@ __meta__ = {
 [node name="attack_3" type="Button" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 752.0
-margin_top = 480.0
-margin_right = 828.0
-margin_bottom = 550.0
-rect_scale = Vector2( 1.9, 2 )
+margin_left = 744.0
+margin_top = 464.0
+margin_right = 820.0
+margin_bottom = 534.0
+rect_scale = Vector2( 2.1, 2.3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -223,16 +223,19 @@ __meta__ = {
 }
 
 [node name="attack1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 470.4, 544 )
 scale = Vector2( 4.5, 4.5 )
 texture = ExtResource( 4 )
 
 [node name="attack2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 646.4, 544 )
 scale = Vector2( 4.5, 4.5 )
 texture = ExtResource( 5 )
 
 [node name="attack3" type="Sprite" parent="."]
+visible = false
 position = Vector2( 822.4, 544 )
 scale = Vector2( 4.5, 4.5 )
 texture = ExtResource( 6 )

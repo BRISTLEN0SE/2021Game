@@ -221,21 +221,18 @@ __meta__ = {
 
 [node name="attack1" type="Sprite" parent="."]
 visible = false
-modulate = Color( 0, 0.952941, 1, 1 )
 position = Vector2( 470.4, 544 )
 scale = Vector2( 2.2, 2.2 )
 texture = ExtResource( 2 )
 
 [node name="attack2" type="Sprite" parent="."]
 visible = false
-modulate = Color( 0, 0.952941, 1, 1 )
 position = Vector2( 646.4, 544 )
 scale = Vector2( 2.2, 2.2 )
 texture = ExtResource( 2 )
 
 [node name="attack3" type="Sprite" parent="."]
 visible = false
-modulate = Color( 0, 0.952941, 1, 1 )
 position = Vector2( 822.4, 544 )
 scale = Vector2( 2.2, 2.2 )
 texture = ExtResource( 2 )
