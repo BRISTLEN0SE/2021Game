@@ -29,7 +29,7 @@ var attack3_charge = 20
 
 var speed = 0
 var max_speed = 100
-var base_speed = 50
+var base_speed = 20
 var charnum = 4
 
 

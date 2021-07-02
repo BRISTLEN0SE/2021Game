@@ -160,6 +160,7 @@ vframes = 4
 [node name="attack" type="Node" parent="."]
 
 [node name="attack_1" type="Button" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 400.0
 margin_top = 480.0
@@ -171,6 +172,7 @@ __meta__ = {
 }
 
 [node name="attack_2" type="Button" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 576.0
 margin_top = 480.0
@@ -182,6 +184,7 @@ __meta__ = {
 }
 
 [node name="attack_3" type="Button" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 752.0
 margin_top = 480.0
@@ -193,6 +196,7 @@ __meta__ = {
 }
 
 [node name="attack_2_charge" type="TextureProgress" parent="."]
+visible = false
 modulate = Color( 0.992157, 1, 0.0156863, 1 )
 margin_left = 566.4
 margin_top = 416.0
@@ -205,6 +209,7 @@ __meta__ = {
 }
 
 [node name="attack_3_charge" type="TextureProgress" parent="."]
+visible = false
 modulate = Color( 0.992157, 1, 0.0156863, 1 )
 margin_left = 742.4
 margin_top = 416.0
@@ -217,16 +222,19 @@ __meta__ = {
 }
 
 [node name="attack1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 470.4, 544 )
 scale = Vector2( 4.5, 4.5 )
 texture = ExtResource( 4 )
 
 [node name="attack2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 646.4, 544 )
 scale = Vector2( 4.5, 4.5 )
 texture = ExtResource( 5 )
 
 [node name="attack3" type="Sprite" parent="."]
+visible = false
 position = Vector2( 822.4, 544 )
 scale = Vector2( 2.2, 2.2 )
 texture = ExtResource( 2 )
