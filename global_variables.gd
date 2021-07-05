@@ -38,17 +38,17 @@ var enemy_slot4_attack  = 4
 var enemy_slot5_attack  = 5
 
 #slot health
-var slot1_health = 1
-var slot2_health = 1
-var slot3_health = 1
-var slot4_health = 1
-var slot5_health = 1
+var slot1_health = 100
+var slot2_health = 100
+var slot3_health = 100
+var slot4_health = 100
+var slot5_health = 100
 
-var enemy_slot1_health = 1
-var enemy_slot2_health = 1
-var enemy_slot3_health = 1
-var enemy_slot4_health = 1
-var enemy_slot5_health = 1
+var enemy_slot1_health = 100
+var enemy_slot2_health = 100
+var enemy_slot3_health = 100
+var enemy_slot4_health = 100
+var enemy_slot5_health = 100
 
 var slot1_speed = 1
 var slot2_speed = 1

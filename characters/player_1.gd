@@ -18,7 +18,6 @@ extends Node
 #speed drain
 #attack/defense buff/debuff
 #haste/slow buff/debuff
-
 var health = 100
 var attack = 1
 var attack1 = 10
@@ -234,6 +233,7 @@ func _physics_process(delta):
 				$enemy/enemy_slot5.hide()
 				$enemy/enemy5.hide()
 
+	
 	
 		if start_speed == true:
 			speed = base_speed
