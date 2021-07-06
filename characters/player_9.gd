@@ -370,15 +370,15 @@ func _on_attack_1_pressed():
 		$attack_3_charge.hide()
 		$other/current_character.hide()
 		if GlobalVariables.targeted == 6:
-			GlobalVariables.enemy_slot1_health -= attack
+			GlobalVariables.enemy_slot1_health -= attack * GlobalVariables.death_count/10
 		if GlobalVariables.targeted == 7:
-			GlobalVariables.enemy_slot2_health -= attack
+			GlobalVariables.enemy_slot2_health -= attack * GlobalVariables.death_count/10
 		if GlobalVariables.targeted == 8:
-			GlobalVariables.enemy_slot3_health -= attack
+			GlobalVariables.enemy_slot3_health -= attack * GlobalVariables.death_count/10
 		if GlobalVariables.targeted == 9:
-			GlobalVariables.enemy_slot4_health -= attack
+			GlobalVariables.enemy_slot4_health -= attack * GlobalVariables.death_count/10
 		if GlobalVariables.targeted == 10:
-			GlobalVariables.enemy_slot5_health -= attack
+			GlobalVariables.enemy_slot5_health -= attack * GlobalVariables.death_count/10
 		start_speed = true
 		charge_enabled = true
 		GlobalVariables.full = false

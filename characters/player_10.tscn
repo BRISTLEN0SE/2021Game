@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://characters/player_10.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Female/Female 03-1.png" type="Texture" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.968627, 1, 0, 1 )
 
 [node name="player_2" type="Node"]
 script = ExtResource( 1 )
@@ -193,31 +196,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="attack_2_charge" type="TextureProgress" parent="."]
+[node name="attack_2_charge" type="ProgressBar" parent="."]
 visible = false
-modulate = Color( 0.992157, 1, 0.0156863, 1 )
 margin_left = 566.4
 margin_top = 416.0
 margin_right = 630.4
 margin_bottom = 480.0
 rect_scale = Vector2( 2.4, 0.5 )
-texture_progress = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+custom_styles/fg = SubResource( 1 )
+percent_visible = false
 
-[node name="attack_3_charge" type="TextureProgress" parent="."]
+[node name="attack_3_charge" type="ProgressBar" parent="."]
 visible = false
-modulate = Color( 0.992157, 1, 0.0156863, 1 )
 margin_left = 742.4
 margin_top = 416.0
 margin_right = 806.4
 margin_bottom = 480.0
 rect_scale = Vector2( 2.4, 0.5 )
-texture_progress = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+custom_styles/fg = SubResource( 1 )
+percent_visible = false
 
 [node name="attack1" type="Sprite" parent="."]
 visible = false

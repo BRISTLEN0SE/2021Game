@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://summons/death 1 low.png" type="Texture" id=1]
+[ext_resource path="res://summons/death 2 low.png" type="Texture" id=2]
+
+[node name="low level summons" type="Node"]
+
+[node name="death 2 low" type="Sprite" parent="."]
+position = Vector2( 64, 16 )
+texture = ExtResource( 2 )
+
+[node name="death_1_low" type="Sprite" parent="."]
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )

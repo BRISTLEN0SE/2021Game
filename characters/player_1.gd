@@ -398,14 +398,24 @@ func _on_attack_2_pressed():
 			$other/current_character.hide()
 			if GlobalVariables.targeted == 6:
 				GlobalVariables.enemy_slot1_health -= attack
+				#bleed
+				GlobalVariables.enemy_slot1_health -= attack/10
 			if GlobalVariables.targeted == 7:
 				GlobalVariables.enemy_slot2_health -= attack
+				#bleed
+				GlobalVariables.enemy_slot1_health -= attack/10
 			if GlobalVariables.targeted == 8:
 				GlobalVariables.enemy_slot3_health -= attack
+				#bleed
+				GlobalVariables.enemy_slot1_health -= attack/10
 			if GlobalVariables.targeted == 9:
 				GlobalVariables.enemy_slot4_health -= attack
+				#bleed
+				GlobalVariables.enemy_slot1_health -= attack/10
 			if GlobalVariables.targeted == 10:
 				GlobalVariables.enemy_slot5_health -= attack
+				#bleed
+				GlobalVariables.enemy_slot1_health -= attack/10
 			start_speed = true
 			charge_enabled = true
 			$attack_2_charge.value = 0
