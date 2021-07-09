@@ -2,6 +2,8 @@ extends Node
 
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("ui_focus_prev"):
+		get_tree().change_scene("res://character_selector.tscn")
 	$health_bars/Player/slot1_health.value = GlobalVariables.slot1_health
 	$health_bars/Player/slot2_health.value = GlobalVariables.slot2_health
 	$health_bars/Player/slot3_health.value = GlobalVariables.slot3_health

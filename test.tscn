@@ -13,53 +13,53 @@
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 16-1.png" type="Texture" id=11]
 [ext_resource path="res://test.gd" type="Script" id=12]
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 6 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 8 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=12]
 animations = [ {
-"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
 "loop": true,
 "name": "0",
 "speed": 5.0
@@ -73,61 +73,61 @@ script = ExtResource( 12 )
 [node name="slot1" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 64 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot2" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 192 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot3" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 320 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot4" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 448 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot5" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 576 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot6" type="AnimatedSprite" parent="characters"]
 position = Vector2( 1216, 64 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot7" type="AnimatedSprite" parent="characters"]
 position = Vector2( 1216, 192 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot8" type="AnimatedSprite" parent="characters"]
 position = Vector2( 1216, 320 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot9" type="AnimatedSprite" parent="characters"]
 position = Vector2( 1216, 448 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="slot10" type="AnimatedSprite" parent="characters"]
 position = Vector2( 1216, 576 )
 scale = Vector2( 4, 4 )
-frames = SubResource( 2 )
+frames = SubResource( 12 )
 animation = "0"
 
 [node name="attacks" type="Node" parent="."]
