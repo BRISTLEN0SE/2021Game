@@ -4,7 +4,17 @@ var chara_chosen = 0
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_focus_prev"):
-		get_tree().change_scene("res://battle.tscn")
+		GlobalVariables.slot_1_used = false
+		GlobalVariables.slot_2_used = false
+		GlobalVariables.slot_3_used = false
+		GlobalVariables.slot_4_used = false
+		GlobalVariables.slot_5_used = false
+		GlobalVariables.enemy_slot_1_used = false
+		GlobalVariables.enemy_slot_2_used = false
+		GlobalVariables.enemy_slot_3_used = false
+		GlobalVariables.enemy_slot_4_used = false
+		GlobalVariables.enemy_slot_5_used = false
+		get_tree().change_scene("res://test.tscn")
 	$team/team1.set_frame(GlobalVariables.slot1 - 1)
 	$team/team2.set_frame(GlobalVariables.slot2 - 1)
 	$team/team3.set_frame(GlobalVariables.slot3 - 1)

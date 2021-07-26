@@ -5,14 +5,16 @@ var speed = 1
 var attack = 1
 
 func _physics_process(delta):
-	$characters/slot1.set_frame(0)
-	$characters/slot2.set_frame(1)
-	$characters/lot3.set_frame(2)
-	$characters/slot4.set_frame(3)
-	$characters/slot5.set_frame(4)
-	$characters/slot6.set_frame(5)
-	$characters/slot7.set_frame(6)
-	$characters/slot8.set_frame(7)
-	$characters/slot9.set_frame(8)
-	$characters/slot10.set_frame(9)
+	if Input.is_action_just_pressed("ui_focus_prev"):
+		get_tree().change_scene("res://character_selector.tscn")
+	$characters/slot1.set_frame(GlobalVariables.slot1-1)
+	$characters/slot2.set_frame(GlobalVariables.slot2-1)
+	$characters/slot3.set_frame(GlobalVariables.slot3-1)
+	$characters/slot4.set_frame(GlobalVariables.slot4-1)
+	$characters/slot5.set_frame(GlobalVariables.slot5-1)
+	$characters/slot6.set_frame(GlobalVariables.enemy_slot1-1)
+	$characters/slot7.set_frame(GlobalVariables.enemy_slot2-1)
+	$characters/slot8.set_frame(GlobalVariables.enemy_slot3-1)
+	$characters/slot9.set_frame(GlobalVariables.enemy_slot4-1)
+	$characters/slot10.set_frame(GlobalVariables.enemy_slot5-1)
 	

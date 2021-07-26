@@ -62,6 +62,30 @@ var enemy_slot3_speed = 1
 var enemy_slot4_speed = 1
 var enemy_slot5_speed = 1
 
+var slot_1_used = false
+var slot_2_used = false
+var slot_3_used = false
+var slot_4_used = false
+var slot_5_used = false
+
+var enemy_slot_1_used = false
+var enemy_slot_2_used = false
+var enemy_slot_3_used = false
+var enemy_slot_4_used = false
+var enemy_slot_5_used = false
+
+var changed1 = false
+var changed2 = false
+var changed3 = false
+var changed4 = false
+var changed5 = false
+var changed6 = false
+var changed7 = false
+var changed8 = false
+var changed9 = false
+var changed10 = false
+var changed11 = false
+
 
 var targeted = 1
 var current = 0

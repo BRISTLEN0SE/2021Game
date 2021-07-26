@@ -39,7 +39,6 @@ var charname = "spiderman"
 
 var slot = 1
 var start_speed = true
-var changed = false
 
 var hide_show = 1
 var charge_enabled = true
@@ -51,63 +50,63 @@ func _physics_process(delta):
 	if charnum in GlobalVariables.player_char or charnum in GlobalVariables.enemy_char:
 		if hide_show == 1:
 			#swap system
-			if changed != true:
+			if GlobalVariables.changed1 != true:
 				if GlobalVariables.character1_created != true and GlobalVariables.slot1 == charnum:
 					GlobalVariables.character1_created = true
 					$player/slot_1.show()
 					GlobalVariables.slot1_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character2_created != true and GlobalVariables.slot2 == charnum:
 					GlobalVariables.character2_created = true
 					$player/slot_2.show()
 					GlobalVariables.slot2_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character3_created != true and GlobalVariables.slot3 == charnum:
 					GlobalVariables.character3_created = true
 					$player/slot_3.show()
 					GlobalVariables.slot3_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character4_created != true and GlobalVariables.slot4 == charnum:
 					GlobalVariables.character4_created = true
 					$player/slot_4.show()
 					GlobalVariables.slot4_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character5_created != true and GlobalVariables.slot5 == charnum:
 					GlobalVariables.character5_created = true
 					$player/slot_5.show()
 					GlobalVariables.slot5_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 					
 				elif GlobalVariables.character6_created != true and GlobalVariables.enemy_slot1 == charnum:
 					GlobalVariables.character6_created = true
 					$enemy/enemy_slot1.show()
 					$enemy/enemy1.show()
 					GlobalVariables.enemy_slot1_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character7_created != true and GlobalVariables.enemy_slot2 == charnum:
 					GlobalVariables.character7_created = true
 					$enemy/enemy_slot2.show()
 					$enemy/enemy2.show()
 					GlobalVariables.enemy_slot2_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character8_created != true and GlobalVariables.enemy_slot3 == charnum:
 					GlobalVariables.character8_created = true
 					$enemy/enemy_slot3.show()
 					$enemy/enemy3.show()
 					GlobalVariables.enemy_slot3_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character9_created != true and GlobalVariables.enemy_slot4 == charnum:
 					GlobalVariables.character9_created = true
 					$enemy/enemy_slot4.show()
 					$enemy/enemy4.show()
 					GlobalVariables.enemy_slot4_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 				elif GlobalVariables.character10_created != true and GlobalVariables.enemy_slot5 == charnum:
 					GlobalVariables.character10_created = true
 					$enemy/enemy_slot5.show()
 					$enemy/enemy5.show()
 					GlobalVariables.enemy_slot5_health = health
-					changed = true
+					GlobalVariables.changed1 = true
 			if $player/slot_1.is_visible_in_tree():
 				slot = 1
 				GlobalVariables.slot1_attack = attack
