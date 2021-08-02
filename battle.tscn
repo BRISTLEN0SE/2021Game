@@ -54,6 +54,9 @@ margin_right = 1296.0
 margin_bottom = 656.0
 texture = ExtResource( 3 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Player_creators" type="Node" parent="."]
 
