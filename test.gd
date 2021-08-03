@@ -23,7 +23,7 @@ var chara11health = 0
 
 
 func _physics_process(delta):
-	
+	#make attacks change when charas change
 	if Input.is_action_just_pressed("ui_focus_prev"):
 		get_tree().change_scene("res://character_selector.tscn")
 	$characters/slot1.set_frame(GlobalVariables.slot1-1)
