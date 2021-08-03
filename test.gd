@@ -4,6 +4,9 @@ var health = 0
 var speed = 1
 var random = RandomNumberGenerator.new()
 var magechosen = false
+var targeted = GlobalVariables.enemy_slot1 -1
+
+var player_char = [GlobalVariables.slot1,GlobalVariables.slot2,GlobalVariables.slot3,GlobalVariables.slot4,GlobalVariables.slot5]
 
 var chara1health = 0
 var chara2health = 0
@@ -35,10 +38,15 @@ func _physics_process(delta):
 	$characters/slot9.set_frame(GlobalVariables.enemy_slot4-1)
 	$characters/slot10.set_frame(GlobalVariables.enemy_slot5-1)
 	
+	$Selected/targeted.set_frame(targeted)
+	
 	match speed:
 		1: 
-			$attacks/attack1.set_frame(6-1)
-			health = chara6health
+			if 6 in GlobalVariables.player_char:
+				$attacks/attack1.set_frame(6-1)
+				health = chara6health
+			else:
+				speed += 1
 		2:
 			$attacks/attack1.set_frame(4-1)
 			health = chara4health
@@ -84,3 +92,38 @@ func _physics_process(delta):
 	
 
 
+
+
+func _on_enemy1_pressed():
+	targeted = GlobalVariables.enemy_slot1-1
+
+
+func _on_enemy2_pressed():
+	targeted = GlobalVariables.enemy_slot2-1
+
+
+func _on_enemy3_pressed():
+	targeted = GlobalVariables.enemy_slot3-1
+
+
+func _on_enemy4_pressed():
+	targeted = GlobalVariables.enemy_slot4-1
+
+
+func _on_enemy5_pressed():
+	targeted = GlobalVariables.enemy_slot5-1
+
+
+func _on_attack_1_pressed():
+	speed += 1
+	pass # Replace with function body.
+
+
+func _on_attack_2_pressed():
+	speed += 1
+	pass # Replace with function body.
+
+
+func _on_attack_3_pressed():
+	speed += 1
+	pass # Replace with function body.

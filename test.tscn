@@ -211,6 +211,55 @@ __meta__ = {
 
 [node name="characters" type="Node" parent="."]
 
+[node name="enemy1" type="Button" parent="characters"]
+margin_left = 1160.0
+margin_right = 1172.0
+margin_bottom = 20.0
+rect_scale = Vector2( 9.5, 6.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy2" type="Button" parent="characters"]
+margin_left = 1160.0
+margin_top = 130.0
+margin_right = 1172.0
+margin_bottom = 150.0
+rect_scale = Vector2( 9.5, 6.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy3" type="Button" parent="characters"]
+margin_left = 1160.0
+margin_top = 260.0
+margin_right = 1172.0
+margin_bottom = 280.0
+rect_scale = Vector2( 9.5, 6.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy4" type="Button" parent="characters"]
+margin_left = 1160.0
+margin_top = 390.0
+margin_right = 1172.0
+margin_bottom = 410.0
+rect_scale = Vector2( 9.5, 6.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="enemy5" type="Button" parent="characters"]
+margin_left = 1160.0
+margin_top = 520.0
+margin_right = 1172.0
+margin_bottom = 540.0
+rect_scale = Vector2( 9.5, 6.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot1" type="AnimatedSprite" parent="characters"]
 position = Vector2( 64, 64 )
 scale = Vector2( 4, 4 )
@@ -282,6 +331,36 @@ frame = 9
 
 [node name="attacks" type="Node" parent="."]
 
+[node name="attack_1" type="Button" parent="attacks"]
+margin_left = 288.0
+margin_top = 416.0
+margin_right = 300.0
+margin_bottom = 436.0
+rect_scale = Vector2( 16, 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_2" type="Button" parent="attacks"]
+margin_left = 544.0
+margin_top = 416.0
+margin_right = 556.0
+margin_bottom = 436.0
+rect_scale = Vector2( 16, 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack_3" type="Button" parent="attacks"]
+margin_left = 800.0
+margin_top = 416.0
+margin_right = 812.0
+margin_bottom = 436.0
+rect_scale = Vector2( 16, 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="attack1" type="AnimatedSprite" parent="attacks"]
 position = Vector2( 384, 512 )
 scale = Vector2( 5, 5 )
@@ -306,14 +385,23 @@ position = Vector2( 384, 512 )
 scale = Vector2( 5, 5 )
 frames = SubResource( 21 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Selected" type="Node" parent="."]
 
-[node name="current" type="AnimatedSprite" parent="Node"]
+[node name="current" type="AnimatedSprite" parent="Selected"]
 position = Vector2( 416, 128 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 33 )
 
-[node name="targeted" type="AnimatedSprite" parent="Node"]
+[node name="targeted" type="AnimatedSprite" parent="Selected"]
 position = Vector2( 800, 128 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 33 )
+
+[connection signal="pressed" from="characters/enemy1" to="." method="_on_enemy1_pressed"]
+[connection signal="pressed" from="characters/enemy2" to="." method="_on_enemy2_pressed"]
+[connection signal="pressed" from="characters/enemy3" to="." method="_on_enemy3_pressed"]
+[connection signal="pressed" from="characters/enemy4" to="." method="_on_enemy4_pressed"]
+[connection signal="pressed" from="characters/enemy5" to="." method="_on_enemy5_pressed"]
+[connection signal="pressed" from="attacks/attack_1" to="." method="_on_attack_1_pressed"]
+[connection signal="pressed" from="attacks/attack_2" to="." method="_on_attack_2_pressed"]
+[connection signal="pressed" from="attacks/attack_3" to="." method="_on_attack_3_pressed"]
