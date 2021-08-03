@@ -23,8 +23,7 @@ var chara11health = 0
 
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("ui_up"):
-		speed += 1
+	
 	if Input.is_action_just_pressed("ui_focus_prev"):
 		get_tree().change_scene("res://character_selector.tscn")
 	$characters/slot1.set_frame(GlobalVariables.slot1-1)
@@ -40,53 +39,95 @@ func _physics_process(delta):
 	
 	$Selected/targeted.set_frame(targeted)
 	
+	if speed > 11:
+		speed = 1
+	
+	if magechosen == false:
+		$attacks/attack1.show()
+		$attacks/attack1mage.hide()
+
 	match speed:
 		1: 
 			if 6 in GlobalVariables.player_char:
+				magechosen = false
 				$attacks/attack1.set_frame(6-1)
 				health = chara6health
 			else:
 				speed += 1
 		2:
-			$attacks/attack1.set_frame(4-1)
-			health = chara4health
+			if 4 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(4-1)
+				health = chara4health
+			else:
+				speed += 1
 		3:
-			$attacks/attack1.set_frame(10-1)
-			health = chara10health
+			if 10 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(10-1)
+				health = chara10health
+			else:
+				speed += 1
 		4:
-			$attacks/attack1.set_frame(1-1)
-			health = chara1health
+			if 1 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(1-1)
+				health = chara1health
+			else:
+				speed += 1
 		5:
-			$attacks/attack1.set_frame(7-1)
-			health = chara7health
+			if 7 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(7-1)
+				health = chara7health
+			else:
+				speed += 1
 		6:
-			$attacks/attack1.set_frame(8-1)
-			health = chara8health
+			if 8 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(8-1)
+				health = chara8health
+			else:
+				speed += 1
 		7:
-			$attacks/attack1.set_frame(3-1)
-			health = chara3health
+			if 3 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(3-1)
+				health = chara3health
+			else:
+				speed += 1
 		8:
-			random.randomize()
-			$attacks/attack1.hide()
-			$attacks/attack1mage.show()
-			if magechosen == false:
-				$attacks/attack1mage.set_frame(random.randi_range(0,3))
-				magechosen = true
-			health = chara5health
+			if 5 in GlobalVariables.player_char:
+				random.randomize()
+				$attacks/attack1.hide()
+				$attacks/attack1mage.show()
+				if magechosen == false:
+					$attacks/attack1mage.set_frame(random.randi_range(0,3))
+					magechosen = true
+				health = chara5health
+			else:
+				speed += 1
 		9:
-			$attacks/attack1.show()
-			$attacks/attack1mage.hide()
-			$attacks/attack1.set_frame(9-1)
-			magechosen = false
-			health = chara9health
+			if 9 in GlobalVariables.player_char:
+				$attacks/attack1.set_frame(9-1)
+				magechosen = false
+				health = chara9health
+			else:
+				speed += 1
 		10:
-			$attacks/attack1.set_frame(2-1)
-			health = chara2health
+			if 2 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(2-1)
+				health = chara2health
+			else:
+				speed += 1
 		11:
-			$attacks/attack1.set_frame(11-1)
-			health = chara11health
-	if speed > 11:
-		speed = 1
+			if 11 in GlobalVariables.player_char:
+				magechosen = false
+				$attacks/attack1.set_frame(11-1)
+				health = chara11health
+			else:
+				speed += 1
 		
 	
 	
