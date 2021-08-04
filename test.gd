@@ -8,6 +8,8 @@ var targeted = GlobalVariables.enemy_slot1 -1
 
 var player_char = [GlobalVariables.slot1,GlobalVariables.slot2,GlobalVariables.slot3,GlobalVariables.slot4,GlobalVariables.slot5]
 
+var chara1 = player_char.count(1)
+
 var chara1health = 0
 var chara2health = 0
 var chara3health = 0
@@ -23,7 +25,6 @@ var chara11health = 0
 
 
 func _physics_process(delta):
-	#make attacks change when charas change
 	if Input.is_action_just_pressed("ui_focus_prev"):
 		get_tree().change_scene("res://character_selector.tscn")
 	$characters/slot1.set_frame(GlobalVariables.slot1-1)
@@ -40,6 +41,7 @@ func _physics_process(delta):
 	$Selected/targeted.set_frame(targeted)
 	
 	if speed > 11:
+		chara1 = player_char.count(1)
 		speed = 1
 	
 	if magechosen == false:
@@ -69,9 +71,7 @@ func _physics_process(delta):
 			else:
 				speed += 1
 		4:
-			if 1 in player_char:
-				print(1)
-				player_char.count(1)
+			if chara1 > 0:
 				magechosen = false
 				$attacks/attack1.set_frame(1-1)
 				health = chara1health
@@ -157,7 +157,29 @@ func _on_enemy5_pressed():
 
 
 func _on_attack_1_pressed():
-	speed += 1
+	match speed:
+		1:
+			speed += 1
+		2:
+			speed += 1
+		3:
+			speed += 1
+		4:
+			chara1 -= 1
+		5:
+			speed += 1
+		6:
+			speed += 1
+		7:
+			speed += 1
+		8:
+			speed += 1
+		9:
+			speed += 1
+		10:
+			speed += 1
+		11:
+			speed += 1
 	pass # Replace with function body.
 
 
