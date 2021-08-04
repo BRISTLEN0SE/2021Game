@@ -48,56 +48,58 @@ func _physics_process(delta):
 
 	match speed:
 		1: 
-			if 6 in GlobalVariables.player_char:
+			if 6 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(6-1)
 				health = chara6health
 			else:
 				speed += 1
 		2:
-			if 4 in GlobalVariables.player_char:
+			if 4 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(4-1)
 				health = chara4health
 			else:
 				speed += 1
 		3:
-			if 10 in GlobalVariables.player_char:
+			if 10 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(10-1)
 				health = chara10health
 			else:
 				speed += 1
 		4:
-			if 1 in GlobalVariables.player_char:
+			if 1 in player_char:
+				print(1)
+				player_char.count(1)
 				magechosen = false
 				$attacks/attack1.set_frame(1-1)
 				health = chara1health
 			else:
 				speed += 1
 		5:
-			if 7 in GlobalVariables.player_char:
+			if 7 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(7-1)
 				health = chara7health
 			else:
 				speed += 1
 		6:
-			if 8 in GlobalVariables.player_char:
+			if 8 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(8-1)
 				health = chara8health
 			else:
 				speed += 1
 		7:
-			if 3 in GlobalVariables.player_char:
+			if 3 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(3-1)
 				health = chara3health
 			else:
 				speed += 1
 		8:
-			if 5 in GlobalVariables.player_char:
+			if 5 in player_char:
 				random.randomize()
 				$attacks/attack1.hide()
 				$attacks/attack1mage.show()
@@ -108,29 +110,28 @@ func _physics_process(delta):
 			else:
 				speed += 1
 		9:
-			if 9 in GlobalVariables.player_char:
+			if 9 in player_char:
 				$attacks/attack1.set_frame(9-1)
 				magechosen = false
 				health = chara9health
 			else:
 				speed += 1
 		10:
-			if 2 in GlobalVariables.player_char:
+			if 2 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(2-1)
 				health = chara2health
 			else:
 				speed += 1
 		11:
-			if 11 in GlobalVariables.player_char:
+			if 11 in player_char:
 				magechosen = false
 				$attacks/attack1.set_frame(11-1)
 				health = chara11health
 			else:
 				speed += 1
-		
 	
-	
+	#print(player_char)
 
 
 
