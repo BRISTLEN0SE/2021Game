@@ -5,10 +5,21 @@ var speed = 1
 var random = RandomNumberGenerator.new()
 var magechosen = false
 var targeted = GlobalVariables.enemy_slot1 -1
+var current = GlobalVariables.slot1 -1
 
 var player_char = [GlobalVariables.slot1,GlobalVariables.slot2,GlobalVariables.slot3,GlobalVariables.slot4,GlobalVariables.slot5]
 
 var chara1 = player_char.count(1)
+var chara2 = player_char.count(2)
+var chara3 = player_char.count(3)
+var chara4 = player_char.count(4)
+var chara5 = player_char.count(5)
+var chara6 = player_char.count(6)
+var chara7 = player_char.count(7)
+var chara8 = player_char.count(8)
+var chara9 = player_char.count(9)
+var chara10 = player_char.count(10)
+var chara11 = player_char.count(11)
 
 var chara1health = 0
 var chara2health = 0
@@ -39,9 +50,20 @@ func _physics_process(delta):
 	$characters/slot10.set_frame(GlobalVariables.enemy_slot5-1)
 	
 	$Selected/targeted.set_frame(targeted)
+	$Selected/current.set_frame(current)
 	
 	if speed > 11:
 		chara1 = player_char.count(1)
+		chara2 = player_char.count(2)
+		chara3 = player_char.count(3)
+		chara4 = player_char.count(4)
+		chara5 = player_char.count(5)
+		chara6 = player_char.count(6)
+		chara7 = player_char.count(7)
+		chara8 = player_char.count(8)
+		chara9 = player_char.count(9)
+		chara10 = player_char.count(10)
+		chara11 = player_char.count(11)
 		speed = 1
 	
 	if magechosen == false:
@@ -50,59 +72,60 @@ func _physics_process(delta):
 
 	match speed:
 		1: 
-			if 6 in player_char:
-				magechosen = false
+			if chara6 > 0:
 				$attacks/attack1.set_frame(6-1)
+				$Selected/current.set_frame(6-1)
 				health = chara6health
 			else:
 				speed += 1
 		2:
-			if 4 in player_char:
-				magechosen = false
+			if chara4 > 0:
 				$attacks/attack1.set_frame(4-1)
+				$Selected/current.set_frame(4-1)
 				health = chara4health
 			else:
 				speed += 1
 		3:
-			if 10 in player_char:
-				magechosen = false
+			if chara10 > 0:
 				$attacks/attack1.set_frame(10-1)
+				$Selected/current.set_frame(10-1)
 				health = chara10health
 			else:
 				speed += 1
 		4:
 			if chara1 > 0:
-				magechosen = false
 				$attacks/attack1.set_frame(1-1)
+				$Selected/current.set_frame(1-1)
 				health = chara1health
 			else:
 				speed += 1
 		5:
-			if 7 in player_char:
-				magechosen = false
+			if chara7 > 0:
 				$attacks/attack1.set_frame(7-1)
+				$Selected/current.set_frame(7-1)
 				health = chara7health
 			else:
 				speed += 1
 		6:
-			if 8 in player_char:
-				magechosen = false
+			if chara8 > 0:
 				$attacks/attack1.set_frame(8-1)
+				$Selected/current.set_frame(8-1)
 				health = chara8health
 			else:
 				speed += 1
 		7:
-			if 3 in player_char:
-				magechosen = false
+			if chara3 > 0:
 				$attacks/attack1.set_frame(3-1)
+				$Selected/current.set_frame(3-1)
 				health = chara3health
 			else:
 				speed += 1
 		8:
-			if 5 in player_char:
+			if chara5 > 0:
 				random.randomize()
 				$attacks/attack1.hide()
 				$attacks/attack1mage.show()
+				$Selected/current.set_frame(5-1)
 				if magechosen == false:
 					$attacks/attack1mage.set_frame(random.randi_range(0,3))
 					magechosen = true
@@ -110,23 +133,23 @@ func _physics_process(delta):
 			else:
 				speed += 1
 		9:
-			if 9 in player_char:
+			if chara9 > 0:
 				$attacks/attack1.set_frame(9-1)
-				magechosen = false
+				$Selected/current.set_frame(9-1)
 				health = chara9health
 			else:
 				speed += 1
 		10:
-			if 2 in player_char:
-				magechosen = false
+			if chara2 > 0:
 				$attacks/attack1.set_frame(2-1)
+				$Selected/current.set_frame(2-1)
 				health = chara2health
 			else:
 				speed += 1
 		11:
-			if 11 in player_char:
-				magechosen = false
+			if chara11 > 0:
 				$attacks/attack1.set_frame(11-1)
+				$Selected/current.set_frame(11-1)
 				health = chara11health
 			else:
 				speed += 1
@@ -159,28 +182,28 @@ func _on_enemy5_pressed():
 func _on_attack_1_pressed():
 	match speed:
 		1:
-			speed += 1
+			chara6 -= 1
 		2:
-			speed += 1
+			chara4 -= 1
 		3:
-			speed += 1
+			chara10 -= 1
 		4:
 			chara1 -= 1
 		5:
-			speed += 1
+			chara7 -= 1
 		6:
-			speed += 1
+			chara8 -= 1
 		7:
-			speed += 1
+			chara3 -= 1
 		8:
-			speed += 1
+			chara5 -= 1
+			magechosen = false
 		9:
-			speed += 1
+			chara9 -= 1
 		10:
-			speed += 1
+			chara2 -= 1
 		11:
-			speed += 1
-	pass # Replace with function body.
+			chara11 -= 1
 
 
 func _on_attack_2_pressed():
