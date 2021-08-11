@@ -1,8 +1,5 @@
 extends Node
 
-var current_health = 0
-var targeted_health = 0 
-
 var speed = 1
 var random = RandomNumberGenerator.new()
 var magechosen = false
@@ -28,12 +25,14 @@ var slot2health = 0
 var slot3health = 0
 var slot4health = 0
 var slot5health = 0
-var enemyslot1health = 0
-var enemyslot2health = 0
-var enemyslot3health = 0
-var enemyslot4health = 0
-var enemyslot5health = 0
+var enemyslot1health = 20
+var enemyslot2health = 40
+var enemyslot3health = 60
+var enemyslot4health = 80
+var enemyslot5health = 100
 
+var current_health = 0
+var targeted_health = enemyslot1health
 
 
 func _physics_process(delta):
@@ -52,6 +51,10 @@ func _physics_process(delta):
 	
 	$Selected/targeted.set_frame(targeted)
 	$Selected/current.set_frame(current)
+	$Selected/targeted/healtht.value = targeted_health
+	
+	if Input.is_action_just_pressed("ui_accept"):
+		$AudioStreamPlayer.play()
 	
 	if speed > 11:
 		chara1 = player_char.count(1)

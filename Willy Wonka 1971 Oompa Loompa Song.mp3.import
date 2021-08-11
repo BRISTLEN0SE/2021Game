@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Willy Wonka 1971 Oompa Loompa Song.mp3-18a0ab74ec21b6bcd9d2c48a4c5abf1f.mp3str"
+
+[deps]
+
+source_file="res://Willy Wonka 1971 Oompa Loompa Song.mp3"
+dest_files=[ "res://.import/Willy Wonka 1971 Oompa Loompa Song.mp3-18a0ab74ec21b6bcd9d2c48a4c5abf1f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
