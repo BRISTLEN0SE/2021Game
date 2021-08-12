@@ -39,7 +39,71 @@
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 01-4.png" type="Texture" id=37]
 [ext_resource path="res://marcelo-goncevatt-arena.jpg" type="Texture" id=38]
 [ext_resource path="res://attack/empty.png" type="Texture" id=39]
-[ext_resource path="res://Willy Wonka 1971 Oompa Loompa Song.mp3" type="AudioStream" id=40]
+[ext_resource path="res://WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3" type="AudioStream" id=40]
+
+[sub_resource type="Gradient" id=22]
+colors = PoolColorArray( 1, 0, 0, 1, 0.313726, 1, 0, 1 )
+
+[sub_resource type="GradientTexture" id=23]
+gradient = SubResource( 22 )
+
+[sub_resource type="Gradient" id=24]
+colors = PoolColorArray( 0.0196078, 0.054902, 0.611765, 1, 0.00392157, 0.0235294, 0.313726, 1 )
+
+[sub_resource type="GradientTexture" id=25]
+gradient = SubResource( 24 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=37]
+animations = [ {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -145,70 +209,6 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="Gradient" id=22]
-colors = PoolColorArray( 1, 0, 0, 1, 0.313726, 1, 0, 1 )
-
-[sub_resource type="GradientTexture" id=23]
-gradient = SubResource( 22 )
-
-[sub_resource type="Gradient" id=24]
-colors = PoolColorArray( 0.0196078, 0.054902, 0.611765, 1, 0.00392157, 0.0235294, 0.313726, 1 )
-
-[sub_resource type="GradientTexture" id=25]
-gradient = SubResource( 24 )
-
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=27]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 11 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=32]
-atlas = ExtResource( 7 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=33]
-atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=34]
-atlas = ExtResource( 10 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=35]
-atlas = ExtResource( 8 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=36]
-atlas = ExtResource( 9 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="SpriteFrames" id=37]
-animations = [ {
-"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), ExtResource( 39 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
 [node name="Battle" type="Node"]
 script = ExtResource( 12 )
 
@@ -219,6 +219,101 @@ margin_right = 1296.0
 margin_bottom = 656.0
 texture = ExtResource( 38 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="health" type="Node" parent="."]
+
+[node name="health1" type="TextureProgress" parent="health"]
+margin_left = 12.0
+margin_top = 116.0
+margin_right = 2060.0
+margin_bottom = 156.0
+rect_scale = Vector2( 0.05, 8 )
+value = 50.0
+texture_progress = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="speed" type="Node" parent="."]
+
+[node name="speed1" type="TextureProgress" parent="speed"]
+margin_left = 12.0
+margin_top = 124.0
+margin_right = 16.0
+margin_bottom = 138.0
+rect_scale = Vector2( 0.05, 4 )
+max_value = 11.0
+step = 0.0
+value = 6.0
+texture_progress = SubResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selected" type="Node" parent="."]
+
+[node name="current" type="AnimatedSprite" parent="Selected"]
+position = Vector2( 384, 128 )
+scale = Vector2( 8, 8 )
+frames = SubResource( 37 )
+
+[node name="healthc" type="TextureProgress" parent="Selected/current"]
+margin_left = -12.0
+margin_top = 17.0
+margin_right = 2036.0
+margin_bottom = 57.0
+rect_scale = Vector2( 0.012, 3 )
+value = 100.0
+texture_progress = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="speedc" type="TextureProgress" parent="Selected/current"]
+margin_left = -12.0
+margin_top = 20.0
+margin_right = 2036.0
+margin_bottom = 34.0
+rect_scale = Vector2( 0.012, 1 )
+max_value = 11.0
+step = 0.0
+value = 11.0
+texture_progress = SubResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="targeted" type="AnimatedSprite" parent="Selected"]
+position = Vector2( 832, 128 )
+scale = Vector2( 8, 8 )
+frames = SubResource( 37 )
+frame = 10
+
+[node name="healtht" type="TextureProgress" parent="Selected/targeted"]
+margin_left = -11.0
+margin_top = 17.0
+margin_right = 2037.0
+margin_bottom = 57.0
+rect_scale = Vector2( 0.012, 3 )
+value = 100.0
+texture_progress = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="speedt" type="TextureProgress" parent="Selected/targeted"]
+margin_left = -11.0
+margin_top = 20.0
+margin_right = 2037.0
+margin_bottom = 34.0
+rect_scale = Vector2( 0.012, 1 )
+max_value = 11.0
+step = 0.0
+value = 11.0
+texture_progress = SubResource( 25 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -404,102 +499,9 @@ position = Vector2( 384, 512 )
 scale = Vector2( 5, 5 )
 frames = SubResource( 21 )
 
-[node name="health" type="Node" parent="."]
+[node name="music" type="Node" parent="."]
 
-[node name="health1" type="TextureProgress" parent="health"]
-margin_left = 12.0
-margin_top = 116.0
-margin_right = 2060.0
-margin_bottom = 156.0
-rect_scale = Vector2( 0.05, 8 )
-value = 50.0
-texture_progress = SubResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="speed" type="Node" parent="."]
-
-[node name="speed1" type="TextureProgress" parent="speed"]
-margin_left = 12.0
-margin_top = 124.0
-margin_right = 16.0
-margin_bottom = 138.0
-rect_scale = Vector2( 0.05, 4 )
-max_value = 11.0
-step = 0.0
-value = 6.0
-texture_progress = SubResource( 25 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Selected" type="Node" parent="."]
-
-[node name="current" type="AnimatedSprite" parent="Selected"]
-position = Vector2( 384, 128 )
-scale = Vector2( 8, 8 )
-frames = SubResource( 37 )
-
-[node name="healthc" type="TextureProgress" parent="Selected/current"]
-margin_left = -12.0
-margin_top = 17.0
-margin_right = 2036.0
-margin_bottom = 57.0
-rect_scale = Vector2( 0.012, 3 )
-value = 100.0
-texture_progress = SubResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="speedc" type="TextureProgress" parent="Selected/current"]
-margin_left = -12.0
-margin_top = 20.0
-margin_right = 2036.0
-margin_bottom = 34.0
-rect_scale = Vector2( 0.012, 1 )
-max_value = 11.0
-step = 0.0
-value = 11.0
-texture_progress = SubResource( 25 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="targeted" type="AnimatedSprite" parent="Selected"]
-position = Vector2( 832, 128 )
-scale = Vector2( 8, 8 )
-frames = SubResource( 37 )
-frame = 10
-
-[node name="healtht" type="TextureProgress" parent="Selected/targeted"]
-margin_left = -11.0
-margin_top = 17.0
-margin_right = 2037.0
-margin_bottom = 57.0
-rect_scale = Vector2( 0.012, 3 )
-value = 100.0
-texture_progress = SubResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="speedt" type="TextureProgress" parent="Selected/targeted"]
-margin_left = -11.0
-margin_top = 20.0
-margin_right = 2037.0
-margin_bottom = 34.0
-rect_scale = Vector2( 0.012, 1 )
-max_value = 11.0
-step = 0.0
-value = 11.0
-texture_progress = SubResource( 25 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="chara11" type="AudioStreamPlayer" parent="music"]
 stream = ExtResource( 40 )
 
 [connection signal="pressed" from="characters/enemy1" to="." method="_on_enemy1_pressed"]

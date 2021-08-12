@@ -7,6 +7,7 @@ var targeted = GlobalVariables.enemy_slot1 -1
 var current = GlobalVariables.slot1 -1
 
 var player_char = [GlobalVariables.slot1,GlobalVariables.slot2,GlobalVariables.slot3,GlobalVariables.slot4,GlobalVariables.slot5]
+var playing = false
 
 var chara1 = player_char.count(1)
 var chara2 = player_char.count(2)
@@ -53,8 +54,8 @@ func _physics_process(delta):
 	$Selected/current.set_frame(current)
 	$Selected/targeted/healtht.value = targeted_health
 	
-	if Input.is_action_just_pressed("ui_accept"):
-		$AudioStreamPlayer.play()
+	if playing == false:
+		$music/chara11.stop()
 	
 	if speed > 11:
 		chara1 = player_char.count(1)
@@ -144,7 +145,12 @@ func _physics_process(delta):
 			if chara11 > 0:
 				$attacks/attack1.set_frame(11-1)
 				$Selected/current.set_frame(11-1)
+				if playing == false:
+					$music/chara11.play()
+					playing = true
+					
 			else:
+				playing = false
 				speed += 1
 
 
@@ -175,6 +181,18 @@ func _on_enemy5_pressed():
 	targeted_health = enemyslot5health
 
 
+
+
+func _on_attack_2_pressed():
+	speed += 1
+	pass # Replace with function body.
+
+
+func _on_attack_3_pressed():
+	speed += 1
+	pass # Replace with function body.
+
+
 func _on_attack_1_pressed():
 	match speed:
 		1:
@@ -200,13 +218,3 @@ func _on_attack_1_pressed():
 			chara2 -= 1
 		11:
 			chara11 -= 1
-
-
-func _on_attack_2_pressed():
-	speed += 1
-	pass # Replace with function body.
-
-
-func _on_attack_3_pressed():
-	speed += 1
-	pass # Replace with function body.

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3-7e299c49565e429e601e6ed08aeb1a51.mp3str"
+
+[deps]
+
+source_file="res://WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3"
+dest_files=[ "res://.import/WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3-7e299c49565e429e601e6ed08aeb1a51.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
