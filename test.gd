@@ -218,3 +218,7 @@ func _on_attack_1_pressed():
 			chara2 -= 1
 		11:
 			chara11 -= 1
+
+
+func _on_Back_pressed():
+	get_tree().change_scene("res://MainMenu.tscn")

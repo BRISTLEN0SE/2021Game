@@ -337,6 +337,15 @@ texture = ExtResource( 8 )
 hframes = 3
 vframes = 4
 
+[node name="Back" type="Button" parent="."]
+margin_top = 576.0
+margin_right = 32.0
+margin_bottom = 608.0
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="teamselect/team 1" to="." method="_on_team_1_pressed"]
 [connection signal="pressed" from="teamselect/team 2" to="." method="_on_team_2_pressed"]
 [connection signal="pressed" from="teamselect/team 3" to="." method="_on_team_3_pressed"]
@@ -353,3 +362,4 @@ vframes = 4
 [connection signal="pressed" from="characterselect/character9" to="." method="_on_character9_pressed"]
 [connection signal="pressed" from="characterselect/character10" to="." method="_on_character10_pressed"]
 [connection signal="pressed" from="characterselect/character11" to="." method="_on_character11_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
