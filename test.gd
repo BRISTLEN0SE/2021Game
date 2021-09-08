@@ -98,7 +98,7 @@ func _physics_process(delta):
 			if chara1 > 0:
 				$attacks/attack1.set_frame(1-1)
 				$Selected/current.set_frame(1-1)
-			else:
+			else: 
 				speed += 1
 		5:
 			if chara7 > 0:

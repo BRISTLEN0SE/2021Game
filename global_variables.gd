@@ -1,5 +1,7 @@
 extends Node
 
+var gold = 0
+
 #slot
 var slot1 = 1
 var slot2 = 2

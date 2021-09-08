@@ -12,4 +12,5 @@ func _on_chara_select_pressed():
 
 
 func _on_unlock_pressed():
+	get_tree().change_scene("res://Unlock.tscn")
 	pass # Replace with function body.
