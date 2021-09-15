@@ -1,5 +1,5 @@
 extends Node
-
+#hi
 
 func _physics_process(delta):
 	if GlobalVariables.gold > 100:
