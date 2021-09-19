@@ -64,7 +64,7 @@ func _physics_process(delta):
 		chara4 = player_char.count(4)
 		chara5 = player_char.count(5)
 		chara6 = player_char.count(6)
-		chara7 = player_char.count(7)
+		chara7 = player_char.count(7) #big chungus#
 		chara8 = player_char.count(8)
 		chara9 = player_char.count(9)
 		chara10 = player_char.count(10)

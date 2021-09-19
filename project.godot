@@ -8,8 +8,32 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "",
+"class": "EffekseerEffect",
+"language": "NativeScript",
+"path": "res://addons/effekseer/src/EffekseerEffect.gdns"
+}, {
+"base": "",
+"class": "EffekseerEmitter",
+"language": "NativeScript",
+"path": "res://addons/effekseer/src/EffekseerEmitter.gdns"
+}, {
+"base": "",
+"class": "EffekseerEmitter2D",
+"language": "NativeScript",
+"path": "res://addons/effekseer/src/EffekseerEmitter2D.gdns"
+}, {
+"base": "Resource",
+"class": "EffekseerResource",
+"language": "NativeScript",
+"path": "res://addons/effekseer/src/EffekseerResource.gdns"
+} ]
 _global_script_class_icons={
+"EffekseerEffect": "res://addons/effekseer/icon16.png",
+"EffekseerEmitter": "res://addons/effekseer/icon16.png",
+"EffekseerEmitter2D": "res://addons/effekseer/icon16.png",
+"EffekseerResource": "res://addons/effekseer/icon16.png"
 }
 
 [application]
