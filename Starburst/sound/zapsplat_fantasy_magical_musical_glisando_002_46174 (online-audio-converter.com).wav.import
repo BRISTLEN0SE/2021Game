@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/zapsplat_fantasy_magical_musical_glisando_002_46174 (online-audio-converter.com).wav-d58ff7bbd45e4242add639d1d3c2631a.sample"
+
+[deps]
+
+source_file="res://Starburst/sound/zapsplat_fantasy_magical_musical_glisando_002_46174 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/zapsplat_fantasy_magical_musical_glisando_002_46174 (online-audio-converter.com).wav-d58ff7bbd45e4242add639d1d3c2631a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

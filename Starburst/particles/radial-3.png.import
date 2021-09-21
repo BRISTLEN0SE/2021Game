@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/radial-11-small.png-768893b925ab4febf43aee8e58cbc67c.stex"
+path="res://.import/radial-3.png-aef06c979425bcec8d2fb277ff7d8fbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Starburst/Starburst/particles/radial-11-small.png"
-dest_files=[ "res://.import/radial-11-small.png-768893b925ab4febf43aee8e58cbc67c.stex" ]
+source_file="res://Starburst/particles/radial-3.png"
+dest_files=[ "res://.import/radial-3.png-aef06c979425bcec8d2fb277ff7d8fbc.stex" ]
 
 [params]
 

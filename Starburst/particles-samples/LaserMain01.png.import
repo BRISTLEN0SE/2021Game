@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LaserMain01.png-e548e937fbdc0c5e22b94709821e0a22.stex"
+path="res://.import/LaserMain01.png-aeef6c80b41694779be9c2ec84dcbff6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Starburst/Starburst/particles-samples/LaserMain01.png"
-dest_files=[ "res://.import/LaserMain01.png-e548e937fbdc0c5e22b94709821e0a22.stex" ]
+source_file="res://Starburst/particles-samples/LaserMain01.png"
+dest_files=[ "res://.import/LaserMain01.png-aeef6c80b41694779be9c2ec84dcbff6.stex" ]
 
 [params]
 

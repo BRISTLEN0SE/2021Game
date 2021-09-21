@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Thunder_Bold.png-e3a48856d08f409177005d23c757998b.stex"
+path="res://.import/radial-3-small.png-73e2a03d667b78319c879d741f03b369.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Starburst/Starburst/particles-samples/Thunder_Bold.png"
-dest_files=[ "res://.import/Thunder_Bold.png-e3a48856d08f409177005d23c757998b.stex" ]
+source_file="res://Starburst/particles/radial-3-small.png"
+dest_files=[ "res://.import/radial-3-small.png-73e2a03d667b78319c879d741f03b369.stex" ]
 
 [params]
 

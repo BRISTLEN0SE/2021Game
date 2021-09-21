@@ -1,0 +1,14 @@
+[remap]
+
+importer="effekseer.effect"
+type="Resource"
+path="res://.import/starburst.efkefc-a77a7bebea786ce145e6dea48abe0506.res"
+
+[deps]
+
+source_file="res://Starburst/starburst.efkefc"
+dest_files=[ "res://.import/starburst.efkefc-a77a7bebea786ce145e6dea48abe0506.res" ]
+
+[params]
+
+scale=1.0

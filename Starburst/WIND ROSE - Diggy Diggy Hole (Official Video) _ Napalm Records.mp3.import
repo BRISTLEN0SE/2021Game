@@ -1,0 +1,13 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+valid=false
+
+[deps]
+
+source_file="res://Starburst/WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3"
+[params]
+
+loop=true
+loop_offset=0
