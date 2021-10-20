@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/images (4).png-24a5629d98cd77db8ceaf43fbd378013.stex"
+path="res://.import/vector-pixel-art-mirror-broken-isolated-cartoon-161257448-1.png.png-bde3681076098f21359958e1ba248293.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images (4).png"
-dest_files=[ "res://.import/images (4).png-24a5629d98cd77db8ceaf43fbd378013.stex" ]
+source_file="res://vector-pixel-art-mirror-broken-isolated-cartoon-161257448-1.png.png"
+dest_files=[ "res://.import/vector-pixel-art-mirror-broken-isolated-cartoon-161257448-1.png.png-bde3681076098f21359958e1ba248293.stex" ]
 
 [params]
 
