@@ -37,7 +37,7 @@
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 01-1.png" type="Texture" id=35]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 01-2.png" type="Texture" id=36]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 01-4.png" type="Texture" id=37]
-[ext_resource path="res://marcelo-goncevatt-arena.jpg" type="Texture" id=38]
+[ext_resource path="res://download (5).png" type="Texture" id=38]
 [ext_resource path="res://attack/empty.png" type="Texture" id=39]
 [ext_resource path="res://WIND ROSE - Diggy Diggy Hole (Official Video) _ Napalm Records.mp3" type="AudioStream" id=40]
 
