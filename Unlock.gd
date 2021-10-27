@@ -2,7 +2,6 @@ extends Node
 #hi
 
 func _physics_process(delta):
-	print(GlobalVariables.unlock)
 	$gold.text = str(GlobalVariables.gold)
 	if Input.is_action_pressed("ui_down"):
 		GlobalVariables.gold += 1
