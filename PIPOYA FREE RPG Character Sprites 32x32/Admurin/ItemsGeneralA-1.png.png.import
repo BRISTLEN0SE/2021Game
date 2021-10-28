@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/32x32_PixelWeapons_Free.png-e8ad70556e877f822a17b33c4104059c.stex"
+path="res://.import/ItemsGeneralA-1.png.png-2c71cf56d671fef07503949f060bcefa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PIPOYA FREE RPG Character Sprites 32x32/Admurin/32x32_PixelWeapons_Free.png"
-dest_files=[ "res://.import/32x32_PixelWeapons_Free.png-e8ad70556e877f822a17b33c4104059c.stex" ]
+source_file="res://PIPOYA FREE RPG Character Sprites 32x32/Admurin/ItemsGeneralA-1.png.png"
+dest_files=[ "res://.import/ItemsGeneralA-1.png.png-2c71cf56d671fef07503949f060bcefa.stex" ]
 
 [params]
 

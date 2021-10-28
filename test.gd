@@ -80,6 +80,9 @@ func _physics_process(delta):
 			if chara6 > 0:
 				$attacks/attack1.set_frame(6-1)
 				$Selected/current.set_frame(6-1)
+				$attacks/attack1.scale.x = 10
+				$attacks/attack1.scale.y = 10
+				
 			else:
 				speed += 1
 		2:
