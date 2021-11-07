@@ -12,7 +12,7 @@
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 08-1.png" type="Texture" id=10]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 18-1.png" type="Texture" id=11]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Female/Female 03-1.png" type="Texture" id=12]
-[ext_resource path="res://download (5).png" type="Texture" id=13]
+[ext_resource path="res://download (1) (1).png" type="Texture" id=13]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
