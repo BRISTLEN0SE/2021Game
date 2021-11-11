@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://crystal1-1.png (1).png" type="Texture" id=2]
 [ext_resource path="res://Female 13-1-1.png.png" type="Texture" id=3]
+[ext_resource path="res://download (5).png" type="Texture" id=4]
 
 [node name="MainMenu" type="Node"]
 script = ExtResource( 1 )
@@ -39,6 +40,11 @@ texture = ExtResource( 2 )
 position = Vector2( 656, 304 )
 scale = Vector2( 15, 15 )
 texture = ExtResource( 3 )
+
+[node name="Download(5)" type="Sprite" parent="."]
+position = Vector2( 192, 304 )
+scale = Vector2( 1.34737, 1.44633 )
+texture = ExtResource( 4 )
 
 [connection signal="pressed" from="level_select" to="." method="_on_level_select_pressed"]
 [connection signal="pressed" from="chara_select" to="." method="_on_chara_select_pressed"]

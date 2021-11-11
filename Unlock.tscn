@@ -77,22 +77,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="crystal1" type="AnimatedSprite" parent="."]
-position = Vector2( 616, 464 )
-scale = Vector2( 5, 5 )
-frames = SubResource( 8 )
-
-[node name="crystal2" type="AnimatedSprite" parent="."]
-position = Vector2( 776, 464 )
-scale = Vector2( 5, 5 )
+[node name="crystalfinal" type="AnimatedSprite" parent="."]
+position = Vector2( 616, 312 )
+scale = Vector2( 14, 14 )
 frames = SubResource( 8 )
 frame = 2
-
-[node name="crystal3" type="AnimatedSprite" parent="."]
-position = Vector2( 456, 464 )
-scale = Vector2( 5, 5 )
-frames = SubResource( 8 )
-frame = 4
 
 [node name="gold" type="Label" parent="."]
 margin_right = 40.0

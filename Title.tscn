@@ -32,9 +32,9 @@ margin_right = 1164.0
 margin_bottom = 298.0
 rect_rotation = 15.0
 rect_scale = Vector2( 0.8, 0.8 )
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Fragmented"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -47,9 +47,9 @@ margin_right = 1313.0
 margin_bottom = 698.0
 rect_rotation = -15.0
 rect_scale = Vector2( 0.8, 0.8 )
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Forces"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -62,8 +62,8 @@ margin_right = 370.0
 margin_bottom = 373.0
 rect_rotation = 30.0
 rect_scale = Vector2( 1.5, 1.5 )
-custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Click to continue"
 __meta__ = {
 "_edit_use_anchors_": false
