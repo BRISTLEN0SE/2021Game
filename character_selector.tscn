@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 05-1.png" type="Texture" id=1]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 02-1.png" type="Texture" id=2]
@@ -13,6 +13,18 @@
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Male/Male 18-1.png" type="Texture" id=11]
 [ext_resource path="res://PIPOYA FREE RPG Character Sprites 32x32/Female/Female 03-1.png" type="Texture" id=12]
 [ext_resource path="res://download (1) (1).png" type="Texture" id=13]
+
+[sub_resource type="Gradient" id=15]
+colors = PoolColorArray( 0.392157, 0.380392, 0.380392, 1, 0.392157, 0.380392, 0.380392, 1 )
+
+[sub_resource type="GradientTexture" id=16]
+gradient = SubResource( 15 )
+
+[sub_resource type="Gradient" id=13]
+colors = PoolColorArray( 0.219608, 0, 0.266667, 1, 0.466667, 0, 0.713726, 1 )
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -74,6 +86,162 @@ margin_right = 1280.0
 margin_bottom = 640.0
 texture = ExtResource( 13 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node" type="Node" parent="."]
+
+[node name="shard1" type="TextureProgress" parent="Node"]
+margin_left = 80.0
+margin_top = 440.0
+margin_right = 2128.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard2" type="TextureProgress" parent="Node"]
+margin_left = 272.0
+margin_top = 440.0
+margin_right = 2320.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard3" type="TextureProgress" parent="Node"]
+margin_left = 464.0
+margin_top = 440.0
+margin_right = 2512.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard4" type="TextureProgress" parent="Node"]
+margin_left = 656.0
+margin_top = 440.0
+margin_right = 2704.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard5" type="TextureProgress" parent="Node"]
+margin_left = 848.0
+margin_top = 440.0
+margin_right = 2896.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard6" type="TextureProgress" parent="Node"]
+margin_left = 1040.0
+margin_top = 440.0
+margin_right = 3088.0
+margin_bottom = 454.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard7" type="TextureProgress" parent="Node"]
+margin_left = 80.0
+margin_top = 616.0
+margin_right = 2128.0
+margin_bottom = 630.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard8" type="TextureProgress" parent="Node"]
+margin_left = 272.0
+margin_top = 616.0
+margin_right = 2320.0
+margin_bottom = 630.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard9" type="TextureProgress" parent="Node"]
+margin_left = 464.0
+margin_top = 616.0
+margin_right = 2512.0
+margin_bottom = 630.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard10" type="TextureProgress" parent="Node"]
+margin_left = 656.0
+margin_top = 616.0
+margin_right = 2704.0
+margin_bottom = 630.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shard11" type="TextureProgress" parent="Node"]
+margin_left = 848.0
+margin_top = 616.0
+margin_right = 2896.0
+margin_bottom = 630.0
+rect_scale = Vector2( 0.048, 20 )
+max_value = 10.0
+value = 5.0
+texture_under = SubResource( 16 )
+texture_progress = SubResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -160,9 +328,9 @@ animation = "0"
 
 [node name="character1" type="Button" parent="characterselect"]
 margin_left = 80.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 92.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -170,9 +338,9 @@ __meta__ = {
 
 [node name="character2" type="Button" parent="characterselect"]
 margin_left = 272.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 284.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -180,9 +348,9 @@ __meta__ = {
 
 [node name="character3" type="Button" parent="characterselect"]
 margin_left = 464.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 476.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -190,9 +358,9 @@ __meta__ = {
 
 [node name="character4" type="Button" parent="characterselect"]
 margin_left = 656.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 668.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,9 +368,9 @@ __meta__ = {
 
 [node name="character5" type="Button" parent="characterselect"]
 margin_left = 848.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 860.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -210,9 +378,9 @@ __meta__ = {
 
 [node name="character6" type="Button" parent="characterselect"]
 margin_left = 1040.0
-margin_top = 320.0
+margin_top = 296.0
 margin_right = 1052.0
-margin_bottom = 340.0
+margin_bottom = 316.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -220,9 +388,9 @@ __meta__ = {
 
 [node name="character7" type="Button" parent="characterselect"]
 margin_left = 80.0
-margin_top = 496.0
+margin_top = 472.0
 margin_right = 92.0
-margin_bottom = 516.0
+margin_bottom = 492.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -230,9 +398,9 @@ __meta__ = {
 
 [node name="character8" type="Button" parent="characterselect"]
 margin_left = 272.0
-margin_top = 496.0
+margin_top = 472.0
 margin_right = 284.0
-margin_bottom = 516.0
+margin_bottom = 492.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -240,9 +408,9 @@ __meta__ = {
 
 [node name="character9" type="Button" parent="characterselect"]
 margin_left = 464.0
-margin_top = 496.0
+margin_top = 472.0
 margin_right = 476.0
-margin_bottom = 516.0
+margin_bottom = 492.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -250,9 +418,9 @@ __meta__ = {
 
 [node name="character10" type="Button" parent="characterselect"]
 margin_left = 656.0
-margin_top = 496.0
+margin_top = 472.0
 margin_right = 668.0
-margin_bottom = 516.0
+margin_bottom = 492.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -260,9 +428,9 @@ __meta__ = {
 
 [node name="character11" type="Button" parent="characterselect"]
 margin_left = 848.0
-margin_top = 496.0
+margin_top = 472.0
 margin_right = 860.0
-margin_bottom = 516.0
+margin_bottom = 492.0
 rect_scale = Vector2( 8, 7 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -271,77 +439,77 @@ __meta__ = {
 [node name="characters" type="Node" parent="."]
 
 [node name="character 1" type="Sprite" parent="characters"]
-position = Vector2( 128, 384 )
+position = Vector2( 128, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 2 )
 hframes = 3
 vframes = 4
 
 [node name="character 2" type="Sprite" parent="characters"]
-position = Vector2( 320, 384 )
+position = Vector2( 320, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 3 )
 hframes = 3
 vframes = 4
 
 [node name="character 3" type="Sprite" parent="characters"]
-position = Vector2( 512, 384 )
+position = Vector2( 512, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 1 )
 hframes = 3
 vframes = 4
 
 [node name="character 4" type="Sprite" parent="characters"]
-position = Vector2( 704, 384 )
+position = Vector2( 704, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 7 )
 hframes = 3
 vframes = 4
 
 [node name="character 5" type="Sprite" parent="characters"]
-position = Vector2( 896, 384 )
+position = Vector2( 896, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 6 )
 hframes = 3
 vframes = 4
 
 [node name="character 6" type="Sprite" parent="characters"]
-position = Vector2( 1088, 384 )
+position = Vector2( 1088, 360 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 9 )
 hframes = 3
 vframes = 4
 
 [node name="character 7" type="Sprite" parent="characters"]
-position = Vector2( 128, 560 )
+position = Vector2( 128, 536 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 11 )
 hframes = 3
 vframes = 4
 
 [node name="character 8" type="Sprite" parent="characters"]
-position = Vector2( 320, 560 )
+position = Vector2( 320, 536 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 5 )
 hframes = 3
 vframes = 4
 
 [node name="character 9" type="Sprite" parent="characters"]
-position = Vector2( 512, 560 )
+position = Vector2( 512, 536 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 10 )
 hframes = 3
 vframes = 4
 
 [node name="character 10" type="Sprite" parent="characters"]
-position = Vector2( 704, 560 )
+position = Vector2( 704, 536 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 12 )
 hframes = 3
 vframes = 4
 
 [node name="character 11" type="Sprite" parent="characters"]
-position = Vector2( 896, 560 )
+position = Vector2( 896, 536 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 8 )
 hframes = 3

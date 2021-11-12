@@ -1,6 +1,6 @@
 extends Node
 
-var gold = 0
+var gold = 10000
 #slot
 var slot1 = 1
 var slot2 = 2
@@ -13,6 +13,18 @@ var enemy_slot2 = 7
 var enemy_slot3 = 8
 var enemy_slot4 = 9
 var enemy_slot5 = 10
+
+var char1_shard = 0
+var char2_shard = 0
+var char3_shard = 0
+var char4_shard = 0
+var char5_shard = 0
+var char6_shard = 0
+var char7_shard = 0
+var char8_shard = 0
+var char9_shard = 0
+var char10_shard = 0
+var char11_shard = 0
 
 var character1_created = false
 var character2_created = false
@@ -37,6 +49,19 @@ var enemy_slot2_attack  = 2
 var enemy_slot3_attack  = 3
 var enemy_slot4_attack  = 4
 var enemy_slot5_attack  = 5
+
+var chara1_health = 100
+var chara2_health = 100
+var chara3_health = 100
+var chara4_health = 100
+var chara5_health = 100
+var chara6_health = 100
+var chara7_health = 100
+var chara8_health = 100
+var chara9_health = 100
+var chara10_health = 100
+var chara11_health = 100
+
 
 #slot health
 var slot1_health = 100
